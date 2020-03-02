@@ -5,14 +5,15 @@ import sys
 
 
 class DataBuilder:
-    def __init__(self, info=False, drops=True, spoils=True, VIP=False):
+    def __init__(self, info=False, drops=True, spoils=True, VIP=False, VIP_rate=1.5):
         self.original_data_path = "./original_data"  # Path of original data (without drop info)
         self.new_data_path = "./new_data"  # Output path of new data (with dorp info)
 
         self.npcs_xml_dir = "./npcs"  # Directory containing NPC xml files
         self.items_xml_dir = "./items"  # Directory containing item xml files
 
-        self.VIP = VIP  # If VIP is True, adena amount/xp/sp/drop rates are all multiplied by 1.5
+        self.VIP = VIP  # If VIP is True, adena amount/xp/sp/drop rates are all scaled accordingly
+        self.VIP_rate = VIP_rate  # Multiplier for VIP rate
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
         self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
@@ -103,9 +104,9 @@ class DataBuilder:
                     minfo = npc["stats"]
 
                     if self.VIP is True:
-                        # If VIP, then multiply exp and sp by 1.5:
-                        minfo["exp"] = int(np.floor(eval(minfo["exp"]) * 1.5))
-                        minfo["sp"] = int(np.floor(eval(minfo["sp"]) * 1.5))
+                        # If VIP, then multiply exp and sp by VIP_rate:
+                        minfo["exp"] = int(np.floor(eval(minfo["exp"]) * self.VIP_rate))
+                        minfo["sp"] = int(np.floor(eval(minfo["sp"]) * self.VIP_rate))
 
                     body = (
                         f"NPC ID: {npc_id}   "
@@ -124,12 +125,12 @@ class DataBuilder:
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
                             if name != "Adena":
-                                # If not adena, then multiply chance by 1.5 (to a max of 1):
-                                chance = min(chance * 1.5, 1)
+                                # If not adena, then multiply chance by VIP_rate (to a max of 1):
+                                chance = min(chance * self.VIP_rate, 1)
                             else:
-                                # If adena, then multiply amount by 1.5:
-                                item_min *= 1.5
-                                item_max *= 1.5
+                                # If adena, then multiply amount by VIP_rate:
+                                item_min *= self.VIP_rate
+                                item_max *= self.VIP_rate
                             # Note: Need to confirm what happens with seal stones
                             item_min, item_max = (round(item_min), round(item_max))  # Round to int
                         item_amt = (  # If item_min == item_max, then only show one:
