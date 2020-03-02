@@ -68,7 +68,7 @@
 	</item>
 	<item id="5803" type="EtcItem" name="Lucky Charm: D-Grade">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="300" />
@@ -81,7 +81,7 @@
 	</item>
 	<item id="5804" type="EtcItem" name="Lucky Charm: C-Grade">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="660" />
@@ -94,7 +94,7 @@
 	</item>
 	<item id="5805" type="EtcItem" name="Lucky Charm: B-Grade">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="1300" />
@@ -107,7 +107,7 @@
 	</item>
 	<item id="5806" type="EtcItem" name="Lucky Charm: A-Grade">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="2700" />
@@ -120,7 +120,7 @@
 	</item>
 	<item id="5807" type="EtcItem" name="Lucky Charm: S Grade">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="5000" />
@@ -197,268 +197,268 @@
 		</for>
 	</item>
 	<item id="5818" type="EtcItem" name="Alternative Dark Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5819" type="EtcItem" name="Alternative Red Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5820" type="EtcItem" name="Alternative Chilly Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5821" type="EtcItem" name="Alternative Blue Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="100" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5822" type="EtcItem" name="Alternative Golden Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="200" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5823" type="EtcItem" name="Alternative Lute Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="300" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5824" type="EtcItem" name="Alternative Desert Coda">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="200" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5825" type="EtcItem" name="Alternative Red Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="200" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5826" type="EtcItem" name="Alternative Chilly Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="250" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5827" type="EtcItem" name="Alternative Blue Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5828" type="EtcItem" name="Alternative Thorn Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5829" type="EtcItem" name="Alternative Golden Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5830" type="EtcItem" name="Alternative Great Cobol">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="400" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5831" type="EtcItem" name="Alternative Red Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="400" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5832" type="EtcItem" name="Alternative Sea Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5833" type="EtcItem" name="Alternative Chilly Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="400" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5834" type="EtcItem" name="Alternative Blue Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5835" type="EtcItem" name="Alternative Twin Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5836" type="EtcItem" name="Alternative Great Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="750" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5837" type="EtcItem" name="Alternative Desert Codran">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5838" type="EtcItem" name="Mature Alternative Dark Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5839" type="EtcItem" name="Mature Alternative Red Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5840" type="EtcItem" name="Mature Alternative Chilly Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5841" type="EtcItem" name="Mature Alternative Blue Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5842" type="EtcItem" name="Mature Alternative Golden Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5843" type="EtcItem" name="Mature Alternative Lute Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5844" type="EtcItem" name="Mature Alternative Desert Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5845" type="EtcItem" name="Mature Alternative Red Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5846" type="EtcItem" name="Mature Alternative Chilly Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5847" type="EtcItem" name="Mature Alternative Blue Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5848" type="EtcItem" name="Mature Alternative Thorn Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5849" type="EtcItem" name="Mature Alternative Golden Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5850" type="EtcItem" name="Mature Alternative Great Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5851" type="EtcItem" name="Mature Alternative Red Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5852" type="EtcItem" name="Mature Alternative Sea Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5853" type="EtcItem" name="Mature Alternative Chilly Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5854" type="EtcItem" name="Mature Alternative Blue Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5855" type="EtcItem" name="Mature Alternative Twin Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5856" type="EtcItem" name="Mature Alternative Great Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5857" type="EtcItem" name="Mature Alternative Desert Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5858" type="EtcItem" name="Blessed Scroll of Escape: Clan Hall">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="100000" />
@@ -470,7 +470,7 @@
 	</item>
 	<item id="5859" type="EtcItem" name="Blessed Scroll of Escape: Castle">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -486,7 +486,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5861" type="EtcItem" name="Lienrik Egg">
 		<set name="material" val="CRYSTAL" />
@@ -495,7 +495,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5862" type="EtcItem" name="Stone of Contract">
 		<set name="material" val="CRYSTAL" />
@@ -504,7 +504,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5863" type="EtcItem" name="Alligator Tooth">
 		<set name="material" val="CRYSTAL" />
@@ -513,7 +513,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5864" type="EtcItem" name="Mysterious Map Piece">
 		<set name="material" val="CRYSTAL" />
@@ -522,7 +522,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5865" type="EtcItem" name="Carnivore Spore">
 		<set name="material" val="CRYSTAL" />
@@ -531,7 +531,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5866" type="EtcItem" name="Herbivorous Spore">
 		<set name="material" val="CRYSTAL" />
@@ -540,7 +540,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5867" type="EtcItem" name="Jade Crystal">
 		<set name="material" val="CRYSTAL" />
@@ -549,7 +549,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5868" type="EtcItem" name="Snake Scale">
 		<set name="material" val="CRYSTAL" />
@@ -558,7 +558,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5869" type="EtcItem" name="Remains of Aden Residents">
 		<set name="material" val="CRYSTAL" />
@@ -567,7 +567,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5870" type="EtcItem" name="Receipt of Supply">
 		<set name="material" val="CRYSTAL" />
@@ -576,7 +576,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5871" type="EtcItem" name="Suspicious Document Piece">
 		<set name="material" val="CRYSTAL" />
@@ -585,7 +585,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5872" type="EtcItem" name="Supply Items">
 		<set name="material" val="CRYSTAL" />
@@ -594,7 +594,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5873" type="EtcItem" name="Pirate's Treasure Chest">
 		<set name="material" val="CRYSTAL" />
@@ -603,7 +603,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5874" type="EtcItem" name="Sairon's Silver Hair">
 		<set name="material" val="CRYSTAL" />
@@ -612,7 +612,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5875" type="EtcItem" name="Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -621,7 +621,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5876" type="EtcItem" name="Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -630,7 +630,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5877" type="EtcItem" name="Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -639,7 +639,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5878" type="EtcItem" name="Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -648,7 +648,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5879" type="EtcItem" name="Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -657,7 +657,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5880" type="EtcItem" name="Broken Titan Lamp">
 		<set name="material" val="CRYSTAL" />
@@ -666,7 +666,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5881" type="EtcItem" name="Blade Stakato Fang">
 		<set name="material" val="CRYSTAL" />
@@ -675,7 +675,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5882" type="EtcItem" name="Flare Shard">
 		<set name="material" val="CRYSTAL" />
@@ -684,7 +684,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5883" type="EtcItem" name="Freezing Shard">
 		<set name="material" val="CRYSTAL" />
@@ -693,7 +693,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5884" type="EtcItem" name="Cave Beast Tooth">
 		<set name="material" val="CRYSTAL" />
@@ -702,7 +702,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5885" type="EtcItem" name="Death Wave Light">
 		<set name="material" val="CRYSTAL" />
@@ -711,7 +711,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5886" type="EtcItem" name="Sealed Mysterious Stone">
 		<set name="material" val="CRYSTAL" />
@@ -720,7 +720,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5887" type="EtcItem" name="Mysterious Stone">
 		<set name="material" val="CRYSTAL" />
@@ -729,7 +729,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5888" type="EtcItem" name="Karik Horn">
 		<set name="material" val="CRYSTAL" />
@@ -738,7 +738,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5889" type="EtcItem" name="Cave Howler Skull">
 		<set name="material" val="CRYSTAL" />
@@ -747,7 +747,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5890" type="EtcItem" name="Mysterious Book">
 		<set name="material" val="CRYSTAL" />
@@ -756,7 +756,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5891" type="EtcItem" name="Ancient Language Dictionary: Basic Level">
 		<set name="material" val="CRYSTAL" />
@@ -765,7 +765,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5892" type="EtcItem" name="Ancient Language Dictionary: Intermediate Level">
 		<set name="material" val="CRYSTAL" />
@@ -774,7 +774,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5893" type="EtcItem" name="Leaf of Eucalyptus">
 		<set name="material" val="CRYSTAL" />
@@ -783,7 +783,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5894" type="EtcItem" name="Stone of Chill">
 		<set name="material" val="CRYSTAL" />
@@ -792,7 +792,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5895" type="EtcItem" name="Ritron's Fruit">
 		<set name="material" val="CRYSTAL" />
@@ -801,7 +801,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5896" type="EtcItem" name="Moon Face Flower">
 		<set name="material" val="CRYSTAL" />
@@ -810,7 +810,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5897" type="EtcItem" name="Leech Fluids">
 		<set name="material" val="CRYSTAL" />
@@ -819,7 +819,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5898" type="EtcItem" name="Royal Membership">
 		<set name="material" val="CRYSTAL" />
@@ -828,7 +828,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5899" type="EtcItem" name="Kail's Coin">
 		<set name="material" val="CRYSTAL" />
@@ -837,6 +837,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 </list>

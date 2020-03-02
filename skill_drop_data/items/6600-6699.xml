@@ -655,7 +655,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6624" type="EtcItem" name="Dummy - Quest Item 2">
 		<set name="material" val="STEEL" />
@@ -664,7 +664,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6625" type="EtcItem" name="Dummy - Quest Item 3">
 		<set name="material" val="STEEL" />
@@ -673,7 +673,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6626" type="EtcItem" name="Dummy - Quest Item 4">
 		<set name="material" val="STEEL" />
@@ -682,7 +682,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6627" type="EtcItem" name="Dummy - Quest Item 5">
 		<set name="material" val="STEEL" />
@@ -691,7 +691,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6628" type="EtcItem" name="Dummy - Quest Item 6">
 		<set name="material" val="STEEL" />
@@ -700,7 +700,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6629" type="EtcItem" name="Dummy - Quest Item 7">
 		<set name="material" val="STEEL" />
@@ -709,7 +709,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6630" type="EtcItem" name="Dummy - Quest Item 8">
 		<set name="material" val="STEEL" />
@@ -718,7 +718,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6631" type="EtcItem" name="Dummy - Quest Item 9">
 		<set name="material" val="STEEL" />
@@ -727,7 +727,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6632" type="EtcItem" name="Dummy - Quest Item 10">
 		<set name="material" val="STEEL" />
@@ -736,7 +736,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6633" type="EtcItem" name="Dummy - General Item 1">
 		<set name="material" val="STEEL" />
@@ -785,7 +785,7 @@
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="BeastSpice" />
+		<set name="handler" val="BeastSpices" />
 		<set name="item_skill" val="2188-1" />
 	</item>
 	<item id="6644" type="EtcItem" name="Crystal Spice">
@@ -795,7 +795,7 @@
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="BeastSpice" />
+		<set name="handler" val="BeastSpices" />
 		<set name="item_skill" val="2189-1" />
 	</item>
 	<item id="6645" type="EtcItem" name="Beast Soulshot">
@@ -804,7 +804,7 @@
 		<set name="weight" val="1" />
 		<set name="price" val="20" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="BeastSoulShot" />
+		<set name="handler" val="BeastSoulShots" />
 		<set name="item_skill" val="2033-1" />
 	</item>
 	<item id="6646" type="EtcItem" name="Beast Spiritshot">
@@ -813,7 +813,7 @@
 		<set name="weight" val="2" />
 		<set name="price" val="40" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="BeastSpiritShot" />
+		<set name="handler" val="BeastSpiritShots" />
 		<set name="item_skill" val="2008-1" />
 	</item>
 	<item id="6647" type="EtcItem" name="Blessed Beast Spiritshot">
@@ -823,12 +823,12 @@
 		<set name="price" val="100" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="BeastSpiritShot" />
+		<set name="handler" val="BeastSpiritShots" />
 		<set name="item_skill" val="2009-1" />
 	</item>
 	<item id="6648" type="EtcItem" name="Baby Buffalo Panpipe">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />
@@ -838,7 +838,7 @@
 	</item>
 	<item id="6649" type="EtcItem" name="Baby Cougar Chime">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />
@@ -848,7 +848,7 @@
 	</item>
 	<item id="6650" type="EtcItem" name="Baby Kookaburra Ocarina">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />
@@ -863,11 +863,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6652" type="EtcItem" name="Scroll: Protection of Valakas">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="100000" />
@@ -876,14 +876,14 @@
 		<set name="item_skill" val="2231-1" />
 	</item>
 	<item id="6653" type="EtcItem" name="Scroll: Flames of Valakas">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6654" type="EtcItem" name="Scroll: Flames of Valakas">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="40000" />
@@ -893,7 +893,7 @@
 	</item>
 	<item id="6655" type="EtcItem" name="Scroll: Slay Valakas">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -1006,7 +1006,7 @@
 		</for>
 	</item>
 	<item id="6663" type="EtcItem" name="Scroll of Escape: Orc Village">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="400" />
@@ -1017,7 +1017,7 @@
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="6664" type="EtcItem" name="Scroll of Escape: Silenos Village">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="400" />
@@ -1296,84 +1296,84 @@
 		</for>
 	</item>
 	<item id="6688" type="EtcItem" name="Forgotten Blade Edge">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="92529" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6689" type="EtcItem" name="Basalt Battlehammer Head">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="94306" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6690" type="EtcItem" name="Imperial Staff Head">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="92353" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6691" type="EtcItem" name="Angel Slayer Blade">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="92529" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6692" type="EtcItem" name="Shining Bow Shaft">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="90882" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6693" type="EtcItem" name="Dragon Hunter Axe Blade">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="90882" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6694" type="EtcItem" name="Saint Spear Blade">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="90882" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6695" type="EtcItem" name="Demon Splinter Blade">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="94306" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6696" type="EtcItem" name="Heavens Divider Edge">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="91082" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6697" type="EtcItem" name="Arcana Mace Head">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="94306" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6698" type="EtcItem" name="Sealed Tateossian Earring Part">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="10182" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6699" type="EtcItem" name="Sealed Tateossian Ring Gem">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="9176" />

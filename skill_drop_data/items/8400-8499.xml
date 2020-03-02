@@ -679,7 +679,7 @@
 	</item>
 	<item id="8484" type="EtcItem" name="Prize-Winning Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -688,7 +688,7 @@
 	</item>
 	<item id="8485" type="EtcItem" name="Prize-Winning Night Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -697,7 +697,7 @@
 	</item>
 	<item id="8486" type="EtcItem" name="Prize-Winning Novice Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -706,7 +706,7 @@
 	</item>
 	<item id="8487" type="EtcItem" name="Recipe: Destroyer Hammer (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="366000" />
@@ -716,46 +716,46 @@
 	<item id="8488" type="EtcItem" name="Engraved Hammer">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8489" type="EtcItem" name="Daimon's Eyes">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8490" type="EtcItem" name="Hestia's Fairy Stone">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8491" type="EtcItem" name="Nucleus of Lesser Golem">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8492" type="EtcItem" name="Falston's Fang">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8493" type="EtcItem" name="Shaid's Talon">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8494" type="EtcItem" name="Nucleus of Flamestone Giant">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8495" type="EtcItem" name="Book of Grey Star">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8496" type="EtcItem" name="Gludio's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -763,7 +763,7 @@
 	</item>
 	<item id="8497" type="EtcItem" name="Dion's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -771,7 +771,7 @@
 	</item>
 	<item id="8498" type="EtcItem" name="Giran's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -779,7 +779,7 @@
 	</item>
 	<item id="8499" type="EtcItem" name="Oren's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />

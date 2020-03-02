@@ -2,37 +2,37 @@
 <list>
 	<item id="5700" type="EtcItem" name="Alternative Great Cobol Seed">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="40" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5701" type="EtcItem" name="Alternative Red Codran Seed">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="40" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="5702" type="EtcItem" name="Alternative Sea Codran Seed">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="5703" type="EtcItem" name="Lucky Charm">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="100" />
@@ -117,10 +117,10 @@
 		<set name="default_action" val="show_ssq_status" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="600" />
-		<set name="handler" val="SevenSignsRecord" />
+		<set name="handler" val="SevenSignsRecords" />
 	</item>
 	<item id="5708" type="EtcItem" name="Lord of the Manor's Certificate of Approval">
-		<set name="etcitem_type" val="ticket_of_lord" />
+		<set name="etcitem_type" val="TICKET_OF_LORD" />
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="5709" type="Armor" name="Sealed Zubei's Gauntlets">
@@ -541,160 +541,160 @@
 	</item>
 	<item id="5741" type="EtcItem" name="Recipe: Sealed Zubei's Gauntlets (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5742" type="EtcItem" name="Recipe: Zubei's Gauntlets (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5743" type="EtcItem" name="Recipe: Sealed Avadon Gloves (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5744" type="EtcItem" name="Recipe: Sealed Avadon Gloves (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5745" type="EtcItem" name="Recipe: Sealed Blue Wolf Gloves (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5746" type="EtcItem" name="Recipe: Sealed Blue Wolf Gloves (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5747" type="EtcItem" name="Recipe: Sealed Doom Gloves (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5748" type="EtcItem" name="Recipe: Sealed Doom Gloves (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5749" type="EtcItem" name="Recipe: Sealed Zubei's Boots (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5750" type="EtcItem" name="Recipe: Sealed Zubei's Boots (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5751" type="EtcItem" name="Recipe: Sealed Avadon Boots (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5752" type="EtcItem" name="Recipe: Sealed Avadon Boots (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5753" type="EtcItem" name="Recipe: Sealed Blue Wolf Boots (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5754" type="EtcItem" name="Recipe: Sealed Blue Wolf Boots (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5755" type="EtcItem" name="Recipe: Sealed Boots of Doom (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5756" type="EtcItem" name="Recipe: Sealed Boots of Doom (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5757" type="EtcItem" name="Sealed Zubei's Gauntlet Part">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5758" type="EtcItem" name="Sealed Avadon Gloves Part">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5759" type="EtcItem" name="Sealed Blue Wolf Gloves Fabric">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5760" type="EtcItem" name="Sealed Doom Gloves Part">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5761" type="EtcItem" name="Sealed Zubei's Boots Design">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5762" type="EtcItem" name="Sealed Avadon Boots Design">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5763" type="EtcItem" name="Sealed Blue Wolf Boots Design">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5764" type="EtcItem" name="Sealed Doom Boots Part">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
@@ -1030,7 +1030,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2047-1" />
 	</item>
 	<item id="5791" type="Weapon" name="Tomb Guard A">

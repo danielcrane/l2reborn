@@ -414,6 +414,11 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="item_skill" val="3260-1;3262-1" />
 		<set name="duration" val="60" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="is_depositable" val="false" />
 		<for>
 			<set order="0x08" stat="pAtk" val="1" />
 			<set order="0x08" stat="mAtk" val="1" />
@@ -432,6 +437,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
 	</item>
 	<item id="9144" type="EtcItem" name="Pirate's Booty">
 		<set name="default_action" val="capsule" />
@@ -452,7 +458,7 @@
 	</item>
 	<item id="9146" type="EtcItem" name="Scroll of Guidance - For Event">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -463,7 +469,7 @@
 	</item>
 	<item id="9147" type="EtcItem" name="Scroll of Death Whisper - For Event">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -474,7 +480,7 @@
 	</item>
 	<item id="9148" type="EtcItem" name="Scroll of Focus (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -485,7 +491,7 @@
 	</item>
 	<item id="9149" type="EtcItem" name="Scroll of Acumen (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -496,7 +502,7 @@
 	</item>
 	<item id="9150" type="EtcItem" name="Scroll of Haste (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -507,7 +513,7 @@
 	</item>
 	<item id="9151" type="EtcItem" name="Scroll of Agility (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -518,7 +524,7 @@
 	</item>
 	<item id="9152" type="EtcItem" name="Scroll of Empower (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -529,7 +535,7 @@
 	</item>
 	<item id="9153" type="EtcItem" name="Scroll of Might (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -540,9 +546,12 @@
 	</item>
 	<item id="9154" type="EtcItem" name="Scroll of Wind Walk (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
@@ -551,7 +560,7 @@
 	</item>
 	<item id="9155" type="EtcItem" name="Scroll of Shield (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -562,7 +571,7 @@
 	</item>
 	<item id="9156" type="EtcItem" name="Blessed Scroll of Escape (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -572,12 +581,12 @@
 	</item>
 	<item id="9157" type="EtcItem" name="Blessed Scroll of Resurrection (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ScrollOfResurrection" />
+		<set name="handler" val="ScrollsOfResurrection" />
 		<set name="item_skill" val="2321-1" />
 	</item>
 	<item id="9158" type="Armor" name="Golden Circlet of Redemption">
@@ -604,7 +613,7 @@
 	</item>
 	<item id="9162" type="EtcItem" name="Red Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -612,7 +621,7 @@
 	</item>
 	<item id="9163" type="EtcItem" name="Blue Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -620,7 +629,7 @@
 	</item>
 	<item id="9164" type="EtcItem" name="Orange Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -628,7 +637,7 @@
 	</item>
 	<item id="9165" type="EtcItem" name="Black Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -636,7 +645,7 @@
 	</item>
 	<item id="9166" type="EtcItem" name="White Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -644,26 +653,26 @@
 	</item>
 	<item id="9167" type="EtcItem" name="Green Philosopher's Stone Transmutation Circle">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9168" type="EtcItem" name="Philosopher's Stone Ore">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="9169" type="EtcItem" name="Philosopher's Stone Conversion Formula">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="9170" type="EtcItem" name="Magic Reagents">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="is_stackable" val="true" />

@@ -171,7 +171,7 @@
 		</for>
 	</item>
 	<item id="2508" type="EtcItem" name="Cursed Bone">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
 		<set name="price" val="300" />
@@ -183,7 +183,7 @@
 		<set name="weight" val="5" />
 		<set name="price" val="15" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2047-1" />
 	</item>
 	<item id="2510" type="EtcItem" name="Spiritshot: D-grade">
@@ -193,7 +193,7 @@
 		<set name="weight" val="5" />
 		<set name="price" val="18" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2155-1" />
 	</item>
 	<item id="2511" type="EtcItem" name="Spiritshot: C-grade">
@@ -203,7 +203,7 @@
 		<set name="weight" val="3" />
 		<set name="price" val="35" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2156-1" />
 	</item>
 	<item id="2512" type="EtcItem" name="Spiritshot: B-grade">
@@ -213,7 +213,7 @@
 		<set name="weight" val="3" />
 		<set name="price" val="100" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2157-1" />
 	</item>
 	<item id="2513" type="EtcItem" name="Spiritshot: A-grade">
@@ -223,7 +223,7 @@
 		<set name="weight" val="2" />
 		<set name="price" val="120" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2158-1" />
 	</item>
 	<item id="2514" type="EtcItem" name="Spiritshot: S-grade">
@@ -233,7 +233,7 @@
 		<set name="weight" val="2" />
 		<set name="price" val="150" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="SpiritShot" />
+		<set name="handler" val="SpiritShots" />
 		<set name="item_skill" val="2159-1" />
 	</item>
 	<item id="2515" type="EtcItem" name="Food For Wolves">
@@ -243,7 +243,7 @@
 		<set name="price" val="100" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="PetFood" />
+		<set name="handler" val="PetFoods" />
 		<set name="item_skill" val="2048-1" />
 		<set name="use_condition" val="{{uc_category;{@all_wolf_group;@sin_eater_group;@deinonychus_pet_group}}}" />
 	</item>

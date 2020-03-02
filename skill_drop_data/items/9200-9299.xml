@@ -70,7 +70,7 @@
 	</item>
 	<item id="9206" type="EtcItem" name="Greater Healing Potion (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="reuse_delay" val="10000" />
@@ -83,7 +83,7 @@
 	</item>
 	<item id="9207" type="EtcItem" name="Quick Healing Potion (Event)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="reuse_delay" val="500" />
@@ -101,5 +101,284 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+	</item>
+	<item id="9900" type="Armor" name="Halloween Hat">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+    </item>
+	<item id="10075" type="EtcItem" name="L2DayNewbie - A">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10076" type="EtcItem" name="L2DayNewbie - C">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10077" type="EtcItem" name="L2DayNewbie - E">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10078" type="EtcItem" name="L2DayNewbie - F">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10079" type="EtcItem" name="L2DayNewbie - G">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10080" type="EtcItem" name="L2DayNewbie - H">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10081" type="EtcItem" name="L2DayNewbie - I">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10082" type="EtcItem" name="L2DayNewbie - L">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10083" type="EtcItem" name="L2DayNewbie - N">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10084" type="EtcItem" name="L2DayNewbie - O">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10085" type="EtcItem" name="L2DayNewbie - R">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10086" type="EtcItem" name="L2DayNewbie - S">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10087" type="EtcItem" name="L2DayNewbie - T">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10088" type="EtcItem" name="L2DayNewbie - II">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10089" type="EtcItem" name="L2DayNewbie - B">
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="10026" type="EtcItem" name="L2Day - Scroll of Guidance">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2050-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10027" type="EtcItem" name="L2Day - Scroll of Death Whisper">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2051-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10028" type="EtcItem" name="L2Day - Scroll of Focus">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2052-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10029" type="EtcItem" name="L2Day - Scroll of Greater Acumen">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2053-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10030" type="EtcItem" name="L2Day - Scroll of Haste">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2054-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10031" type="EtcItem" name="L2Day - Scroll of Agility">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2055-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10032" type="EtcItem" name="L2Day - Scroll of Mystic Empower">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2056-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10033" type="EtcItem" name="L2Day - Scroll of Might">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2057-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10034" type="EtcItem" name="L2Day - Scroll of Windwalk">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2058-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
+	</item>
+	<item id="10035" type="EtcItem" name="L2Day - Scroll of Shield">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2059-1" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 </list>

@@ -2,7 +2,7 @@
 <list>
 	<item id="8700" type="EtcItem" name="Recipe: Tiphon's Spear (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -10,7 +10,7 @@
 	</item>
 	<item id="8701" type="EtcItem" name="Recipe: Tiphon's Spear (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -18,7 +18,7 @@
 	</item>
 	<item id="8702" type="EtcItem" name="Recipe: Shyeed's Bow (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="706000" />
@@ -27,7 +27,7 @@
 	</item>
 	<item id="8703" type="EtcItem" name="Recipe: Shyeed's Bow (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="706000" />
@@ -36,7 +36,7 @@
 	</item>
 	<item id="8704" type="EtcItem" name="Recipe: Sobekk's Hurricane (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -44,7 +44,7 @@
 	</item>
 	<item id="8705" type="EtcItem" name="Recipe: Sobekk's Hurricane (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -52,7 +52,7 @@
 	</item>
 	<item id="8706" type="EtcItem" name="Recipe: Themis' Tongue (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -60,7 +60,7 @@
 	</item>
 	<item id="8707" type="EtcItem" name="Recipe: Themis' Tongue (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -68,7 +68,7 @@
 	</item>
 	<item id="8708" type="EtcItem" name="Recipe: Cabrio's Hand (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -76,7 +76,7 @@
 	</item>
 	<item id="8709" type="EtcItem" name="Recipe: Cabrio's Hand (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -84,7 +84,7 @@
 	</item>
 	<item id="8710" type="EtcItem" name="Recipe: Daimon Crystal (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -92,74 +92,74 @@
 	</item>
 	<item id="8711" type="EtcItem" name="Recipe: Daimon Crystal (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="8712" type="EtcItem" name="Sirra's Blade Edge">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8713" type="EtcItem" name="Sword of Ipos Blade">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8714" type="EtcItem" name="Barakiel's Axe Piece">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8715" type="EtcItem" name="Behemoth's Tuning Fork Piece">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8716" type="EtcItem" name="Naga Storm Piece">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8717" type="EtcItem" name="Tiphon's Spear Edge">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8718" type="EtcItem" name="Shyeed's Bow Shaft">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8719" type="EtcItem" name="Sobekk's Hurricane Edge">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8720" type="EtcItem" name="Themis' Tongue Piece">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8721" type="EtcItem" name="Cabrio's Hand Head">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8722" type="EtcItem" name="Daimon Crystal Fragment">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
@@ -508,111 +508,111 @@
 	<item id="8765" type="EtcItem" name="Red Gem">
 		<set name="material" val="CRYSTAL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8766" type="EtcItem" name="Spirit Bead">
 		<set name="material" val="CRYSTAL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8767" type="EtcItem" name="Tyrannosaurus Claw">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8768" type="EtcItem" name="Diary Fragment">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8769" type="EtcItem" name="Expedition Member's Letter">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8770" type="EtcItem" name="Ornithomimus Claw">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8771" type="EtcItem" name="Deinonychus Bone">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8772" type="EtcItem" name="Pachycephalosaurus Skin">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8773" type="EtcItem" name="Practice Elrokian Trap">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8774" type="EtcItem" name="Dinosaur Tissue">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8775" type="EtcItem" name="Dinosaur Egg">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8776" type="EtcItem" name="Bones of a Plains Dinosaur">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8777" type="EtcItem" name="Ancient Creatures and How I Long To Be With Them">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8778" type="EtcItem" name="Mantarasa Egg">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8779" type="EtcItem" name="Ornithomimus Claw">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8780" type="EtcItem" name="Deinonychus Bone Fragment">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8781" type="EtcItem" name="Epitaph of Wisdom">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8782" type="EtcItem" name="Gazkh Fragment">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8783" type="EtcItem" name="Bone Powder">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8784" type="EtcItem" name="Gazkh">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8785" type="EtcItem" name="Dinosaur Fang Necklace">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8786" type="EtcItem" name="Primeval Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="5000" />
@@ -623,7 +623,7 @@
 	</item>
 	<item id="8787" type="EtcItem" name="Sprigant's Fruit">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="is_stackable" val="true" />

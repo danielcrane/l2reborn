@@ -7,7 +7,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3301" type="EtcItem" name="Talisman of Snake">
 		<set name="material" val="STEEL" />
@@ -16,7 +16,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3302" type="EtcItem" name="Mithril Clip">
 		<set name="material" val="STEEL" />
@@ -25,7 +25,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3303" type="EtcItem" name="Stakato Chitin">
 		<set name="material" val="STEEL" />
@@ -34,7 +34,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3304" type="EtcItem" name="Reinforced Bowstring">
 		<set name="material" val="STEEL" />
@@ -43,7 +43,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3305" type="EtcItem" name="Manashen's Horn">
 		<set name="material" val="STEEL" />
@@ -52,7 +52,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3306" type="EtcItem" name="Blood of Lizardman">
 		<set name="material" val="STEEL" />
@@ -61,7 +61,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3307" type="EtcItem" name="Mark of Witchcraft">
 		<set name="material" val="STEEL" />
@@ -70,7 +70,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3308" type="EtcItem" name="Orim's Diagram">
 		<set name="material" val="STEEL" />
@@ -79,7 +79,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3309" type="EtcItem" name="Alexandria's Book">
 		<set name="material" val="STEEL" />
@@ -88,7 +88,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3310" type="EtcItem" name="Iker's List">
 		<set name="material" val="STEEL" />
@@ -97,7 +97,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3311" type="EtcItem" name="Dire Wyrm Fang">
 		<set name="material" val="STEEL" />
@@ -106,7 +106,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3312" type="EtcItem" name="Leto Lizardman Charm">
 		<set name="material" val="STEEL" />
@@ -115,7 +115,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3313" type="EtcItem" name="Enchanted Golem Heartstone">
 		<set name="material" val="STEEL" />
@@ -124,7 +124,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3314" type="EtcItem" name="Lara's Memo">
 		<set name="material" val="STEEL" />
@@ -133,7 +133,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3315" type="EtcItem" name="Nestle's Memo">
 		<set name="material" val="STEEL" />
@@ -142,7 +142,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3316" type="EtcItem" name="Leopold's Journal">
 		<set name="material" val="STEEL" />
@@ -151,7 +151,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3317" type="EtcItem" name="Aklantoth 1st Gem">
 		<set name="material" val="STEEL" />
@@ -160,7 +160,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3318" type="EtcItem" name="Aklantoth 2nd Gem">
 		<set name="material" val="STEEL" />
@@ -169,7 +169,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3319" type="EtcItem" name="Aklantoth 3rd Gem">
 		<set name="material" val="STEEL" />
@@ -178,7 +178,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3320" type="EtcItem" name="Aklantoth 4th Gem">
 		<set name="material" val="STEEL" />
@@ -187,7 +187,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3321" type="EtcItem" name="Aklantoth 5th Gem">
 		<set name="material" val="STEEL" />
@@ -196,7 +196,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3322" type="EtcItem" name="Aklantoth 6th Gem">
 		<set name="material" val="STEEL" />
@@ -205,7 +205,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3323" type="EtcItem" name="1st Brimstone">
 		<set name="material" val="STEEL" />
@@ -214,7 +214,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3324" type="EtcItem" name="Orim's Instructions">
 		<set name="material" val="STEEL" />
@@ -223,7 +223,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3325" type="EtcItem" name="Orim's 1st Letter">
 		<set name="material" val="STEEL" />
@@ -232,7 +232,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3326" type="EtcItem" name="Orim's 2nd Letter">
 		<set name="material" val="STEEL" />
@@ -241,7 +241,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3327" type="EtcItem" name="Sir Vasper's Letter">
 		<set name="material" val="STEEL" />
@@ -250,7 +250,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3328" type="EtcItem" name="Vadin's Crucifix">
 		<set name="material" val="STEEL" />
@@ -259,7 +259,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3329" type="EtcItem" name="Tamlin Orc Amulet">
 		<set name="material" val="STEEL" />
@@ -268,7 +268,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3330" type="EtcItem" name="Vadin's Sanctions">
 		<set name="material" val="STEEL" />
@@ -277,7 +277,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3331" type="EtcItem" name="Iker's Amulet">
 		<set name="material" val="STEEL" />
@@ -286,7 +286,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3332" type="EtcItem" name="Soultrap Crystal">
 		<set name="material" val="STEEL" />
@@ -295,7 +295,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3333" type="EtcItem" name="Purgatory Key">
 		<set name="material" val="STEEL" />
@@ -304,7 +304,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3334" type="EtcItem" name="Zeruel Bind Crystal">
 		<set name="material" val="STEEL" />
@@ -313,7 +313,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3335" type="EtcItem" name="2nd Brimstone">
 		<set name="material" val="STEEL" />
@@ -322,7 +322,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3336" type="EtcItem" name="Mark of Summoner">
 		<set name="material" val="STEEL" />
@@ -331,7 +331,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3337" type="EtcItem" name="Leto Lizardman Amulet">
 		<set name="material" val="STEEL" />
@@ -340,7 +340,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3338" type="EtcItem" name="Sac of Redspores">
 		<set name="material" val="STEEL" />
@@ -349,7 +349,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3339" type="EtcItem" name="Karul Bugbear Totem">
 		<set name="material" val="STEEL" />
@@ -358,7 +358,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3340" type="EtcItem" name="Shards of Manashen">
 		<set name="material" val="STEEL" />
@@ -367,7 +367,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3341" type="EtcItem" name="Breka Orc Totem">
 		<set name="material" val="STEEL" />
@@ -376,7 +376,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3342" type="EtcItem" name="Crimson Bloodstone">
 		<set name="material" val="STEEL" />
@@ -385,7 +385,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3343" type="EtcItem" name="Talons of Tyrant">
 		<set name="material" val="STEEL" />
@@ -394,7 +394,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3344" type="EtcItem" name="Wings of Droneant">
 		<set name="material" val="STEEL" />
@@ -403,7 +403,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3345" type="EtcItem" name="Tusk of Windsus">
 		<set name="material" val="STEEL" />
@@ -412,7 +412,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3346" type="EtcItem" name="Fangs of Wyrm">
 		<set name="material" val="STEEL" />
@@ -421,7 +421,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3347" type="EtcItem" name="Lara's 1st List">
 		<set name="material" val="STEEL" />
@@ -430,7 +430,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3348" type="EtcItem" name="Lara's 2nd List">
 		<set name="material" val="STEEL" />
@@ -439,7 +439,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3349" type="EtcItem" name="Lara's 3rd List">
 		<set name="material" val="STEEL" />
@@ -448,7 +448,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3350" type="EtcItem" name="Lara's 4th List">
 		<set name="material" val="STEEL" />
@@ -457,7 +457,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3351" type="EtcItem" name="Lara's 5th List">
 		<set name="material" val="STEEL" />
@@ -466,7 +466,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3352" type="EtcItem" name="Galatea's Letter">
 		<set name="material" val="STEEL" />
@@ -475,7 +475,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3353" type="EtcItem" name="Beginner's Arcana">
 		<set name="material" val="STEEL" />
@@ -484,7 +484,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3354" type="EtcItem" name="Almors's Arcana">
 		<set name="material" val="STEEL" />
@@ -493,7 +493,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3355" type="EtcItem" name="Camoniell's Arcana">
 		<set name="material" val="STEEL" />
@@ -502,7 +502,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3356" type="EtcItem" name="Belthus's Arcana">
 		<set name="material" val="STEEL" />
@@ -511,7 +511,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3357" type="EtcItem" name="Basillia's Arcana">
 		<set name="material" val="STEEL" />
@@ -520,7 +520,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3358" type="EtcItem" name="Celestiel's Arcana">
 		<set name="material" val="STEEL" />
@@ -529,7 +529,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3359" type="EtcItem" name="Brynthea's Arcana">
 		<set name="material" val="STEEL" />
@@ -538,7 +538,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3360" type="EtcItem" name="1st Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -547,7 +547,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3361" type="EtcItem" name="1st Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -556,7 +556,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3362" type="EtcItem" name="1st Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -565,7 +565,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3363" type="EtcItem" name="1st Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -574,7 +574,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3364" type="EtcItem" name="1st Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -583,7 +583,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3365" type="EtcItem" name="2nd Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -592,7 +592,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3366" type="EtcItem" name="2nd Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -601,7 +601,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3367" type="EtcItem" name="2nd Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -610,7 +610,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3368" type="EtcItem" name="2nd Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -619,7 +619,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3369" type="EtcItem" name="2nd Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -628,7 +628,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3370" type="EtcItem" name="3rd Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -637,7 +637,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3371" type="EtcItem" name="3rd Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -646,7 +646,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3372" type="EtcItem" name="3rd Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -655,7 +655,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3373" type="EtcItem" name="3rd Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -664,7 +664,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3374" type="EtcItem" name="3rd Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -673,7 +673,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3375" type="EtcItem" name="4th Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -682,7 +682,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3376" type="EtcItem" name="4th Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -691,7 +691,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3377" type="EtcItem" name="4th Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -700,7 +700,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3378" type="EtcItem" name="4th Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -709,7 +709,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3379" type="EtcItem" name="4th Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -718,7 +718,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3380" type="EtcItem" name="5th Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -727,7 +727,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3381" type="EtcItem" name="5th Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -736,7 +736,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3382" type="EtcItem" name="5th Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -745,7 +745,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3383" type="EtcItem" name="5th Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -754,7 +754,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3384" type="EtcItem" name="5th Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -763,7 +763,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3385" type="EtcItem" name="6th Crystal of Starting">
 		<set name="material" val="STEEL" />
@@ -772,7 +772,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3386" type="EtcItem" name="6th Crystal of Inprogress">
 		<set name="material" val="STEEL" />
@@ -781,7 +781,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3387" type="EtcItem" name="6th Crystal of Foul">
 		<set name="material" val="STEEL" />
@@ -790,7 +790,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3388" type="EtcItem" name="6th Crystal of Defeat">
 		<set name="material" val="STEEL" />
@@ -799,7 +799,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3389" type="EtcItem" name="6th Crystal of Victory">
 		<set name="material" val="STEEL" />
@@ -808,7 +808,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3390" type="EtcItem" name="Mark of Lord">
 		<set name="material" val="STEEL" />
@@ -817,7 +817,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3391" type="EtcItem" name="Ordeal Necklace">
 		<set name="material" val="STEEL" />
@@ -826,7 +826,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3392" type="EtcItem" name="Varkee's Charm">
 		<set name="material" val="STEEL" />
@@ -835,7 +835,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3393" type="EtcItem" name="Tantus's Charm">
 		<set name="material" val="STEEL" />
@@ -844,7 +844,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3394" type="EtcItem" name="Hatos's Charm">
 		<set name="material" val="STEEL" />
@@ -853,7 +853,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3395" type="EtcItem" name="Takuna's Charm">
 		<set name="material" val="STEEL" />
@@ -862,7 +862,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3396" type="EtcItem" name="Chianta's Charm">
 		<set name="material" val="STEEL" />
@@ -871,7 +871,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3397" type="EtcItem" name="Manakia's Orders">
 		<set name="material" val="STEEL" />
@@ -880,7 +880,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3398" type="EtcItem" name="Breka Orc Fang">
 		<set name="material" val="STEEL" />
@@ -889,7 +889,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3399" type="EtcItem" name="Manakia's Amulet">
 		<set name="material" val="STEEL" />
@@ -898,6 +898,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 </list>

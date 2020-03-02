@@ -2,7 +2,7 @@
 <list>
 	<item id="3500" type="EtcItem" name="Dragonflute of Wind">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="1000" />
@@ -13,7 +13,7 @@
 	</item>
 	<item id="3501" type="EtcItem" name="Dragonflute of Star">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="1000" />
@@ -24,7 +24,7 @@
 	</item>
 	<item id="3502" type="EtcItem" name="Dragonflute of Twilight">
 		<set name="default_action" val="skill_maintain" />
-		<set name="etcitem_type" val="pet_collar" />
+		<set name="etcitem_type" val="PET_COLLAR" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="1000" />
@@ -40,7 +40,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3504" type="EtcItem" name="Kirunas Horn">
 		<set name="material" val="STEEL" />
@@ -49,7 +49,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3505" type="EtcItem" name="Mithril Mold">
 		<set name="material" val="STEEL" />
@@ -58,7 +58,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3506" type="EtcItem" name="Bloody Letter">
 		<set name="material" val="STEEL" />
@@ -67,7 +67,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3507" type="EtcItem" name="Supplies to Alex">
 		<set name="material" val="STEEL" />
@@ -76,7 +76,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3508" type="EtcItem" name="Supplies to Endrigo">
 		<set name="material" val="STEEL" />
@@ -85,7 +85,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3509" type="EtcItem" name="Alex's Coins">
 		<set name="material" val="STEEL" />
@@ -94,7 +94,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3510" type="EtcItem" name="Wardens Appreciation">
 		<set name="material" val="STEEL" />
@@ -103,7 +103,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3511" type="EtcItem" name="Blackbox to Orim">
 		<set name="material" val="STEEL" />
@@ -112,7 +112,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3512" type="EtcItem" name="Deluxe Windsus Ham">
 		<set name="material" val="STEEL" />
@@ -121,7 +121,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3513" type="EtcItem" name="Heart of Silenos">
 		<set name="material" val="STEEL" />
@@ -130,7 +130,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3514" type="EtcItem" name="Request Giran">
 		<set name="material" val="STEEL" />
@@ -139,7 +139,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3515" type="EtcItem" name="Request Gludin">
 		<set name="material" val="STEEL" />
@@ -148,7 +148,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3516" type="EtcItem" name="Request Hunters">
 		<set name="material" val="STEEL" />
@@ -157,7 +157,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3517" type="EtcItem" name="Delivery Score Red">
 		<set name="material" val="STEEL" />
@@ -166,7 +166,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3518" type="EtcItem" name="Delivery Score Blue">
 		<set name="material" val="STEEL" />
@@ -175,7 +175,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3519" type="EtcItem" name="Deliverymen Advanced Certificate Super">
 		<set name="material" val="STEEL" />
@@ -184,7 +184,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3520" type="EtcItem" name="1st Confirmation Document">
 		<set name="material" val="STEEL" />
@@ -193,7 +193,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3521" type="EtcItem" name="2nd Confirmation Document">
 		<set name="material" val="STEEL" />
@@ -202,7 +202,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3522" type="EtcItem" name="Delivery Goods 01">
 		<set name="material" val="STEEL" />
@@ -211,7 +211,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3523" type="EtcItem" name="Delivery Goods 02">
 		<set name="material" val="STEEL" />
@@ -220,7 +220,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3524" type="EtcItem" name="Delivery Goods 03">
 		<set name="material" val="STEEL" />
@@ -229,7 +229,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3525" type="EtcItem" name="Delivery Goods 04">
 		<set name="material" val="STEEL" />
@@ -238,7 +238,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3526" type="EtcItem" name="Delivery Goods 05">
 		<set name="material" val="STEEL" />
@@ -247,7 +247,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3527" type="EtcItem" name="Delivery Goods 06">
 		<set name="material" val="STEEL" />
@@ -256,7 +256,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3528" type="EtcItem" name="Delivery Goods 07">
 		<set name="material" val="STEEL" />
@@ -265,7 +265,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3529" type="EtcItem" name="Delivery Goods 08">
 		<set name="material" val="STEEL" />
@@ -274,7 +274,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3530" type="EtcItem" name="Delivery Goods 09">
 		<set name="material" val="STEEL" />
@@ -283,7 +283,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3531" type="EtcItem" name="Delivery Goods 10">
 		<set name="material" val="STEEL" />
@@ -292,7 +292,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3532" type="EtcItem" name="Delivery Goods 11">
 		<set name="material" val="STEEL" />
@@ -301,7 +301,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3533" type="EtcItem" name="Delivery Goods 12">
 		<set name="material" val="STEEL" />
@@ -310,7 +310,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3534" type="EtcItem" name="Delivery Goods 13">
 		<set name="material" val="STEEL" />
@@ -319,7 +319,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3535" type="EtcItem" name="Delivery Goods 14">
 		<set name="material" val="STEEL" />
@@ -328,7 +328,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3536" type="EtcItem" name="Delivery Goods 15">
 		<set name="material" val="STEEL" />
@@ -337,7 +337,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3537" type="EtcItem" name="Delivery Goods 16">
 		<set name="material" val="STEEL" />
@@ -346,7 +346,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3538" type="EtcItem" name="Delivery Goods 17">
 		<set name="material" val="STEEL" />
@@ -355,7 +355,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3539" type="EtcItem" name="Delivery Goods 18">
 		<set name="material" val="STEEL" />
@@ -364,7 +364,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3540" type="EtcItem" name="Delivery Goods 19">
 		<set name="material" val="STEEL" />
@@ -373,7 +373,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3541" type="EtcItem" name="Delivery Goods 20">
 		<set name="material" val="STEEL" />
@@ -382,7 +382,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3542" type="EtcItem" name="Delivery Goods 21">
 		<set name="material" val="STEEL" />
@@ -391,7 +391,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3543" type="EtcItem" name="Delivery Goods 22">
 		<set name="material" val="STEEL" />
@@ -400,7 +400,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3544" type="EtcItem" name="Delivery Goods 23">
 		<set name="material" val="STEEL" />
@@ -409,7 +409,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3545" type="EtcItem" name="Delivery Goods 24">
 		<set name="material" val="STEEL" />
@@ -418,7 +418,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3546" type="EtcItem" name="Delivery Goods 25">
 		<set name="material" val="STEEL" />
@@ -427,7 +427,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3547" type="EtcItem" name="Delivery Goods 26">
 		<set name="material" val="STEEL" />
@@ -436,7 +436,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3548" type="EtcItem" name="Delivery Goods 27">
 		<set name="material" val="STEEL" />
@@ -445,7 +445,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3549" type="EtcItem" name="Delivery Goods 28">
 		<set name="material" val="STEEL" />
@@ -454,7 +454,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3550" type="EtcItem" name="Delivery Goods 29">
 		<set name="material" val="STEEL" />
@@ -463,7 +463,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3551" type="EtcItem" name="Delivery Goods 30">
 		<set name="material" val="STEEL" />
@@ -472,7 +472,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3552" type="EtcItem" name="Delivery Goods 31">
 		<set name="material" val="STEEL" />
@@ -481,7 +481,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3553" type="EtcItem" name="Delivery Goods 32">
 		<set name="material" val="STEEL" />
@@ -490,7 +490,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3554" type="EtcItem" name="Delivery Goods 33">
 		<set name="material" val="STEEL" />
@@ -499,7 +499,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3555" type="EtcItem" name="Delivery Goods 34">
 		<set name="material" val="STEEL" />
@@ -508,7 +508,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3556" type="EtcItem" name="Delivery Goods 35">
 		<set name="material" val="STEEL" />
@@ -517,7 +517,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3557" type="EtcItem" name="Delivery Goods 36">
 		<set name="material" val="STEEL" />
@@ -526,7 +526,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3558" type="EtcItem" name="Delivery Goods 37">
 		<set name="material" val="STEEL" />
@@ -535,7 +535,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3559" type="EtcItem" name="Delivery Goods 38">
 		<set name="material" val="STEEL" />
@@ -544,7 +544,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3560" type="EtcItem" name="Delivery Goods 39">
 		<set name="material" val="STEEL" />
@@ -553,7 +553,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3561" type="EtcItem" name="Delivery Goods 40">
 		<set name="material" val="STEEL" />
@@ -562,7 +562,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3562" type="EtcItem" name="Delivery Goods 41">
 		<set name="material" val="STEEL" />
@@ -571,7 +571,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3563" type="EtcItem" name="Delivery Goods 42">
 		<set name="material" val="STEEL" />
@@ -580,7 +580,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3564" type="EtcItem" name="Delivery Goods 43">
 		<set name="material" val="STEEL" />
@@ -589,7 +589,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3565" type="EtcItem" name="Delivery Goods 44">
 		<set name="material" val="STEEL" />
@@ -598,7 +598,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3566" type="EtcItem" name="Delivery Goods 45">
 		<set name="material" val="STEEL" />
@@ -607,7 +607,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3567" type="EtcItem" name="Delivery Goods 46">
 		<set name="material" val="STEEL" />
@@ -616,7 +616,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3568" type="EtcItem" name="Delivery Goods 47">
 		<set name="material" val="STEEL" />
@@ -625,7 +625,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3569" type="EtcItem" name="Delivery Goods 48">
 		<set name="material" val="STEEL" />
@@ -634,7 +634,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3570" type="EtcItem" name="Delivery Goods 49">
 		<set name="material" val="STEEL" />
@@ -643,7 +643,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3571" type="EtcItem" name="Delivery Goods 50">
 		<set name="material" val="STEEL" />
@@ -652,7 +652,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3572" type="EtcItem" name="Delivery Goods 51">
 		<set name="material" val="STEEL" />
@@ -661,7 +661,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3573" type="EtcItem" name="Delivery Goods 52">
 		<set name="material" val="STEEL" />
@@ -670,7 +670,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3574" type="EtcItem" name="Delivery Goods 53">
 		<set name="material" val="STEEL" />
@@ -679,7 +679,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3575" type="EtcItem" name="Delivery Goods 54">
 		<set name="material" val="STEEL" />
@@ -688,7 +688,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3576" type="EtcItem" name="Delivery Goods 55">
 		<set name="material" val="STEEL" />
@@ -697,7 +697,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3577" type="EtcItem" name="Delivery Goods 56">
 		<set name="material" val="STEEL" />
@@ -706,7 +706,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3578" type="EtcItem" name="Delivery Goods 57">
 		<set name="material" val="STEEL" />
@@ -715,7 +715,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3579" type="EtcItem" name="Delivery Goods 58">
 		<set name="material" val="STEEL" />
@@ -724,7 +724,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3580" type="EtcItem" name="Delivery Goods 59">
 		<set name="material" val="STEEL" />
@@ -733,7 +733,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3581" type="EtcItem" name="Delivery Goods 60">
 		<set name="material" val="STEEL" />
@@ -742,7 +742,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3582" type="EtcItem" name="Delivery Goods 61">
 		<set name="material" val="STEEL" />
@@ -751,7 +751,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3583" type="EtcItem" name="Delivery Goods 62">
 		<set name="material" val="STEEL" />
@@ -760,7 +760,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3584" type="EtcItem" name="Delivery Goods 63">
 		<set name="material" val="STEEL" />
@@ -769,7 +769,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3585" type="EtcItem" name="Delivery Goods 64">
 		<set name="material" val="STEEL" />
@@ -778,7 +778,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3586" type="EtcItem" name="Delivery Goods 65">
 		<set name="material" val="STEEL" />
@@ -787,7 +787,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3587" type="EtcItem" name="Delivery Goods 66">
 		<set name="material" val="STEEL" />
@@ -796,7 +796,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3588" type="EtcItem" name="Delivery Goods 67">
 		<set name="material" val="STEEL" />
@@ -805,7 +805,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3589" type="EtcItem" name="Confirmation Document 01">
 		<set name="material" val="STEEL" />
@@ -814,7 +814,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3590" type="EtcItem" name="Confirmation Document 02">
 		<set name="material" val="STEEL" />
@@ -823,7 +823,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3591" type="EtcItem" name="Confirmation Document 03">
 		<set name="material" val="STEEL" />
@@ -832,7 +832,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3592" type="EtcItem" name="Confirmation Document 04">
 		<set name="material" val="STEEL" />
@@ -841,7 +841,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3593" type="EtcItem" name="Confirmation Document 05">
 		<set name="material" val="STEEL" />
@@ -850,7 +850,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3594" type="EtcItem" name="Confirmation Document 06">
 		<set name="material" val="STEEL" />
@@ -859,7 +859,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3595" type="EtcItem" name="Confirmation Document 07">
 		<set name="material" val="STEEL" />
@@ -868,7 +868,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3596" type="EtcItem" name="Confirmation Document 08">
 		<set name="material" val="STEEL" />
@@ -877,7 +877,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3597" type="EtcItem" name="Confirmation Document 09">
 		<set name="material" val="STEEL" />
@@ -886,7 +886,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3598" type="EtcItem" name="Confirmation Document 10">
 		<set name="material" val="STEEL" />
@@ -895,7 +895,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3599" type="EtcItem" name="Confirmation Document 11">
 		<set name="material" val="STEEL" />
@@ -904,6 +904,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 </list>

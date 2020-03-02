@@ -7,7 +7,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6401" type="EtcItem" name="Badge of Fox">
 		<set name="material" val="CRYSTAL" />
@@ -16,7 +16,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6402" type="EtcItem" name="Badge of Wolf">
 		<set name="material" val="CRYSTAL" />
@@ -25,7 +25,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6403" type="EtcItem" name="Star Shard">
 		<set name="default_action" val="skill_reduce" />
@@ -66,7 +66,7 @@
 	</item>
 	<item id="6409" type="EtcItem" name="2006 Battle Tournament - CP Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="500" />
 		<set name="reuse_delay" val="1000" />
@@ -76,7 +76,7 @@
 	</item>
 	<item id="6410" type="EtcItem" name="2006 Battle Tournament - Quick Healing Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="180" />
 		<set name="reuse_delay" val="500" />

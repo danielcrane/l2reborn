@@ -2,7 +2,7 @@
 <list>
 	<item id="3000" type="EtcItem" name="Recipe: Dwarven Chain Shield">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="3120" />
@@ -11,7 +11,7 @@
 	</item>
 	<item id="3001" type="EtcItem" name="Recipe: Rind Leather Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="3220" />
@@ -20,7 +20,7 @@
 	</item>
 	<item id="3002" type="EtcItem" name="Recipe: Dwarven Chain Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="3220" />
@@ -29,7 +29,7 @@
 	</item>
 	<item id="3003" type="EtcItem" name="Recipe: Gloves of Seal">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="3220" />
@@ -38,7 +38,7 @@
 	</item>
 	<item id="3004" type="EtcItem" name="Recipe: Rind Leather Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="3220" />
@@ -47,7 +47,7 @@
 	</item>
 	<item id="3005" type="EtcItem" name="Recipe: Demon's Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="4900" />
@@ -56,7 +56,7 @@
 	</item>
 	<item id="3006" type="EtcItem" name="Recipe: Demon's Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="4900" />
@@ -65,7 +65,7 @@
 	</item>
 	<item id="3007" type="EtcItem" name="Recipe: Theca Leather Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5500" />
@@ -74,7 +74,7 @@
 	</item>
 	<item id="3008" type="EtcItem" name="Recipe: Theca Leather Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5500" />
@@ -83,7 +83,7 @@
 	</item>
 	<item id="3009" type="EtcItem" name="Recipe: Composite Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="4900" />
@@ -92,7 +92,7 @@
 	</item>
 	<item id="3010" type="EtcItem" name="Recipe: Composite Helmet">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7360" />
@@ -101,7 +101,7 @@
 	</item>
 	<item id="3011" type="EtcItem" name="Recipe: Divine Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -110,7 +110,7 @@
 	</item>
 	<item id="3012" type="EtcItem" name="Recipe: Full Plate Helmet">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="10720" />
@@ -119,7 +119,7 @@
 	</item>
 	<item id="3013" type="EtcItem" name="Recipe: Drake Leather Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -128,7 +128,7 @@
 	</item>
 	<item id="3014" type="EtcItem" name="Recipe: Full Plate Boots">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -137,7 +137,7 @@
 	</item>
 	<item id="3015" type="EtcItem" name="Recipe: Drake Leather Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -146,7 +146,7 @@
 	</item>
 	<item id="3016" type="EtcItem" name="Recipe: Full Plate Gauntlets">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -155,7 +155,7 @@
 	</item>
 	<item id="3017" type="EtcItem" name="Recipe: Divine Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -164,7 +164,7 @@
 	</item>
 	<item id="3018" type="EtcItem" name="Recipe: Blessed Gloves">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7160" />
@@ -173,7 +173,7 @@
 	</item>
 	<item id="3019" type="EtcItem" name="Recipe: Full Plate Shield">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="7500" />
@@ -182,7 +182,7 @@
 	</item>
 	<item id="3020" type="EtcItem" name="Recipe: Elven Long Sword">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="36000" />
@@ -191,7 +191,7 @@
 	</item>
 	<item id="3021" type="EtcItem" name="Recipe: Dwarven War Hammer">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="57400" />
@@ -200,7 +200,7 @@
 	</item>
 	<item id="3022" type="EtcItem" name="Recipe: Yaksa Mace">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="122600" />
@@ -209,7 +209,7 @@
 	</item>
 	<item id="3023" type="EtcItem" name="Recipe: Titan Key">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -222,7 +222,7 @@
 	</item>
 	<item id="3024" type="EtcItem" name="Recipe: Journeyman Ring">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -235,7 +235,7 @@
 	</item>
 	<item id="3025" type="EtcItem" name="Recipe: Amber Bead">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -341,7 +341,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="3031" type="EtcItem" name="Spirit Ore">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="price" val="400" />
@@ -349,7 +349,7 @@
 	</item>
 	<item id="3032" type="EtcItem" name="Recipe: Spiritshot D">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5000" />
@@ -358,7 +358,7 @@
 	</item>
 	<item id="3033" type="EtcItem" name="Recipe: Spiritshot C">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="60000" />
@@ -367,7 +367,7 @@
 	</item>
 	<item id="3034" type="EtcItem" name="Recipe: Spiritshot B">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -376,7 +376,7 @@
 	</item>
 	<item id="3035" type="EtcItem" name="Recipe: Spiritshot A">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="150000" />
@@ -385,7 +385,7 @@
 	</item>
 	<item id="3036" type="EtcItem" name="Recipe: Spiritshot S">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="450000" />
@@ -399,7 +399,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="3038" type="EtcItem" name="Blueprint: Summon Mechanic Golem">
 		<set name="material" val="PAPER" />

@@ -2,7 +2,7 @@
 <list>
 	<item id="8600" type="EtcItem" name="Herb of Life">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -10,7 +10,7 @@
 	</item>
 	<item id="8601" type="EtcItem" name="Greater Herb of Life">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -18,7 +18,7 @@
 	</item>
 	<item id="8602" type="EtcItem" name="Superior Herb of Life">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -26,7 +26,7 @@
 	</item>
 	<item id="8603" type="EtcItem" name="Herb of Mana">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -34,7 +34,7 @@
 	</item>
 	<item id="8604" type="EtcItem" name="Greater Herb of Mana">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -42,7 +42,7 @@
 	</item>
 	<item id="8605" type="EtcItem" name="Superior Herb of Mana">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -50,7 +50,7 @@
 	</item>
 	<item id="8606" type="EtcItem" name="Herb of Power">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -58,7 +58,7 @@
 	</item>
 	<item id="8607" type="EtcItem" name="Herb of Magic">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -66,7 +66,7 @@
 	</item>
 	<item id="8608" type="EtcItem" name="Herb of Atk. Spd.">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -74,7 +74,7 @@
 	</item>
 	<item id="8609" type="EtcItem" name="Herb of Casting Spd.">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -82,7 +82,7 @@
 	</item>
 	<item id="8610" type="EtcItem" name="Herb of Critical Attack.">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -90,7 +90,7 @@
 	</item>
 	<item id="8611" type="EtcItem" name="Herb of Speed">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -98,7 +98,7 @@
 	</item>
 	<item id="8612" type="EtcItem" name="Herb of the Warrior">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -106,7 +106,7 @@
 	</item>
 	<item id="8613" type="EtcItem" name="Herb of the Mystic">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
@@ -114,14 +114,14 @@
 	</item>
 	<item id="8614" type="EtcItem" name="Herb of Recovery">
 		<set name="material" val="PAPER" />
-		<set name="etcitem_type" val="herb" />
+		<set name="etcitem_type" val="HERB" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="handler" val="ItemSkills" />
 		<set name="item_skill" val="2278-3;2279-3" />
 	</item>
 	<item id="8615" type="EtcItem" name="Summoning Crystal">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="10" />
 		<set name="price" val="35000" />
@@ -157,7 +157,7 @@
 	</item>
 	<item id="8622" type="EtcItem" name="Elixir of Life (No Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="price" val="1300" />
@@ -165,13 +165,13 @@
 		<set name="shared_reuse_group" val="1" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-1" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8623" type="EtcItem" name="Elixir of Life (D-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -180,13 +180,13 @@
 		<set name="shared_reuse_group" val="2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-2" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8624" type="EtcItem" name="Elixir of Life (C-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -195,13 +195,13 @@
 		<set name="shared_reuse_group" val="3" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-3" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8625" type="EtcItem" name="Elixir of Life (B-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -210,13 +210,13 @@
 		<set name="shared_reuse_group" val="4" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-4" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8626" type="EtcItem" name="Elixir of Life (A-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -225,13 +225,13 @@
 		<set name="shared_reuse_group" val="5" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-5" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8627" type="EtcItem" name="Elixir of Life (S-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -240,13 +240,13 @@
 		<set name="shared_reuse_group" val="6" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2287-6" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8628" type="EtcItem" name="Elixir of Mental Strength (No Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="price" val="1200" />
@@ -254,13 +254,13 @@
 		<set name="shared_reuse_group" val="1" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-1" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8629" type="EtcItem" name="Elixir of Mental Strength (D-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -269,13 +269,13 @@
 		<set name="shared_reuse_group" val="2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-2" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8630" type="EtcItem" name="Elixir of Mental Strength (C-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -284,13 +284,13 @@
 		<set name="shared_reuse_group" val="3" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-3" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8631" type="EtcItem" name="Elixir of Mental Strength (B-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -299,13 +299,13 @@
 		<set name="shared_reuse_group" val="4" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-4" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8632" type="EtcItem" name="Elixir of Mental Strength (A-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -314,13 +314,13 @@
 		<set name="shared_reuse_group" val="5" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-5" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8633" type="EtcItem" name="Elixir of Mental Strength (S-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -329,13 +329,13 @@
 		<set name="shared_reuse_group" val="6" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2288-6" />
 		<set name="use_condition" val="{{uc_transmode_exclude;{tt_flying}}}" />
 	</item>
 	<item id="8634" type="EtcItem" name="Elixir of CP (No Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
 		<set name="price" val="600" />
@@ -343,12 +343,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-1" />
 	</item>
 	<item id="8635" type="EtcItem" name="Elixir of CP (D-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -357,12 +357,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-2" />
 	</item>
 	<item id="8636" type="EtcItem" name="Elixir of CP (C-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -371,12 +371,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-3" />
 	</item>
 	<item id="8637" type="EtcItem" name="Elixir of CP (B-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -385,12 +385,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-4" />
 	</item>
 	<item id="8638" type="EtcItem" name="Elixir of CP (A-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -399,12 +399,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-5" />
 	</item>
 	<item id="8639" type="EtcItem" name="Elixir of CP (S-Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="elixir" />
+		<set name="etcitem_type" val="ELIXIR" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -413,12 +413,12 @@
 		<set name="shared_reuse_group" val="7" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="Elixir" />
+		<set name="handler" val="Elixirs" />
 		<set name="item_skill" val="2289-6" />
 	</item>
 	<item id="8640" type="EtcItem" name="Recipe: Elixir of Life (No Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -426,7 +426,7 @@
 	</item>
 	<item id="8641" type="EtcItem" name="Recipe: Elixir of Life (D-Grade)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -434,7 +434,7 @@
 	</item>
 	<item id="8642" type="EtcItem" name="Recipe: Elixir of Life (C-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -442,7 +442,7 @@
 	</item>
 	<item id="8643" type="EtcItem" name="Recipe: Elixir of Life (B-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="2000" />
@@ -451,7 +451,7 @@
 	</item>
 	<item id="8644" type="EtcItem" name="Recipe: Elixir of Life (A-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="2500" />
@@ -460,7 +460,7 @@
 	</item>
 	<item id="8645" type="EtcItem" name="Recipe: Elixir of Life (S-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="3000" />
@@ -469,7 +469,7 @@
 	</item>
 	<item id="8646" type="EtcItem" name="Recipe: Elixir of Mental Strength (No Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -477,7 +477,7 @@
 	</item>
 	<item id="8647" type="EtcItem" name="Recipe: Elixir of Mental Strength (D-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -485,7 +485,7 @@
 	</item>
 	<item id="8648" type="EtcItem" name="Recipe: Elixir of Mental Strength (C-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="1760" />
@@ -494,7 +494,7 @@
 	</item>
 	<item id="8649" type="EtcItem" name="Recipe: Elixir of Mental Strength (B-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="2320" />
@@ -503,7 +503,7 @@
 	</item>
 	<item id="8650" type="EtcItem" name="Recipe: Elixir of Mental Strength (A-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="2880" />
@@ -512,7 +512,7 @@
 	</item>
 	<item id="8651" type="EtcItem" name="Recipe: Elixir of Mental Strength (S-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="3360" />
@@ -521,7 +521,7 @@
 	</item>
 	<item id="8652" type="EtcItem" name="Recipe: Elixir of CP (No Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -529,7 +529,7 @@
 	</item>
 	<item id="8653" type="EtcItem" name="Recipe: Elixir of CP (D-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -537,7 +537,7 @@
 	</item>
 	<item id="8654" type="EtcItem" name="Recipe: Elixir of CP (C-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -545,7 +545,7 @@
 	</item>
 	<item id="8655" type="EtcItem" name="Recipe: Elixir of CP (B-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -553,7 +553,7 @@
 	</item>
 	<item id="8656" type="EtcItem" name="Recipe: Elixir of CP (A-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -561,14 +561,14 @@
 	</item>
 	<item id="8657" type="EtcItem" name="Recipe: Elixir of CP (S-Grade) (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="8658" type="EtcItem" name="Mysterious Solvent">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="100" />
@@ -578,6 +578,7 @@
 		<set name="default_action" val="capsule" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
 		<set name="item_skill" val="2290-1" />
 	</item>
 	<item id="8660" type="Armor" name="Demon Horns">
@@ -603,7 +604,7 @@
 	</item>
 	<item id="8663" type="EtcItem" name="Enlightenment Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -613,7 +614,7 @@
 	</item>
 	<item id="8664" type="EtcItem" name="Masking Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -623,7 +624,7 @@
 	</item>
 	<item id="8665" type="EtcItem" name="Masking Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -633,7 +634,7 @@
 	</item>
 	<item id="8666" type="EtcItem" name="Masking Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -643,7 +644,7 @@
 	</item>
 	<item id="8667" type="EtcItem" name="Chameleon Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -653,7 +654,7 @@
 	</item>
 	<item id="8668" type="EtcItem" name="Chameleon Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -663,7 +664,7 @@
 	</item>
 	<item id="8669" type="EtcItem" name="Chameleon Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -673,7 +674,7 @@
 	</item>
 	<item id="8670" type="EtcItem" name="Chameleon Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -683,7 +684,7 @@
 	</item>
 	<item id="8671" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -693,7 +694,7 @@
 	</item>
 	<item id="8672" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -703,7 +704,7 @@
 	</item>
 	<item id="8673" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -713,7 +714,7 @@
 	</item>
 	<item id="8674" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -723,7 +724,7 @@
 	</item>
 	<item id="8675" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -733,7 +734,7 @@
 	</item>
 	<item id="8676" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -743,7 +744,7 @@
 	</item>
 	<item id="8677" type="EtcItem" name="Luxury Oil">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="reuse_delay" val="500" />
@@ -1042,7 +1043,7 @@
 	</item>
 	<item id="8690" type="EtcItem" name="Recipe: Sirra's Blade (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1050,7 +1051,7 @@
 	</item>
 	<item id="8691" type="EtcItem" name="Recipe: Sirra's Blade (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1058,7 +1059,7 @@
 	</item>
 	<item id="8692" type="EtcItem" name="Recipe: Sword of Ipos (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1066,7 +1067,7 @@
 	</item>
 	<item id="8693" type="EtcItem" name="Recipe: Sword of Ipos (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1074,7 +1075,7 @@
 	</item>
 	<item id="8694" type="EtcItem" name="Recipe: Barakiel's Axe (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1082,7 +1083,7 @@
 	</item>
 	<item id="8695" type="EtcItem" name="Recipe: Barakiel's Axe (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1090,7 +1091,7 @@
 	</item>
 	<item id="8696" type="EtcItem" name="Recipe: Behemoth's Tuning Fork (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1098,7 +1099,7 @@
 	</item>
 	<item id="8697" type="EtcItem" name="Recipe: Behemoth's Tuning Fork (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1106,7 +1107,7 @@
 	</item>
 	<item id="8698" type="EtcItem" name="Recipe: Naga Storm (60%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -1114,7 +1115,7 @@
 	</item>
 	<item id="8699" type="EtcItem" name="Recipe: Naga Storm (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />

@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
 	<item id="6300" type="EtcItem" name="Nephilim Shaman Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6301" type="EtcItem" name="Nephilim Warrior Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6302" type="EtcItem" name="Nephilim Shaman Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6303" type="EtcItem" name="Nephilim Warrior Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6304" type="EtcItem" name="Nephilim Shaman Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6305" type="EtcItem" name="Nephilim Warrior Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6306" type="EtcItem" name="Nephilim Shaman Posting Ticket">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="6307" type="Weapon" name="Sword of Limit - Guidance">
 		<set name="default_action" val="equip" />
@@ -274,7 +274,7 @@
 		<set name="price" val="300" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="PetFood" />
+		<set name="handler" val="PetFoods" />
 		<set name="item_skill" val="2180-1" />
 		<set name="use_condition" val="{{uc_category;{@strider;@wyvern_group}}}" />
 	</item>
@@ -283,13 +283,13 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="20" />
 		<set name="is_dropable" val="false" />
-		<set name="handler" val="Book" />
+		<set name="handler" val="Books" />
 	</item>
 	<item id="6318" type="EtcItem" name="Blood Fire">
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6319" type="EtcItem" name="Mimir's Elixir">
 		<set name="material" val="CRYSTAL" />
@@ -298,12 +298,12 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6320" type="EtcItem" name="Pure Silver">
 		<set name="material" val="LIQUID" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6321" type="EtcItem" name="true Gold">
 		<set name="material" val="CRYSTAL" />
@@ -312,7 +312,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6322" type="EtcItem" name="Sage's Stone">
 		<set name="material" val="CRYSTAL" />
@@ -321,7 +321,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="6323" type="Armor" name="Sealed Phoenix Necklace">
 		<set name="default_action" val="equip" />
@@ -403,7 +403,7 @@
 	</item>
 	<item id="6329" type="EtcItem" name="Recipe: Sealed Phoenix Necklace(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="34800" />
@@ -412,7 +412,7 @@
 	</item>
 	<item id="6330" type="EtcItem" name="Recipe: Sealed Phoenix Necklace(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="69600" />
@@ -421,7 +421,7 @@
 	</item>
 	<item id="6331" type="EtcItem" name="Recipe: Sealed Phoenix Earring(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="26200" />
@@ -430,7 +430,7 @@
 	</item>
 	<item id="6332" type="EtcItem" name="Recipe: Sealed Phoenix Earring(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="52400" />
@@ -439,7 +439,7 @@
 	</item>
 	<item id="6333" type="EtcItem" name="Recipe: Sealed Phoenix Ring(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="17420" />
@@ -448,7 +448,7 @@
 	</item>
 	<item id="6334" type="EtcItem" name="Recipe: Sealed Phoenix Ring(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="34840" />
@@ -457,7 +457,7 @@
 	</item>
 	<item id="6335" type="EtcItem" name="Recipe: Sealed Majestic Necklace(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="52000" />
@@ -466,7 +466,7 @@
 	</item>
 	<item id="6336" type="EtcItem" name="Recipe: Sealed Majestic Necklace(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="104000" />
@@ -475,7 +475,7 @@
 	</item>
 	<item id="6337" type="EtcItem" name="Recipe: Sealed Majestic Earring(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="39000" />
@@ -484,7 +484,7 @@
 	</item>
 	<item id="6338" type="EtcItem" name="Recipe: Sealed Majestic Earring(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="78000" />
@@ -493,7 +493,7 @@
 	</item>
 	<item id="6339" type="EtcItem" name="Recipe: Sealed Majestic Ring(70%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="26000" />
@@ -502,7 +502,7 @@
 	</item>
 	<item id="6340" type="EtcItem" name="Recipe: Sealed Majestic Ring(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="52000" />
@@ -510,42 +510,42 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6341" type="EtcItem" name="Sealed Phoenix Earring Gemstone">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="7231" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6342" type="EtcItem" name="Sealed Majestic Earring Gemstone">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="8829" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6343" type="EtcItem" name="Sealed Phoenix Necklace Beads">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="9354" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6344" type="EtcItem" name="Sealed Majestic Necklace Beads">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="13643" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6345" type="EtcItem" name="Sealed Phoenix Ring Gemstone">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5228" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6346" type="EtcItem" name="Sealed Majestic Ring Gemstone">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="6143" />
@@ -1217,13 +1217,13 @@
 	</item>
 	<item id="6387" type="EtcItem" name="Blessed Scroll of Resurrection for Pets">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="6000" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ScrollOfResurrection" />
+		<set name="handler" val="ScrollsOfResurrection" />
 		<set name="item_skill" val="2179-1" />
 	</item>
 	<item id="6388" type="EtcItem" name="Lord of the Manor's Certificate of Approval">
@@ -1298,6 +1298,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 </list>

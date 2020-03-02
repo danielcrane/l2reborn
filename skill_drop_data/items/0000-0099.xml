@@ -335,7 +335,7 @@
 	</item>
 	<item id="17" type="EtcItem" name="Wooden Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="6" />
@@ -865,7 +865,7 @@
 	</item>
 	<item id="65" type="EtcItem" name="Red Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="80" />
 		<set name="price" val="40" />

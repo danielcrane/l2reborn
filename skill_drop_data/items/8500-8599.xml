@@ -2,7 +2,7 @@
 <list>
 	<item id="8500" type="EtcItem" name="Aden's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -10,7 +10,7 @@
 	</item>
 	<item id="8501" type="EtcItem" name="Innadril's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -18,7 +18,7 @@
 	</item>
 	<item id="8502" type="EtcItem" name="Goddard's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -26,7 +26,7 @@
 	</item>
 	<item id="8503" type="EtcItem" name="Rune's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -34,7 +34,7 @@
 	</item>
 	<item id="8504" type="EtcItem" name="Schuttgart's Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -42,7 +42,7 @@
 	</item>
 	<item id="8505" type="EtcItem" name="Green Luminous Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -50,7 +50,7 @@
 	</item>
 	<item id="8506" type="EtcItem" name="Green Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -59,7 +59,7 @@
 	</item>
 	<item id="8507" type="EtcItem" name="Green Colored Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -67,7 +67,7 @@
 	</item>
 	<item id="8508" type="EtcItem" name="Purple Luminous Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -75,7 +75,7 @@
 	</item>
 	<item id="8509" type="EtcItem" name="Purple Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -84,7 +84,7 @@
 	</item>
 	<item id="8510" type="EtcItem" name="Purple Luminous Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -92,7 +92,7 @@
 	</item>
 	<item id="8511" type="EtcItem" name="Yellow Luminous Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -100,7 +100,7 @@
 	</item>
 	<item id="8512" type="EtcItem" name="Yellow Luminous Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -108,7 +108,7 @@
 	</item>
 	<item id="8513" type="EtcItem" name="Yellow Luminous Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -117,11 +117,11 @@
 	<item id="8514" type="EtcItem" name="Remnants of Old Dwarves' Dreams">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8515" type="EtcItem" name="Charm of Courage: No Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="reuse_delay" val="1200000" />
@@ -131,7 +131,7 @@
 	</item>
 	<item id="8516" type="EtcItem" name="Charm of Courage: D-Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -142,7 +142,7 @@
 	</item>
 	<item id="8517" type="EtcItem" name="Charm of Courage: C-Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -154,7 +154,7 @@
 	</item>
 	<item id="8518" type="EtcItem" name="Charm of Courage: B-Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -166,7 +166,7 @@
 	</item>
 	<item id="8519" type="EtcItem" name="Charm of Courage: A-Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -178,7 +178,7 @@
 	</item>
 	<item id="8520" type="EtcItem" name="Charm of Courage: S-Grade">
 		<set name="default_action" val="keep_exp" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -190,62 +190,62 @@
 	</item>
 	<item id="8521" type="EtcItem" name="Seed: Sea Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="900" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8522" type="EtcItem" name="Seed: Alternative Sea Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="900" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8523" type="EtcItem" name="Seed: Twin Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="1000" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8524" type="EtcItem" name="Seed: Alternative Twin Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="1000" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8525" type="EtcItem" name="Seed: Great Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="1200" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8526" type="EtcItem" name="Seed: Alternative Great Coba">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed2" />
+		<set name="etcitem_type" val="SEED2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="1200" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="8527" type="Weapon" name="For Monsters Only (Strengthened Bow)">
@@ -465,22 +465,22 @@
 	<item id="8543" type="EtcItem" name="Bead Parcel">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8544" type="EtcItem" name="Timora Orc's Head">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8545" type="EtcItem" name="Kasha Spider's Tooth">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8546" type="EtcItem" name="Horn of Baar Dre Vanul">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8547" type="EtcItem" name="Old Box">
 		<set name="default_action" val="capsule" />
@@ -488,12 +488,12 @@
 		<set name="weight" val="100" />
 		<set name="price" val="1500" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 		<set name="item_skill" val="2271-1" />
 	</item>
 	<item id="8548" type="EtcItem" name="Hot Springs Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -503,12 +503,12 @@
 	<item id="8549" type="EtcItem" name="Bruin Lizardman Blood">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8550" type="EtcItem" name="Picot Araneid's Leg">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8551" type="EtcItem" name="Box of Cheerleading Gear Used to encourage victory.">
 		<set name="default_action" val="capsule" />
@@ -523,14 +523,14 @@
 		<set name="weight" val="10" />
 	</item>
 	<item id="8553" type="EtcItem" name="Red Mask of Victory, Fabric">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="60" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8554" type="EtcItem" name="Recipe: Red Mask of Victory (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -643,7 +643,8 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="item_skill" val="2277-1" />
+		<set name="item_skill" val="9999-1" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8571" type="EtcItem" name="Event Gift Box">
 		<set name="default_action" val="capsule" />
@@ -654,6 +655,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="item_skill" val="2277-2" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8572" type="EtcItem" name="Event Gift Box">
 		<set name="default_action" val="capsule" />
@@ -664,6 +666,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="item_skill" val="2277-3" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8573" type="EtcItem" name="Event Gift Box">
 		<set name="default_action" val="capsule" />
@@ -674,6 +677,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="item_skill" val="2277-4" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8574" type="EtcItem" name="Event Gift Box">
 		<set name="default_action" val="capsule" />
@@ -684,6 +688,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="item_skill" val="2277-5" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8575" type="EtcItem" name="Event Gift Box">
 		<set name="default_action" val="capsule" />
@@ -694,6 +699,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="item_skill" val="2277-6" />
+		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="8576" type="Weapon" name="Apprentice's Staff (Event)">
 		<set name="is_magical" val="true" />
@@ -1082,18 +1088,18 @@
 		</for>
 	</item>
 	<item id="8592" type="EtcItem" name="Weapon Exchange Coupon - No Grade">
-		<set name="etcitem_type" val="coupon" />
+		<set name="etcitem_type" val="COUPON" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 	</item>
 	<item id="8593" type="EtcItem" name="Weapon Exchange Coupon - D Grade">
-		<set name="etcitem_type" val="coupon" />
+		<set name="etcitem_type" val="COUPON" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 	</item>
 	<item id="8594" type="EtcItem" name="Scroll: Recovery (No Grade)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000" />
@@ -1104,7 +1110,7 @@
 	</item>
 	<item id="8595" type="EtcItem" name="Scroll: Recovery (Grade D)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1116,7 +1122,7 @@
 	</item>
 	<item id="8596" type="EtcItem" name="Scroll: Recovery (Grade C)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1128,7 +1134,7 @@
 	</item>
 	<item id="8597" type="EtcItem" name="Scroll: Recovery (Grade B)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1140,7 +1146,7 @@
 	</item>
 	<item id="8598" type="EtcItem" name="Scroll: Recovery (Grade A)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1152,7 +1158,7 @@
 	</item>
 	<item id="8599" type="EtcItem" name="Scroll: Recovery (Grade S)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />

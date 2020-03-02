@@ -15,7 +15,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5902" type="EtcItem" name="Scroll of Ancient Magic">
 		<set name="material" val="CRYSTAL" />
@@ -24,7 +24,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5903" type="EtcItem" name="Ancient Ash Urn">
 		<set name="material" val="CRYSTAL" />
@@ -33,7 +33,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5904" type="EtcItem" name="Wesley's Mixing Stone">
 		<set name="material" val="CRYSTAL" />
@@ -42,7 +42,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5905" type="EtcItem" name="Magister's Mixing Stone">
 		<set name="material" val="CRYSTAL" />
@@ -51,21 +51,21 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5906" type="EtcItem" name="(Not used) Red Soul Crystal: Grade 11">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5907" type="EtcItem" name="(Not used) Red Soul Crystal: Grade 12">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5908" type="EtcItem" name="Red Soul Crystal: Grade 13">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />
@@ -73,18 +73,18 @@
 		<set name="item_skill" val="2096-1" />
 	</item>
 	<item id="5909" type="EtcItem" name="(Not used) Green Soul Crystal: Grade 11">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5910" type="EtcItem" name="(Not used) Green Soul Crystal: Grade 12">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5911" type="EtcItem" name="Green Soul Crystal: Grade 13">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />
@@ -92,18 +92,18 @@
 		<set name="item_skill" val="2096-1" />
 	</item>
 	<item id="5912" type="EtcItem" name="(Not used) Blue Soul Crystal: Grade 11">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5913" type="EtcItem" name="(Not used) Blue Soul Crystal: Grade 12">
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 	</item>
 	<item id="5914" type="EtcItem" name="Blue Soul Crystal: Grade 13">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="20" />
 		<set name="is_oly_restricted" val="true" />

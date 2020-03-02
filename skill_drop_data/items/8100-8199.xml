@@ -7,12 +7,12 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8101" type="EtcItem" name="Dwarf's Favor">
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8102" type="Weapon" name="Pa'agrian Sword - Focus">
 		<set name="default_action" val="equip" />

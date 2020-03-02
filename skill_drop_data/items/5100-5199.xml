@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
 	<item id="5100" type="EtcItem" name="Mature Desert Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5101" type="EtcItem" name="Mature Lute Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5102" type="EtcItem" name="Mature Twin Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5103" type="EtcItem" name="Mature Dark Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5104" type="EtcItem" name="Mature Shining Coda">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5105" type="EtcItem" name="Mature Chilly Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5106" type="EtcItem" name="Mature Burning Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5107" type="EtcItem" name="Mature Blue Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5108" type="EtcItem" name="Mature Red Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5109" type="EtcItem" name="Mature Golden Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5110" type="EtcItem" name="Mature Desert Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5111" type="EtcItem" name="Mature Sea Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5112" type="EtcItem" name="Mature Thorn Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5113" type="EtcItem" name="Mature Dapple Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5114" type="EtcItem" name="Mature Great Cobol">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5115" type="EtcItem" name="Mature Chilly Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5116" type="EtcItem" name="Mature Burning Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5117" type="EtcItem" name="Mature Blue Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5118" type="EtcItem" name="Mature Red Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5119" type="EtcItem" name="Mature Dapple Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5120" type="EtcItem" name="Mature Desert Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5121" type="EtcItem" name="Mature Sea Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5122" type="EtcItem" name="Mature Twin Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5123" type="EtcItem" name="Mature Thorn Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5124" type="EtcItem" name="Mature Great Codran">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5125" type="EtcItem" name="Harvester">
 		<set name="default_action" val="harvest" />
-		<set name="etcitem_type" val="harvest" />
+		<set name="etcitem_type" val="HARVEST" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="500" />
-		<set name="handler" val="Harvester" />
+		<set name="handler" val="Harvesters" />
 		<set name="item_skill" val="2098-1" />
 	</item>
 	<item id="5126" type="EtcItem" name="Dualsword Craft Stamp">
@@ -475,7 +475,7 @@
 	</item>
 	<item id="5153" type="EtcItem" name="Recipe: Soulshot (D) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5000" />
@@ -484,7 +484,7 @@
 	</item>
 	<item id="5154" type="EtcItem" name="Recipe: Soulshot (C) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="25000" />
@@ -493,7 +493,7 @@
 	</item>
 	<item id="5155" type="EtcItem" name="Recipe: Soulshot (B) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -502,7 +502,7 @@
 	</item>
 	<item id="5156" type="EtcItem" name="Recipe: Soulshot (A) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="150000" />
@@ -511,7 +511,7 @@
 	</item>
 	<item id="5157" type="EtcItem" name="Recipe: Soulshot (S) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="250000" />
@@ -520,7 +520,7 @@
 	</item>
 	<item id="5158" type="EtcItem" name="Recipe: Spiritshot (D) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5000" />
@@ -529,7 +529,7 @@
 	</item>
 	<item id="5159" type="EtcItem" name="Recipe: Spiritshot (C) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="25000" />
@@ -538,7 +538,7 @@
 	</item>
 	<item id="5160" type="EtcItem" name="Recipe: Spiritshot (B) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -547,7 +547,7 @@
 	</item>
 	<item id="5161" type="EtcItem" name="Recipe: Spiritshot (A) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="150000" />
@@ -556,7 +556,7 @@
 	</item>
 	<item id="5162" type="EtcItem" name="Recipe: Spiritshot (S) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="250000" />
@@ -565,7 +565,7 @@
 	</item>
 	<item id="5163" type="EtcItem" name="Recipe: Blessed Spiritshot (D) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="30000" />
@@ -574,7 +574,7 @@
 	</item>
 	<item id="5164" type="EtcItem" name="Recipe: Blessed Spiritshot (C) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="60000" />
@@ -583,7 +583,7 @@
 	</item>
 	<item id="5165" type="EtcItem" name="Recipe: Blessed Spiritshot (B) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -592,7 +592,7 @@
 	</item>
 	<item id="5166" type="EtcItem" name="Recipe: Blessed Spiritshot (A) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="180000" />
@@ -601,7 +601,7 @@
 	</item>
 	<item id="5167" type="EtcItem" name="Recipe: Blessed Spiritshot (S) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="290000" />
@@ -615,7 +615,7 @@
 		<set name="price" val="200" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="PetFood" />
+		<set name="handler" val="PetFoods" />
 		<set name="item_skill" val="2101-1" />
 		<set name="use_condition" val="{{uc_category;{@strider}}}" />
 	</item>
@@ -626,7 +626,7 @@
 		<set name="price" val="300" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="PetFood" />
+		<set name="handler" val="PetFoods" />
 		<set name="item_skill" val="2102-1" />
 		<set name="use_condition" val="{{uc_category;{@strider}}}" />
 	</item>

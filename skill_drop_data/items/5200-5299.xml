@@ -51,70 +51,70 @@
 		<set name="item_skill" val="2065-8" />
 	</item>
 	<item id="5205" type="EtcItem" name="Mercenary Posting Ticket (Sword/Stationary)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5206" type="EtcItem" name="Mercenary Posting Ticket (Spear/Stationary)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5207" type="EtcItem" name="Mercenary Posting Ticket (Bow/Stationary)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5208" type="EtcItem" name="Mercenary Posting Ticket (Cleric/Stationary)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5209" type="EtcItem" name="Mercenary Posting Ticket (Wizard/Stationary)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5210" type="EtcItem" name="Mercenary Posting Ticket (Sword/Mobile)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5211" type="EtcItem" name="Mercenary Posting Ticket (Spear/Mobile)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5212" type="EtcItem" name="Mercenary Posting Ticket (Bow/Mobile)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5213" type="EtcItem" name="Mercenary Posting Ticket (Cleric/Mobile)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5214" type="EtcItem" name="Mercenary Posting Ticket (Wizard/Mobile)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5215" type="EtcItem" name="Mercenary Posting Ticket (Teleporter1)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5216" type="Armor" name="Wolf Level 75 Armor">
 		<set name="default_action" val="equip" />
@@ -148,19 +148,19 @@
 		</for>
 	</item>
 	<item id="5218" type="EtcItem" name="Mercenary Posting Ticket (Teleporter2)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5219" type="EtcItem" name="Mercenary Posting Ticket (Teleporter3)">
-		<set name="etcitem_type" val="castle_guard" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="MercTicket" />
+		<set name="handler" val="MercenaryTickets" />
 	</item>
 	<item id="5220" type="EtcItem" name="Metal Hardener">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="5000" />
@@ -168,72 +168,72 @@
 	</item>
 	<item id="5221" type="EtcItem" name="Seed: Chilly Cobol">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="25" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5222" type="EtcItem" name="Seed: Blue Cobol">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5223" type="EtcItem" name="Seed: Thorn Cobol">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5224" type="EtcItem" name="Seed: Golden Cobol">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5225" type="EtcItem" name="Seed: Great Cobol">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-2" />
 	</item>
 	<item id="5226" type="EtcItem" name="Seed: Red Codran">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="40" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="5227" type="EtcItem" name="Seed: Sea Codran">
 		<set name="default_action" val="seed" />
-		<set name="etcitem_type" val="seed" />
+		<set name="etcitem_type" val="SEED" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="price" val="50" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="Seed" />
+		<set name="handler" val="Seeds" />
 		<set name="item_skill" val="2097-3" />
 	</item>
 	<item id="5228" type="EtcItem" name="Trash">
@@ -250,7 +250,7 @@
 	</item>
 	<item id="5230" type="EtcItem" name="Recipe: Mithril Arrow (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="80000" />
@@ -259,7 +259,7 @@
 	</item>
 	<item id="5231" type="EtcItem" name="Recipe: Metal Hardener (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="2800" />
@@ -273,7 +273,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="5233" type="Weapon" name="Keshanberk*Keshanberk">
 		<set name="default_action" val="equip" />
@@ -301,7 +301,7 @@
 	</item>
 	<item id="5234" type="EtcItem" name="Mystery Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="12000" />
@@ -314,7 +314,7 @@
 	</item>
 	<item id="5235" type="EtcItem" name="Facelifting Potion - A">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -327,7 +327,7 @@
 	</item>
 	<item id="5236" type="EtcItem" name="Facelifting Potion - B">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -340,7 +340,7 @@
 	</item>
 	<item id="5237" type="EtcItem" name="Facelifting Potion - C">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -353,7 +353,7 @@
 	</item>
 	<item id="5238" type="EtcItem" name="Dye Potion - A">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -366,7 +366,7 @@
 	</item>
 	<item id="5239" type="EtcItem" name="Dye Potion - B">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -379,7 +379,7 @@
 	</item>
 	<item id="5240" type="EtcItem" name="Dye Potion - C">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -392,7 +392,7 @@
 	</item>
 	<item id="5241" type="EtcItem" name="Dye Potion - D">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -405,7 +405,7 @@
 	</item>
 	<item id="5242" type="EtcItem" name="Hair Style Change Potion - A">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -418,7 +418,7 @@
 	</item>
 	<item id="5243" type="EtcItem" name="Hair Style Change Potion - B">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -431,7 +431,7 @@
 	</item>
 	<item id="5244" type="EtcItem" name="Hair Style Change Potion - C">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -444,7 +444,7 @@
 	</item>
 	<item id="5245" type="EtcItem" name="Hair Style Change Potion - D">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -457,7 +457,7 @@
 	</item>
 	<item id="5246" type="EtcItem" name="Hair Style Change Potion - E">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -470,7 +470,7 @@
 	</item>
 	<item id="5247" type="EtcItem" name="Hair Style Change Potion - F">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -483,7 +483,7 @@
 	</item>
 	<item id="5248" type="EtcItem" name="Hair Style Change Potion - G">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="50" />
 		<set name="price" val="24000" />
@@ -648,7 +648,7 @@
 	</item>
 	<item id="5268" type="EtcItem" name="Recipe: Greater Soulshot (D) Compressed Package (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5000" />
@@ -657,7 +657,7 @@
 	</item>
 	<item id="5269" type="EtcItem" name="Recipe: Greater Soulshot (C) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="60000" />
@@ -666,7 +666,7 @@
 	</item>
 	<item id="5270" type="EtcItem" name="Recipe: Greater Soulshot (B) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -675,7 +675,7 @@
 	</item>
 	<item id="5271" type="EtcItem" name="Recipe: Greater Soulshot (A) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="150000" />
@@ -684,7 +684,7 @@
 	</item>
 	<item id="5272" type="EtcItem" name="Recipe: Greater Soulshot (S) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="250000" />
@@ -693,7 +693,7 @@
 	</item>
 	<item id="5273" type="EtcItem" name="Recipe: Greater Spiritshot (D) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="5000" />
@@ -702,7 +702,7 @@
 	</item>
 	<item id="5274" type="EtcItem" name="Recipe: Greater Spiritshot (C) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="60000" />
@@ -711,7 +711,7 @@
 	</item>
 	<item id="5275" type="EtcItem" name="Recipe: Greater Spiritshot (B) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -720,7 +720,7 @@
 	</item>
 	<item id="5276" type="EtcItem" name="Recipe: Greater Spiritshot (A) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="150000" />
@@ -729,7 +729,7 @@
 	</item>
 	<item id="5277" type="EtcItem" name="Recipe: Greater Spiritshot (S) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="250000" />
@@ -738,7 +738,7 @@
 	</item>
 	<item id="5278" type="EtcItem" name="Recipe: Greater Blessed Spiritshot (D) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="8000" />
@@ -747,7 +747,7 @@
 	</item>
 	<item id="5279" type="EtcItem" name="Recipe: Greater Blessed Spiritshot (C) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="80000" />
@@ -756,7 +756,7 @@
 	</item>
 	<item id="5280" type="EtcItem" name="Recipe: Greater Blessed Spiritshot (B) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="130000" />
@@ -765,7 +765,7 @@
 	</item>
 	<item id="5281" type="EtcItem" name="Recipe: Greater Blessed Spiritshot (A) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="170000" />
@@ -774,7 +774,7 @@
 	</item>
 	<item id="5282" type="EtcItem" name="Recipe: Greater Blessed Spiritshot (S) Compressed Package(100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="30" />
 		<set name="price" val="285000" />
@@ -783,7 +783,7 @@
 	</item>
 	<item id="5283" type="EtcItem" name="Rice Cake">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />

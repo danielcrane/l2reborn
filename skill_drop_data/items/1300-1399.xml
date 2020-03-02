@@ -533,14 +533,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1335" type="EtcItem" name="Goblin Club">
 		<set name="material" val="STEEL" />
 		<set name="is_dropable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1336" type="EtcItem" name="Glass Shard">
 		<set name="material" val="LIQUID" />
@@ -574,7 +574,7 @@
 	</item>
 	<item id="1341" type="EtcItem" name="Bone Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BONE" />
@@ -584,7 +584,7 @@
 	</item>
 	<item id="1342" type="EtcItem" name="Fine Steel Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="crystal_type" val="C" />
 		<set name="material" val="FINE_STEEL" />
@@ -594,7 +594,7 @@
 	</item>
 	<item id="1343" type="EtcItem" name="Silver Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="crystal_type" val="B" />
 		<set name="material" val="SILVER" />
@@ -604,7 +604,7 @@
 	</item>
 	<item id="1344" type="EtcItem" name="Mithril Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="crystal_type" val="A" />
 		<set name="material" val="MITHRIL" />
@@ -614,7 +614,7 @@
 	</item>
 	<item id="1345" type="EtcItem" name="Shining Arrow">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="arrow" />
+		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="ADAMANTAITE" />
@@ -629,7 +629,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1347" type="EtcItem" name="Monster Eye Carcass">
 		<set name="material" val="STEEL" />
@@ -638,7 +638,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1348" type="EtcItem" name="Basilisk's Gizzard">
 		<set name="material" val="STEEL" />
@@ -647,7 +647,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1349" type="EtcItem" name="Anatomy Diagram">
 		<set name="material" val="STEEL" />
@@ -656,7 +656,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1350" type="EtcItem" name="Zombie Head">
 		<set name="material" val="STEEL" />
@@ -665,7 +665,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1351" type="EtcItem" name="Zombie Heart">
 		<set name="material" val="STEEL" />
@@ -674,7 +674,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1352" type="EtcItem" name="Zombie Liver">
 		<set name="material" val="STEEL" />
@@ -683,7 +683,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1353" type="EtcItem" name="Skull">
 		<set name="material" val="STEEL" />
@@ -692,7 +692,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1354" type="EtcItem" name="Rib Bone">
 		<set name="material" val="STEEL" />
@@ -701,7 +701,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1355" type="EtcItem" name="Spine">
 		<set name="material" val="STEEL" />
@@ -710,7 +710,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1356" type="EtcItem" name="Arm Bone">
 		<set name="material" val="STEEL" />
@@ -719,7 +719,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1357" type="EtcItem" name="Thigh Bone">
 		<set name="material" val="STEEL" />
@@ -728,7 +728,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1358" type="EtcItem" name="Complete Skeleton">
 		<set name="material" val="STEEL" />
@@ -737,7 +737,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1359" type="EtcItem" name="Red Cross Badge">
 		<set name="material" val="STEEL" />
@@ -746,7 +746,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1360" type="EtcItem" name="Blue Cross Badge">
 		<set name="material" val="STEEL" />
@@ -755,7 +755,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1361" type="EtcItem" name="Black Cross Badge">
 		<set name="material" val="STEEL" />
@@ -764,7 +764,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1362" type="EtcItem" name="Spider's Carapace">
 		<set name="material" val="STEEL" />
@@ -773,7 +773,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1363" type="EtcItem" name="Spider Silk">
 		<set name="material" val="STEEL" />
@@ -782,7 +782,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1364" type="EtcItem" name="Spider Venom Sac">
 		<set name="material" val="STEEL" />
@@ -791,7 +791,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1365" type="EtcItem" name="Broken Stoneheart">
 		<set name="material" val="STEEL" />
@@ -800,7 +800,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1366" type="EtcItem" name="Monster Eye's Lens">
 		<set name="material" val="STEEL" />
@@ -809,7 +809,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1367" type="EtcItem" name="Wolf Claw">
 		<set name="material" val="STEEL" />
@@ -818,7 +818,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1368" type="EtcItem" name="Imp Shackles">
 		<set name="material" val="STEEL" />
@@ -827,7 +827,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1369" type="EtcItem" name="Black Lion Mark">
 		<set name="material" val="STEEL" />
@@ -836,7 +836,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="1370" type="EtcItem" name="Spellbook: Aqua Swirl">
 		<set name="material" val="PAPER" />
@@ -861,7 +861,7 @@
 	</item>
 	<item id="1374" type="EtcItem" name="Greater Haste Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="20" />
 		<set name="price" val="3600" />
@@ -874,7 +874,7 @@
 	</item>
 	<item id="1375" type="EtcItem" name="Greater Swift Attack Potion">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="potion" />
+		<set name="etcitem_type" val="POTION" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="20" />
 		<set name="price" val="7200" />

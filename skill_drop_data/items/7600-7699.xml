@@ -7,7 +7,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7601" type="EtcItem" name="Worn Tarot Card - Power">
 		<set name="material" val="PAPER" />
@@ -16,7 +16,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7602" type="EtcItem" name="Worn Tarot Card - Love">
 		<set name="material" val="PAPER" />
@@ -25,7 +25,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7603" type="EtcItem" name="Worn Tarot Card - Knowledge">
 		<set name="material" val="PAPER" />
@@ -34,7 +34,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7604" type="EtcItem" name="Summoner Keats' Letter">
 		<set name="material" val="PAPER" />
@@ -43,7 +43,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7605" type="EtcItem" name="Miracle Potion of Transferred Life">
 		<set name="material" val="PAPER" />
@@ -52,7 +52,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7606" type="EtcItem" name="Kamilen's Antidote">
 		<set name="material" val="PAPER" />
@@ -61,7 +61,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7607" type="EtcItem" name="Coolant of the Repaired Wilma #3">
 		<set name="material" val="PAPER" />
@@ -70,7 +70,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7608" type="EtcItem" name="Sealed Envelope">
 		<set name="material" val="PAPER" />
@@ -79,16 +79,16 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7609" type="EtcItem" name="Proof of Catching a Fish">
 		<set name="material" val="PAPER" />
-		<set name="price" val="500" />
+		<set name="price" val="0" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7610" type="EtcItem" name="Wind Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
@@ -96,7 +96,7 @@
 	</item>
 	<item id="7611" type="EtcItem" name="Icy Air Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
@@ -104,7 +104,7 @@
 	</item>
 	<item id="7612" type="EtcItem" name="Earth Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
@@ -112,7 +112,7 @@
 	</item>
 	<item id="7613" type="EtcItem" name="Flaming Fishing Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
@@ -167,7 +167,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7621" type="EtcItem" name="Essence of Wind">
 		<set name="material" val="PAPER" />
@@ -176,7 +176,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7622" type="EtcItem" name="Lost Bait Ingredient">
 		<set name="material" val="PAPER" />
@@ -185,7 +185,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7623" type="EtcItem" name="Eye of Tarlk Basilisk">
 		<set name="material" val="PAPER" />
@@ -194,7 +194,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7624" type="EtcItem" name="Crimson Drake Heart">
 		<set name="material" val="PAPER" />
@@ -203,7 +203,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7625" type="EtcItem" name="Strange Golem Blueprint">
 		<set name="material" val="PAPER" />
@@ -212,7 +212,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7626" type="EtcItem" name="Kiki's Letter">
 		<set name="material" val="PAPER" />
@@ -221,7 +221,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7627" type="EtcItem" name="Small Glass Box">
 		<set name="material" val="PAPER" />
@@ -230,7 +230,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7628" type="EtcItem" name="Rukal's Musical Score">
 		<set name="material" val="PAPER" />
@@ -239,7 +239,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7629" type="EtcItem" name="Looted Goods - White Cargo box">
 		<set name="default_action" val="capsule" />
@@ -524,7 +524,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7678" type="EtcItem" name="Caradine's Letter">
 		<set name="material" val="PAPER" />
@@ -533,7 +533,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7679" type="EtcItem" name="Caradine's Letter">
 		<set name="material" val="PAPER" />
@@ -542,7 +542,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="7680" type="Armor" name="Raccoon Ears">
 		<set name="default_action" val="equip" />
@@ -576,35 +576,35 @@
 		<set name="price" val="500000" />
 	</item>
 	<item id="7684" type="EtcItem" name="Raccoon Ears Fabric">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7685" type="EtcItem" name="Outlaw's Eyepatch Strap">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7686" type="EtcItem" name="Maiden's Hairpin Piece">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7687" type="EtcItem" name="Rabbit Ears Fabric">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7688" type="EtcItem" name="Cat Ears Fabric">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
@@ -612,7 +612,7 @@
 	</item>
 	<item id="7689" type="EtcItem" name="Recipe - Raccoon Ears (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="50000" />
@@ -621,7 +621,7 @@
 	</item>
 	<item id="7690" type="EtcItem" name="Recipe - Outlaw's Eyepatch (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -630,7 +630,7 @@
 	</item>
 	<item id="7691" type="EtcItem" name="Recipe - Maiden's Hairpin (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />
@@ -639,7 +639,7 @@
 	</item>
 	<item id="7692" type="EtcItem" name="Recipe - Rabbit Ears (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="50000" />
@@ -648,7 +648,7 @@
 	</item>
 	<item id="7693" type="EtcItem" name="Recipe - Cat Ears (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="50000" />
@@ -686,14 +686,14 @@
 		</cond>
 	</item>
 	<item id="7697" type="EtcItem" name="Piece of Forget-me-not Hairpin">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7698" type="EtcItem" name="Piece of Daisy Hairpin">
-		<set name="etcitem_type" val="material" />
+		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="60" />
 		<set name="price" val="5000" />
@@ -701,7 +701,7 @@
 	</item>
 	<item id="7699" type="EtcItem" name="Recipe: Forget-me-not Hairpin (100%)">
 		<set name="default_action" val="recipe" />
-		<set name="etcitem_type" val="recipe" />
+		<set name="etcitem_type" val="RECIPE" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
 		<set name="price" val="100000" />

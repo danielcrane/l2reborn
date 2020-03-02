@@ -451,32 +451,32 @@
 	<item id="8939" type="EtcItem" name="Dominic's Mark">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8940" type="EtcItem" name="Mark of the Future: Human">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8941" type="EtcItem" name="Mark of the Future: Dwarf">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8942" type="EtcItem" name="Mark of the Future: Elf">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8943" type="EtcItem" name="Mark of the Future: Dark Elf">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8944" type="EtcItem" name="Mark of the Future: Orc">
 		<set name="material" val="STEEL" />
 		<set name="is_stackable" val="true" />
-		<set name="etcitem_type" val="quest" />
+		<set name="etcitem_type" val="QUEST" />
 	</item>
 	<item id="8945" type="EtcItem" name="Spellbook: Celestial Shield">
 		<set name="material" val="PAPER" />
@@ -530,7 +530,7 @@
 	</item>
 	<item id="8954" type="EtcItem" name="Blue Primeval Crystal">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -542,7 +542,7 @@
 	</item>
 	<item id="8955" type="EtcItem" name="Green Primeval Crystal">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -554,7 +554,7 @@
 	</item>
 	<item id="8956" type="EtcItem" name="Red Primeval Crystal">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="scroll" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />

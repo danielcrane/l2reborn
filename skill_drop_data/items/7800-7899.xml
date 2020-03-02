@@ -58,7 +58,7 @@
 	</item>
 	<item id="7807" type="EtcItem" name="Green Colored Lure - For Beginners">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -67,7 +67,7 @@
 	</item>
 	<item id="7808" type="EtcItem" name="Purple Colored Lure - For Beginners">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -76,7 +76,7 @@
 	</item>
 	<item id="7809" type="EtcItem" name="Yellow Colored Lure - For Beginners">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -396,7 +396,8 @@
 			<set order="0x08" stat="pAtkSpd" val="379" />
 		</for>
 	</item>
-	<item id="7822" type="Weapon" name="Traveler's Mace">
+    <item id="7822" type="Weapon" name="Traveler's Mace">
+        <set name="is_enchantable" val="false" />
 		<set name="is_magical" val="true" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="BLUNT" />
@@ -425,7 +426,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7823" type="Weapon" name="Traveler's Dark Elven Bow">
+    <item id="7823" type="Weapon" name="Traveler's Dark Elven Bow">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="BOW" />
 		<set name="bodypart" val="lrhand" />
@@ -455,7 +457,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7824" type="Weapon" name="Traveler's Long Bow">
+    <item id="7824" type="Weapon" name="Traveler's Long Bow">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="BOW" />
 		<set name="bodypart" val="lrhand" />
@@ -485,7 +488,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7825" type="Weapon" name="Traveler's Staff">
+    <item id="7825" type="Weapon" name="Traveler's Staff">
+        <set name="is_enchantable" val="false" />
 		<set name="is_magical" val="true" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="BIGBLUNT" />
@@ -514,7 +518,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7826" type="Weapon" name="Traveler's Bastard Sword">
+    <item id="7826" type="Weapon" name="Traveler's Bastard Sword">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="SWORD" />
 		<set name="bodypart" val="rhand" />
@@ -541,7 +546,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7827" type="Weapon" name="Traveler's Wand">
+    <item id="7827" type="Weapon" name="Traveler's Wand">
+        <set name="is_enchantable" val="false" />
 		<set name="is_magical" val="true" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="ETC" />
@@ -569,7 +575,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7828" type="Weapon" name="Traveler's Jamadhr">
+    <item id="7828" type="Weapon" name="Traveler's Jamadhr">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="DUALFIST" />
 		<set name="bodypart" val="lrhand" />
@@ -597,7 +604,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7829" type="Weapon" name="Traveler's Tomahawk">
+    <item id="7829" type="Weapon" name="Traveler's Tomahawk">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="BLUNT" />
 		<set name="bodypart" val="rhand" />
@@ -625,7 +633,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7830" type="Weapon" name="Traveler's Poniard Dagger">
+    <item id="7830" type="Weapon" name="Traveler's Poniard Dagger">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="DAGGER" />
 		<set name="bodypart" val="rhand" />
@@ -653,7 +662,8 @@
 			<enchant val="0" order="0x0C" stat="mAtk" />
 		</for>
 	</item>
-	<item id="7831" type="Weapon" name="Traveler's Pike">
+    <item id="7831" type="Weapon" name="Traveler's Pike">
+        <set name="is_enchantable" val="false" />
 		<set name="default_action" val="equip" />
 		<set name="weapon_type" val="POLE" />
 		<set name="bodypart" val="lrhand" />

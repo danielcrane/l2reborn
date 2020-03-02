@@ -191,7 +191,7 @@
 	</item>
 	<item id="6519" type="EtcItem" name="Green Colored Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -201,7 +201,7 @@
 	</item>
 	<item id="6520" type="EtcItem" name="Green Colored Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -211,7 +211,7 @@
 	</item>
 	<item id="6521" type="EtcItem" name="Green Colored Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -221,7 +221,7 @@
 	</item>
 	<item id="6522" type="EtcItem" name="Purple Colored Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -231,7 +231,7 @@
 	</item>
 	<item id="6523" type="EtcItem" name="Purple Colored Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -241,7 +241,7 @@
 	</item>
 	<item id="6524" type="EtcItem" name="Purple Colored Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -251,7 +251,7 @@
 	</item>
 	<item id="6525" type="EtcItem" name="Yellow Colored Lure - Low Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -261,7 +261,7 @@
 	</item>
 	<item id="6526" type="EtcItem" name="Yellow Colored Lure">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="4" />
@@ -271,7 +271,7 @@
 	</item>
 	<item id="6527" type="EtcItem" name="Yellow Colored Lure - High Grade">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -281,7 +281,7 @@
 	</item>
 	<item id="6528" type="EtcItem" name="Event bait">
 		<set name="default_action" val="equip" />
-		<set name="etcitem_type" val="lure" />
+		<set name="etcitem_type" val="LURE" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="3" />
@@ -465,190 +465,190 @@
 		<set name="item_skill" val="2186-1" />
 	</item>
 	<item id="6541" type="EtcItem" name="Blue Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1250" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6542" type="EtcItem" name="Red Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6543" type="EtcItem" name="Gold Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1750" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6544" type="EtcItem" name="Desert Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6545" type="EtcItem" name="Sea Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2250" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6546" type="EtcItem" name="Twin Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6547" type="EtcItem" name="King Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2750" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6548" type="EtcItem" name="Alternative Blue Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1250" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6549" type="EtcItem" name="Alternative Red Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6550" type="EtcItem" name="Alternative Gold Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="1750" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6551" type="EtcItem" name="Alternative Desert Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2000" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6552" type="EtcItem" name="Alternative Sea Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2250" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6553" type="EtcItem" name="Alternative Twin Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2500" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6554" type="EtcItem" name="Alternative King Coba">
-		<set name="etcitem_type" val="crop" />
+		<set name="etcitem_type" val="CROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="2" />
 		<set name="price" val="2750" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6555" type="EtcItem" name="Ripe Blue Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6556" type="EtcItem" name="Ripe Red Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6557" type="EtcItem" name="Ripe Gold Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6558" type="EtcItem" name="Ripe Desert Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6559" type="EtcItem" name="Ripe Sea Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6560" type="EtcItem" name="Ripe Twin Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6561" type="EtcItem" name="Ripe King Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6562" type="EtcItem" name="Ripe Alternative Blue Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6563" type="EtcItem" name="Ripe Alternative Red Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6564" type="EtcItem" name="Ripe Alternative Gold Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6565" type="EtcItem" name="Ripe Alternative Desert Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6566" type="EtcItem" name="Ripe Alternative Sea Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6567" type="EtcItem" name="Ripe Alternative Twin Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6568" type="EtcItem" name="Ripe Alternative King Coba">
-		<set name="etcitem_type" val="maturecrop" />
+		<set name="etcitem_type" val="MATURECROP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6569" type="EtcItem" name="Blessed Scroll: Enchant Weapon (Grade A)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_wp" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="1750000" />
@@ -658,7 +658,7 @@
 	</item>
 	<item id="6570" type="EtcItem" name="Blessed Scroll: Enchant Armor (Grade A)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_am" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="750000" />
@@ -668,7 +668,7 @@
 	</item>
 	<item id="6571" type="EtcItem" name="Blessed Scroll: Enchant Weapon (Grade B)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_wp" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="1250000" />
@@ -678,7 +678,7 @@
 	</item>
 	<item id="6572" type="EtcItem" name="Blessed Scroll: Enchant Armor (Grade B)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_am" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="250000" />
@@ -688,7 +688,7 @@
 	</item>
 	<item id="6573" type="EtcItem" name="Blessed Scroll: Enchant Weapon (Grade C)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_wp" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="250000" />
@@ -698,7 +698,7 @@
 	</item>
 	<item id="6574" type="EtcItem" name="Blessed Scroll: Enchant Armor (Grade C)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_am" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="100000" />
@@ -708,7 +708,7 @@
 	</item>
 	<item id="6575" type="EtcItem" name="Blessed Scroll: Enchant Weapon (Grade D)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_wp" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="150000" />
@@ -718,7 +718,7 @@
 	</item>
 	<item id="6576" type="EtcItem" name="Blessed Scroll: Enchant Armor (Grade D)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_am" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="50000" />
@@ -728,7 +728,7 @@
 	</item>
 	<item id="6577" type="EtcItem" name="Blessed Scroll: Enchant Weapon (Grade S)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_wp" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="2250000" />
@@ -738,7 +738,7 @@
 	</item>
 	<item id="6578" type="EtcItem" name="Blessed Scroll: Enchant Armor (Grade S)">
 		<set name="default_action" val="skill_reduce" />
-		<set name="etcitem_type" val="bless_scrl_enchant_am" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="price" val="1250000" />
