@@ -1,11 +1,10 @@
-import json
 import numpy as np
-import utils
 import sys
+import utils
 
 
 class DataBuilder:
-    def __init__(self, info=False, drops=True, spoils=True, VIP=False, VIP_rate=1.5):
+    def __init__(self, info=False, drops=True, spoils=True, VIP=False):
         self.original_data_path = "./original_data"  # Path of original data (without drop info)
         self.new_data_path = "./new_data"  # Output path of new data (with dorp info)
 
@@ -13,7 +12,7 @@ class DataBuilder:
         self.items_xml_dir = "./items"  # Directory containing item xml files
 
         self.VIP = VIP  # If VIP is True, adena amount/xp/sp/drop rates are all scaled accordingly
-        self.VIP_rate = VIP_rate  # Multiplier for VIP rate
+        self.VIP_rate = 1.5  # Multiplier for VIP rate
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
         self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
