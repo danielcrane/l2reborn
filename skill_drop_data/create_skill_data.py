@@ -1,10 +1,11 @@
+import getopt
 import numpy as np
 import sys
 import utils
 
 
 class DataBuilder:
-    def __init__(self, info=False, drops=True, spoils=True, VIP=False):
+    def __init__(self, info=True, drops=True, spoils=True, VIP=False):
         self.original_data_path = "./original_data"  # Path of original data (without drop info)
         self.new_data_path = "./new_data"  # Output path of new data (with dorp info)
 
@@ -23,6 +24,15 @@ class DataBuilder:
         }
 
     def build(self):
+        """This is the main class method that performs the actions required
+        to build the new .dat files from scratch
+
+        Returns
+        -------
+        None
+            Outputs updated skillname-e.dat and skillgrp.dat to self.new_data_path
+
+        """
         print("[] Parsing NPC .xml files")
         sys.stdout.flush()
         self.parse_npc_xmls()
@@ -36,6 +46,15 @@ class DataBuilder:
         sys.stdout.flush()
 
     def parse_npc_xmls(self):
+        """Parses the server XML files and creates a dict of NPC data
+        including drops, spoils, stats, etc.
+
+        Returns
+        -------
+        None
+            Stores self.npc_data - a dict containing the information of each NPC
+
+        """
         parser = utils.NpcParser()
         self.npc_data = parser.parse()
 
@@ -162,6 +181,36 @@ class DataBuilder:
         utils.write_encrypted(self.new_data_path, fname, lines)
 
 
-if __name__ == "__main__":
-    builder = DataBuilder(info=True, VIP=True)
+def main(argv):
+    """Executes the builder with the specified command line arguments
+
+    Parameters
+    ----------
+    argv : list
+        List of command line arguments to be parsed
+
+    """
+    try:
+        opts, args = getopt.getopt(argv, "", ["no-info", "no-drops", "no-spoils", "vip"])
+    except getopt.GetoptError:
+        print("Usage: create_skill_data.py <--no-info | --no-drops | --no-spoils | --vip>")
+        sys.exit(2)
+
+    info, drops, spoils, vip = True, True, True, False
+    for opt, arg in opts:
+        if opt is "--no-info":
+            info = False
+        elif opt is "--no-drops":
+            drops = False
+        elif opt is "--no-spoils":
+            spoils = False
+        elif opt is "--vip":
+            vip = True
+
+    print(f"[] Running with setup: info={info}, drops={drops}, spoils={spoils}, VIP={vip}")
+    builder = DataBuilder(info=info, drops=drops, spoils=spoils, VIP=vip)
     builder.build()
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
