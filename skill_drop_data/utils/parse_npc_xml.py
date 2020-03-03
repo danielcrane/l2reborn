@@ -85,7 +85,7 @@ class NpcParser:
                         stats[stat_name] = str(round(eval(stat["val"])))
 
                 ai = npc.find("ai")
-                if "aggro" in ai and ai["aggro"] != "0":
+                if ai.has_attr("aggro") and ai["aggro"] != "0":
                     stats["agro"] = "Yes"
                 else:
                     stats["agro"] = "No"
