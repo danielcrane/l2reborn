@@ -15,7 +15,8 @@ class DataBuilder:
         self.VIP = VIP  # If True, currency amount/xp/sp/drop rates are all scaled accordingly
         self.VIP_rate = 1.5  # Multiplier for VIP rate
         # The below currencies have their amount multiplied by VIP_rate (rather than chance):
-        self.currencies = ["Adena", "Blue Seal Stone", "Green Seal Stone", "Red Seal Stone"]
+        self.currencies = ["Adena"]
+        self.vip_unaffected = ["Blue Seal Stone", "Green Seal Stone", "Red Seal Stone"]
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
         self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
@@ -144,7 +145,9 @@ class DataBuilder:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
-                            if name not in self.currencies:
+                            if name in self.vip_unaffected:
+                                pass
+                            elif name not in self.currencies:
                                 # If not adena, then multiply chance by VIP_rate (to a max of 1):
                                 chance = min(chance * self.VIP_rate, 1)
                             else:
