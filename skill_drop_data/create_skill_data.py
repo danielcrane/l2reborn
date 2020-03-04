@@ -191,21 +191,24 @@ def main(argv):
 
     """
     try:
-        opts, args = getopt.getopt(argv, "", ["no-info", "no-drops", "no-spoils", "vip"])
+        opts, args = getopt.getopt(argv, "h", ["no-info", "no-drops", "no-spoils", "vip", "help"])
     except getopt.GetoptError:
         print("Usage: create_skill_data.py <--no-info | --no-drops | --no-spoils | --vip>")
         sys.exit(2)
 
     info, drops, spoils, vip = True, True, True, False
     for opt, arg in opts:
-        if opt is "--no-info":
+        if opt == "--no-info":
             info = False
-        elif opt is "--no-drops":
+        elif opt == "--no-drops":
             drops = False
-        elif opt is "--no-spoils":
+        elif opt == "--no-spoils":
             spoils = False
-        elif opt is "--vip":
+        elif opt == "--vip":
             vip = True
+        elif opt in ["--help", "-h"]:
+            print("Usage: create_skill_data.py <--no-info | --no-drops | --no-spoils | --vip>")
+            sys.exit(2)
 
     print(f"[] Running with setup: info={info}, drops={drops}, spoils={spoils}, VIP={vip}")
     builder = DataBuilder(info=info, drops=drops, spoils=spoils, VIP=vip)
