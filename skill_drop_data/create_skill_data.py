@@ -7,7 +7,7 @@ import utils
 class DataBuilder:
     def __init__(self, info=True, drops=True, spoils=True, VIP=False):
         self.original_data_path = "./original_data"  # Path of original data (without drop info)
-        self.new_data_path = "./new_data"  # Output path of new data (with dorp info)
+        self.new_data_path = "./new_data"  # Output path of new data (with drop info)
 
         self.npcs_xml_dir = "./npcs"  # Directory containing NPC xml files
         self.items_xml_dir = "./items"  # Directory containing item xml files
