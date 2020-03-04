@@ -12,8 +12,10 @@ class DataBuilder:
         self.npcs_xml_dir = "./npcs"  # Directory containing NPC xml files
         self.items_xml_dir = "./items"  # Directory containing item xml files
 
-        self.VIP = VIP  # If VIP is True, adena amount/xp/sp/drop rates are all scaled accordingly
+        self.VIP = VIP  # If True, currency amount/xp/sp/drop rates are all scaled accordingly
         self.VIP_rate = 1.5  # Multiplier for VIP rate
+        # The below currencies have their amount multiplied by VIP_rate (rather than chance):
+        self.currencies = ["Adena", "Blue Seal Stone", "Green Seal Stone", "Red Seal Stone"]
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
         self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
@@ -142,15 +144,15 @@ class DataBuilder:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
-                            if name != "Adena":
+                            if name not in self.currencies:
                                 # If not adena, then multiply chance by VIP_rate (to a max of 1):
                                 chance = min(chance * self.VIP_rate, 1)
                             else:
                                 # If adena, then multiply amount by VIP_rate:
                                 item_min *= self.VIP_rate
                                 item_max *= self.VIP_rate
-                            # Note: Need to confirm what happens with seal stones
                             item_min, item_max = (round(item_min), round(item_max))  # Round to int
+
                         item_amt = (  # If item_min == item_max, then only show one:
                             f"{item_min}-{item_max}" if item_min != item_max else f"{item_min}"
                         )
