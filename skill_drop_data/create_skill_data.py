@@ -141,13 +141,16 @@ class DataBuilder:
                 elif info_type == "Drop":
                     if "drop" not in npc:
                         continue
+
+                    npc_type = npc["stats"]["type"]
                     for drop in npc["drop"]:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
                             if name != "Adena":
-                                # If not adena, then multiply chance by VIP_drop_rate (to a max of 1):
-                                chance = min(chance * self.VIP_drop_rate, 1)
+                                # If not adena or raid boss, then multiply chance by VIP_drop_rate (to a max of 1):
+                                if npc_type not in ["RaidBoss", "GrandBoss"]:
+                                    chance = min(chance * self.VIP_drop_rate, 1)
                             else:
                                 # If adena, then multiply amount by VIP_adena_amount:
                                 item_min *= self.VIP_adena_amount
