@@ -14,7 +14,7 @@ class NpcParser:
             self.npc_dir = os.path.join(self.util_dir, "..", "npcs")
 
         # Stats to extract from NPC XMLs:
-        self.stats = {"level", "hp", "mp", "exp", "sp", "patk", "pdef", "matk", "mdef"}
+        self.stats = {"level", "type", "hp", "mp", "exp", "sp", "patk", "pdef", "matk", "mdef"}
 
         self.item_data = None
         self.drop_data = None
@@ -82,7 +82,10 @@ class NpcParser:
                 for stat in stat_list:
                     stat_name = stat["name"].lower()
                     if stat_name in self.stats:  # If it's a stat we're interested in:
-                        stats[stat_name] = str(round(eval(stat["val"])))
+                        try:  # If stat is numerical, then round:
+                            stats[stat_name] = str(round(eval(stat["val"])))
+                        except NameError:  # Otherwise:
+                            stats[stat_name] = stat["val"]
 
                 ai = npc.find("ai")
                 if ai.has_attr("aggro") and ai["aggro"] != "0":
