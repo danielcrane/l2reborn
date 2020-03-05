@@ -147,16 +147,15 @@ class DataBuilder:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
-                            if name != "Adena":
-                                # If not adena or raid boss, then multiply chance by VIP_drop_rate (to a max of 1):
-                                if npc_type not in ["RaidBoss", "GrandBoss"]:
-                                    chance = min(chance * self.VIP_drop_rate, 1)
-                            else:
+                            if name == "Adena":
                                 # If adena, then multiply amount by VIP_adena_amount:
                                 item_min *= self.VIP_adena_amount
                                 item_max *= self.VIP_adena_amount
                                 # And multiply chance by VIP_adena_rate:
                                 chance = min(chance * self.VIP_adena_rate, 1)
+                            elif npc_type not in ["RaidBoss", "GrandBoss"]:
+                                # If not adena or raid boss, then multiply chance by VIP_drop_rate (to a max of 1):
+                                chance = min(chance * self.VIP_drop_rate, 1)
                             item_min, item_max = (round(item_min), round(item_max))  # Round to int
 
                         item_amt = (  # If item_min == item_max, then only show one:
@@ -165,10 +164,7 @@ class DataBuilder:
                         drop_info = f"{name} [{item_amt}] {utils.round_chance(chance, 4)}\\n"
 
                         # Hacky way of making sure adena is always on the top of the drop list:
-                        if name != "Adena":
-                            body += drop_info
-                        else:
-                            body = drop_info + body
+                        body = body + drop_info if name != "Adena" else drop_info + body
 
                 elif info_type == "Spoil":
                     if "spoil" not in npc:
