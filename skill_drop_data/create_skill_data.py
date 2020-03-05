@@ -13,10 +13,10 @@ class DataBuilder:
         self.items_xml_dir = "./items"  # Directory containing item xml files
 
         self.VIP = VIP  # If True, currency amount/xp/sp/drop rates are all scaled accordingly
-        self.VIP_rate = 1.5  # Multiplier for VIP rate
-        # The below currencies have their amount multiplied by VIP_rate (rather than chance):
-        self.currencies = ["Adena"]
-        self.vip_unaffected = ["Blue Seal Stone", "Green Seal Stone", "Red Seal Stone"]
+        self.VIP_xp_sp_rate = 1.5  # Experience and SP multiplier
+        self.VIP_drop_rate = 1.5  # Drop chance multipler increase for items
+        self.VIP_adena_rate = 1.0  # Drop chance increase multiplier for adena
+        self.VIP_adena_amount = 1.5  # Drop amount increase multiplier for adena
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
         self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
@@ -125,9 +125,9 @@ class DataBuilder:
                     minfo = npc["stats"]
 
                     if self.VIP is True:
-                        # If VIP, then multiply exp and sp by VIP_rate:
-                        minfo["exp"] = int(np.floor(eval(minfo["exp"]) * self.VIP_rate))
-                        minfo["sp"] = int(np.floor(eval(minfo["sp"]) * self.VIP_rate))
+                        # If VIP, then multiply exp and sp by VIP_xp_sp_rate:
+                        minfo["exp"] = int(np.floor(eval(minfo["exp"]) * self.VIP_xp_sp_rate))
+                        minfo["sp"] = int(np.floor(eval(minfo["sp"]) * self.VIP_xp_sp_rate))
 
                     body = (
                         f"NPC ID: {npc_id}   "
@@ -145,15 +145,15 @@ class DataBuilder:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
                             # If VIP, then multiply accordingly:
-                            if name in self.vip_unaffected:
-                                pass
-                            elif name not in self.currencies:
-                                # If not adena, then multiply chance by VIP_rate (to a max of 1):
-                                chance = min(chance * self.VIP_rate, 1)
+                            if name != "Adena":
+                                # If not adena, then multiply chance by VIP_drop_rate (to a max of 1):
+                                chance = min(chance * self.VIP_drop_rate, 1)
                             else:
-                                # If adena, then multiply amount by VIP_rate:
-                                item_min *= self.VIP_rate
-                                item_max *= self.VIP_rate
+                                # If adena, then multiply amount by VIP_adena_amount:
+                                item_min *= self.VIP_adena_amount
+                                item_max *= self.VIP_adena_amount
+                                # And multiply chance by VIP_adena_rate:
+                                chance = min(chance * self.VIP_adena_rate, 1)
                             item_min, item_max = (round(item_min), round(item_max))  # Round to int
 
                         item_amt = (  # If item_min == item_max, then only show one:
