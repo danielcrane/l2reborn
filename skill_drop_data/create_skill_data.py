@@ -19,7 +19,7 @@ class DataBuilder:
         self.VIP_adena_amount = 1.5  # Drop amount increase multiplier for adena
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
-        self.skill_ids = {"Information": 20002, "Drop": 20000, "Spoil": 20001}
+        self.skill_ids = {"Information": 20000, "Drop": 20001, "Spoil": 20002}
         self.skill_icons = {
             "Information": "icon.etc_lottery_card_i00",
             "Drop": "icon.etc_adena_i00",
@@ -45,6 +45,9 @@ class DataBuilder:
         print("[] Updating skillgrp.dat")
         sys.stdout.flush()
         self.modify_skill_grp()
+        print("[] Updating npcgrp.dat")
+        sys.stdout.flush()
+        self.modify_npc_grp()
         print("\n[] Build complete")
         sys.stdout.flush()
 
@@ -60,6 +63,73 @@ class DataBuilder:
         """
         parser = utils.NpcParser()
         self.npc_data = parser.parse()
+
+    def modify_npc_grp(self):
+        """Takes an unmodified npcgrp.dat and first increases the number of possible
+        passive skills from 13 to 16 - an extra 3 spots to accomodate for the 3 new types
+        of info, and adds the skills which will store drop/spoil/other to each mob
+
+        Note that the size of dtab_base/dtab_max are 2x the number of skills,
+        since the skill id and skill level both consist of one entry each
+
+        Returns
+        -------
+        None
+            Outputs updated npcdrp.dat to self.new_data_path
+
+        """
+
+        fname = "npcgrp.dat"
+
+        # Calculate number of additional skills needed to display required info:
+        additional_skills = list(self.skill_include.values()).count(True)
+
+        dtab_base = 26  # Original max number of allowed skills = 13 (x2)
+        dtab_max = 32  # New max number of allowed skills = 16 (x2)
+
+        # Decode and convert from .dat to .txt
+        lines = utils.read_encrypted(self.original_data_path, fname)
+
+        # Now modify each line to add the skill slots, and data where appropriate:
+        for i, line in enumerate(lines):
+            line = line.split("\t")  # Split the tab-delimited string into a list
+
+            if i == 0:
+                # Modify the header
+                dtab_loc = line.index("dtab1[0]")  # Index of first skill, denoted by dtab[0]
+                for idx in range(dtab_base, dtab_max):
+                    loc = dtab_loc + idx  # Offset idx by starting index, dtab_loc
+                    line.insert(loc, f"dtab1[{idx}]")  # Insert new skill header element
+                lines[i] = "\t".join(line)  # Now rejoin the list to form a tab-delimited string
+                continue  # Move on to the next line
+
+            # If not the header, then first add empty string to each new skill slot:
+            for idx in range(dtab_base, dtab_max):
+                loc = dtab_loc + idx  # Offset idx by starting index, dtab_loc
+                line.insert(loc, "")  # Insert blank skill data for now
+
+            npc_id = eval(line[0])
+            # Now, if the NPC is in our data parsed from XML:
+            if npc_id in self.npc_data:
+                # Add the skills containing the additional information to the mob data
+                n_skill = eval(line[dtab_loc - 1])  # Find how many skills the NPC has
+                # Note that mobs with no passives have "1", so we must change to 0 before proceeding:
+                n_skill = 0 if n_skill == 1 else n_skill
+
+                # Now we must increase the number of skills the NPC has by 2 for each additional
+                # field of information that we wish to add:
+                line[dtab_loc - 1] = str(n_skill + 2 * additional_skills)
+
+                for idx, skill_id in enumerate(self.skill_ids.values()):
+                    loc = dtab_loc + n_skill + 2 * idx  # Select first empty skill index
+                    line[loc : loc + 2] = [str(skill_id), str(npc_id)]  # Insert skill and npc id
+
+            lines[i] = "\t".join(line)  # Now rejoin the list to form a tab-delimited string
+
+        # Since we'll add new skills, we must write with a custom ddf file:
+        fname_ddf = fname.replace(".dat", "-custom.ddf")
+        # Now encrypt and write updated lines:
+        utils.write_encrypted(self.new_data_path, fname, lines, ddf=fname_ddf)
 
     def modify_skill_grp(self):
         """Takes an unmodified skillgrp.dat and adds the skills which will store
@@ -141,7 +211,6 @@ class DataBuilder:
                 elif info_type == "Drop":
                     if "drop" not in npc:
                         continue
-
                     npc_type = npc["stats"]["type"]
                     for drop in npc["drop"]:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info

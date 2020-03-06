@@ -49,7 +49,7 @@ def read_encrypted(path, fname):
     return lines
 
 
-def write_encrypted(path, fname, lines):
+def write_encrypted(path, fname, lines, ddf=None):
     """Writes inputted lines to encrypted .dat file
     Note: The input .dat file name must use the original name, otherwise
           it'll fail to find the correct .ddf file for l2asmdism
@@ -68,7 +68,7 @@ def write_encrypted(path, fname, lines):
         raise ValueError("Output of writer must be a .dat file")
 
     fname_txt = fname.replace(".dat", ".txt")
-    fname_ddf = fname.replace(".dat", ".ddf")
+    fname_ddf = fname.replace(".dat", ".ddf") if ddf is None else ddf
 
     with open(f"{tmp_path}/{fname_txt}", "w", encoding="utf8") as f:
         for line in lines:
