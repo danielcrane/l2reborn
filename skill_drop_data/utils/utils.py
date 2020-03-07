@@ -84,6 +84,41 @@ def write_encrypted(path, fname, lines, ddf=None):
     # os.remove(f"{tmp_path}/{fname_txt}")  # Remove readable .txt file
 
 
+def round_sf(X, n=5):
+    """Round X to n significant figures, preserving all values before the decimal place
+
+    Parameters
+    ----------
+    X : float
+        Input value to be rounded
+    n : int
+        Number of significant figures to round to
+
+    Returns
+    -------
+    float/int
+        X rounded to n significant figures
+
+    """
+
+    nX = np.floor(np.log10(X)) + 1  # Number of digits before decimal place in X
+    if nX >= n:
+        # If number of digits before decimal is >= n, then return X rounded to nearest int
+        return round(X)
+
+    # If not then we must calculate how many decimal digits to preserve:
+    nD = n - nX  # Number of decimal places to preserve
+    X_int = np.floor(X)  # Extract integer part of X
+
+    X_dec = X - X_int  # Extract decimal part of X
+    mult = 10 ** nD  # Multiplier to increase X_dec by for rounding of decimal portion
+    X_dec = round(X_dec * mult) / mult  # Update X_dec to round to the first nD digits
+
+    # Here we also multiply X_int by mult to avoid rounding errors that can occur
+    # if we divide the decimal portion first and then add:
+    return (X_int * mult + round(X_dec * mult)) / mult
+
+
 def round_chance(X, n=5):
     """Rounds the fractional probability X as a percentage, rounded to n decimal places
     with trailing zeros removed
