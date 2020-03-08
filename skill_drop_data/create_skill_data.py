@@ -105,7 +105,8 @@ class DataBuilder:
         fname = "npcgrp.dat"
 
         # Calculate number of additional skills needed to display required info:
-        additional_skills = list(self.skill_include.values()).count(True)
+        additional_skills = len(self.skill_ids)
+        # additional_skills = list(self.skill_include.values()).count(True)
 
         dtab_base = 26  # Original max number of allowed skills = 13 (x2)
         dtab_max = 32  # New max number of allowed skills = 16 (x2)
