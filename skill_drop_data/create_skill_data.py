@@ -5,19 +5,17 @@ import utils
 
 
 class DataBuilder:
-    def __init__(self, info=True, drops=True, spoils=True, VIP=False, drop_display="percent"):
+    def __init__(self, info=True, drops=True, spoils=True, VIP=False):
         self.original_data_path = "./original_data"  # Path of original data (without drop info)
         self.new_data_path = "./new_data"  # Output path of new data (with drop info)
 
         self.npcs_xml_dir = "./npcs"  # Directory containing NPC xml files
         self.items_xml_dir = "./items"  # Directory containing item xml files
 
-        self.drop_display = drop_display  # drop_display describes how drop rates are shown
-
         self.VIP = VIP  # If True, currency amount/xp/sp/drop rates are all scaled accordingly
         self.VIP_xp_sp_rate = 1.5  # Experience and SP multiplier
-        self.VIP_drop_rate = 1.5  # Drop chance multipler increase for items
-        self.VIP_adena_rate = 1.0  # Drop chance increase multiplier for adena
+        self.VIP_drop_rate = 1  # 1.5  # Drop chance multipler increase for items
+        self.VIP_adena_rate = 1  # 1.1  # Drop chance increase multiplier for adena
         self.VIP_adena_amount = 1.5  # Drop amount increase multiplier for adena
 
         self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
@@ -54,7 +52,7 @@ class DataBuilder:
         sys.stdout.flush()
 
     def format_probability(self, chance, n=4):
-        """Format the inputted probability as a percent or fraction depending on self.drop_display
+        """Format the inputted probability as a percent or fraction depending size
 
         Parameters
         ----------
@@ -63,16 +61,14 @@ class DataBuilder:
 
         Returns
         -------
-        type
-            Description of returned object.
+        string
+            Formatted chance (percent if > 1%, fraction otherwise)
 
         """
-        if self.drop_display == "percent":
+        if chance >= 0.01:
             return utils.round_chance(chance, n)
-        elif self.drop_display == "fraction":
-            return f"1 / {utils.round_sf(1/chance, n)}"
         else:
-            raise ValueError("drop_display must be one of either 'percent' or 'fraction'")
+            return f"1 / {round(1/chance):,}"
 
     def parse_npc_xmls(self):
         """Parses the server XML files and creates a dict of NPC data
@@ -176,8 +172,16 @@ class DataBuilder:
         for npc_id, npc in self.npc_data.items():
             for info_type in self.skill_ids.keys():
                 if not self.skill_include[info_type]:
-                    # If this type of info isn't to be included, then skip:
+                    # If this type of info isn't to be included, then skip
                     continue
+                elif info_type == "Drop":
+                    # Don't include drop skill for NPCs with no drops
+                    if "drop" not in npc or len(npc["drop"]) == 0:
+                        continue
+                elif info_type == "Spoil":
+                    # Don't include spoil skill for NPCs with no drops
+                    if "spoil" not in npc or len(npc["spoil"]) == 0:
+                        continue
                 # Add info to line_format and append to lines:
                 lines.append(
                     line_format.format(
@@ -233,7 +237,8 @@ class DataBuilder:
                     )
 
                 elif info_type == "Drop":
-                    if "drop" not in npc:
+                    if "drop" not in npc or len(npc["drop"]) == 0:
+                        # Don't include drop skill for NPCs with no drops
                         continue
                     npc_type = npc["stats"]["type"]
                     for drop in npc["drop"]:
@@ -260,7 +265,8 @@ class DataBuilder:
                         body = body + drop_info if name != "Adena" else drop_info + body
 
                 elif info_type == "Spoil":
-                    if "spoil" not in npc:
+                    if "spoil" not in npc or len(npc["spoil"]) == 0:
+                        # Don't include spoil skill for NPCs with no drops
                         continue
                     for spoil in npc["spoil"]:
                         id, item_min, item_max, chance, name = spoil  # Extract relevant info
@@ -287,16 +293,14 @@ def main(argv):
         List of command line arguments to be parsed
 
     """
-    usage = "Usage: create_skill_data.py <--no-info | --no-drops | --no-spoils | --vip | --drop_display=<percent|fraction> >"
+    usage = "Usage: create_skill_data.py <--no-info | --no-drops | --no-spoils | --vip >"
     try:
-        opts, args = getopt.getopt(
-            argv, "h", ["no-info", "no-drops", "no-spoils", "vip", "help", "drop_display="]
-        )
+        opts, args = getopt.getopt(argv, "h", ["no-info", "no-drops", "no-spoils", "vip", "help"])
     except getopt.GetoptError:
         print(usage)
         sys.exit(2)
 
-    info, drops, spoils, vip, drop_display = True, True, True, False, "percent"
+    info, drops, spoils, vip = True, True, True, False
     for opt, arg in opts:
         if opt == "--no-info":
             info = False
@@ -306,23 +310,12 @@ def main(argv):
             spoils = False
         elif opt == "--vip":
             vip = True
-        elif opt == "--drop_display":
-            print(arg)
-            if arg == "fraction":
-                drop_display = "fraction"
-            elif arg != "percent":
-                raise ValueError("drop_display must be one of either 'percent' or 'fraction'")
         elif opt in ["--help", "-h"]:
             print(usage)
             sys.exit(2)
 
-    print(
-        f"[] Running with setup: info={info}, drops={drops}, spoils={spoils}, "
-        f"drop_display={drop_display}, VIP={vip}"
-    )
-    builder = DataBuilder(
-        info=info, drops=drops, spoils=spoils, VIP=vip, drop_display=drop_display
-    )
+    print(f"[] Running with setup: info={info}, drops={drops}, spoils={spoils}, VIP={vip}")
+    builder = DataBuilder(info=info, drops=drops, spoils=spoils, VIP=vip)
     builder.build()
 
 
