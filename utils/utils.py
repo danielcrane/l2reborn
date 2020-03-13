@@ -79,6 +79,10 @@ def write_encrypted(path, fname, lines, ddf=None):
         f"{tmp_path}/{fname_txt} {tmp_path}/unenc-{fname}"
     )
 
+    if not os.path.exists(path):
+        # If output directory doesn't exist, then make it
+        os.makedirs(path)
+
     os.system(f"{l2encdec_path}/l2encdec.exe -h 413 {tmp_path}/unenc-{fname} {path}/{fname}")
     os.remove(f"{tmp_path}/unenc-{fname}")
     # os.remove(f"{tmp_path}/{fname_txt}")  # Remove readable .txt file

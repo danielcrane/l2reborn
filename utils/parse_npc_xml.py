@@ -9,9 +9,9 @@ class NpcParser:
         self.util_dir = os.path.dirname(os.path.realpath(__file__))
 
         if item_dir is None:
-            self.item_dir = os.path.join(os.getcwd(), "items")
+            self.item_dir = os.path.join(self.util_dir, "..", "server_data", "items")
         if npc_dir is None:
-            self.npc_dir = os.path.join(os.getcwd(), "npcs")
+            self.npc_dir = os.path.join(self.util_dir, "..", "server_data", "npcs")
 
         # Stats to extract from NPC XMLs:
         self.stats = {"level", "type", "hp", "mp", "exp", "sp", "patk", "pdef", "matk", "mdef"}

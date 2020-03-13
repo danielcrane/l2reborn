@@ -8,11 +8,11 @@ import utils
 
 class DataBuilder:
     def __init__(self, info=True, drops=True, spoils=True, VIP=False):
-        self.original_data_path = "./original_data"  # Path of original data (without drop info)
-        self.new_data_path = "./new_data"  # Output path of new data (with drop info)
+        self.original_data_path = "../server_data/dat_files"  # Path of clean dat files
+        self.new_data_path = "./new_dat_files"  # Output path of new data (with drop info)
 
-        self.npcs_xml_dir = "./npcs"  # Directory containing NPC xml files
-        self.items_xml_dir = "./items"  # Directory containing item xml files
+        self.npcs_xml_dir = "../server_data/npcs"  # Directory containing NPC xml files
+        self.items_xml_dir = "../server_data/items"  # Directory containing item xml files
 
         self.VIP = VIP  # If True, currency amount/xp/sp/drop rates are all scaled accordingly
         self.VIP_xp_sp_rate = 1.5  # Experience and SP multiplier
