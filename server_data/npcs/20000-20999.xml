@@ -28569,10 +28569,6 @@
     <drop chance="9346" itemid="1956" max="1" min="1"/>
     <drop chance="6667" itemid="2930" max="1" min="1"/>
     <drop chance="9346" itemid="2934" max="1" min="1"/>
-    <drop chance="7752" itemid="3061" max="1" min="1"/>
-    <drop chance="7752" itemid="3062" max="1" min="1"/>
-    <drop chance="7752" itemid="3064" max="1" min="1"/>
-    <drop chance="7752" itemid="3432" max="1" min="1"/>
    </category>
    <category id="3">
     <drop chance="7752" itemid="3061" max="1" min="1"/>

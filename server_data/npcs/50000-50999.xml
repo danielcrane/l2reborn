@@ -257,4 +257,40 @@
    <skill id="4416" level="19"/>
   </skills>
  </npc>
+ <npc id="50013" idTemplate="20432" name="Elpy" title="Jail Rat">
+  <set name="usingServerSideName" val="true"/>
+  <set name="usingServerSideTitle" val="true"/>
+  <set name="level" val="1"/>
+  <set name="radius" val="5"/>
+  <set name="height" val="3.5"/>
+  <set name="rHand" val="0"/>
+  <set name="lHand" val="0"/>
+  <set name="type" val="Monster"/>
+  <set name="exp" val="35"/>
+  <set name="sp" val="2"/>
+  <set name="hp" val="39.74519"/>
+  <set name="mp" val="40"/>
+  <set name="hpRegen" val="2"/>
+  <set name="mpRegen" val="0.9"/>
+  <set name="pAtk" val="8.47458"/>
+  <set name="pDef" val="44.44444"/>
+  <set name="mAtk" val="5.78704"/>
+  <set name="mDef" val="10000.4"/>
+  <set name="crit" val="4"/>
+  <set name="atkSpd" val="253"/>
+  <set name="str" val="40"/>
+  <set name="int" val="21"/>
+  <set name="dex" val="30"/>
+  <set name="wit" val="20"/>
+  <set name="con" val="43"/>
+  <set name="men" val="10"/>
+  <set name="corpseTime" val="7"/>
+  <set name="walkSpd" val="50"/>
+  <set name="runSpd" val="80"/>
+  <set name="dropHerbGroup" val="1"/>
+  <ai aggro="0" canMove="true" seedable="true" spsCount="0" spsRate="0" ssCount="0" ssRate="0" type="DEFAULT"/>
+  <skills>
+   <skill id="4416" level="4"/>
+  </skills>
+ </npc>
 </list>

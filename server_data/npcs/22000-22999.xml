@@ -5662,7 +5662,7 @@
   <set name="men" val="10"/>
   <set name="corpseTime" val="7"/>
   <set name="walkSpd" val="40"/>
-  <set name="runSpd" val="120"/>
+  <set name="runSpd" val="150"/>
   <set name="dropHerbGroup" val="0"/>
   <ai aggro="0" canMove="true" clan="wanimal_clan" clanRange="300" seedable="true" spsCount="0" spsRate="0" ssCount="0" ssRate="0" type="DEFAULT"/>
   <skills>
@@ -5724,7 +5724,7 @@
   <set name="men" val="10"/>
   <set name="corpseTime" val="7"/>
   <set name="walkSpd" val="40"/>
-  <set name="runSpd" val="120"/>
+  <set name="runSpd" val="150"/>
   <set name="dropHerbGroup" val="0"/>
   <ai aggro="0" canMove="true" clan="wanimal_clan" clanRange="300" seedable="true" spsCount="0" spsRate="0" ssCount="0" ssRate="0" type="DEFAULT"/>
   <skills>
