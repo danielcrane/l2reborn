@@ -20,12 +20,12 @@ class DataBuilder:
         self.VIP_adena_rate = 1  # 1.1  # Drop chance increase multiplier for adena
         self.VIP_adena_amount = 1.5  # Drop amount increase multiplier for adena
 
-        self.skill_include = {"Information": info, "Drop": drops, "Spoil": spoils}
-        self.skill_ids = {"Information": 20000, "Drop": 20001, "Spoil": 20002}
+        self.skill_include = {"Drop": drops, "Spoil": spoils, "Information": info}
+        self.skill_ids = {"Drop": 20000, "Spoil": 20001, "Information": 20003}
         self.skill_icons = {
-            "Information": "icon.etc_lottery_card_i00",
             "Drop": "icon.etc_adena_i00",
             "Spoil": "icon.skill0254",
+            "Information": "icon.etc_lottery_card_i00",
         }
 
     def build(self):
@@ -243,6 +243,8 @@ class DataBuilder:
                         # Don't include drop skill for NPCs with no drops
                         continue
                     npc_type = npc["stats"]["type"]
+                    # Here we create lists to store the info, and the drop chance:
+                    drop_lines, drop_lines_chance = [], []
                     for drop in npc["drop"]:
                         id, item_min, item_max, chance, name = drop  # Extract relevant info
                         if self.VIP is True:
@@ -262,14 +264,20 @@ class DataBuilder:
                             f"{item_min}-{item_max}" if item_min != item_max else f"{item_min}"
                         )
                         drop_info = f"{name} [{item_amt}] {self.format_probability(chance)}\\n"
+                        drop_lines.append(drop_info)
+                        drop_lines_chance.append(chance)
 
-                        # Hacky way of making sure adena is always on the top of the drop list:
-                        body = body + drop_info if name != "Adena" else drop_info + body
+                    else:
+                        # Now we go through item by item and insert in order of decreasing drop rate:
+                        for idx in np.argsort(drop_lines_chance)[::-1]:
+                            body += drop_lines[idx]
 
                 elif info_type == "Spoil":
                     if "spoil" not in npc or len(npc["spoil"]) == 0:
                         # Don't include spoil skill for NPCs with no drops
                         continue
+                    # Here we create lists to store the info, and the spoil chance:
+                    spoil_lines, spoil_lines_chance = [], []
                     for spoil in npc["spoil"]:
                         id, item_min, item_max, chance, name = spoil  # Extract relevant info
                         item_min, item_max = (round(item_min), round(item_max))  # Round to int
@@ -277,7 +285,13 @@ class DataBuilder:
                             f"{item_min}-{item_max}" if item_min != item_max else f"{item_min}"
                         )
                         spoil_info = f"{name} [{item_amt}] {self.format_probability(chance)}\\n"
-                        body += spoil_info
+
+                        spoil_lines.append(spoil_info)
+                        spoil_lines_chance.append(chance)
+                    else:
+                        # Now we go through item by item and insert in order of decreasing drop rate:
+                        for idx in np.argsort(spoil_lines_chance)[::-1]:
+                            body += spoil_lines[idx]
 
                 new_line = head + body + tail  # Combine the three parts to get the full line
                 lines.append(new_line)
