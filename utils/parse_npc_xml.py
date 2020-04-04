@@ -2,6 +2,7 @@ import os
 import sys
 import json
 from bs4 import BeautifulSoup
+from collections import namedtuple
 
 
 class NpcParser:
@@ -28,6 +29,9 @@ class NpcParser:
         json.dump(self.drop_data, open("drop_data_xml.json", "w"))
 
     def parse_item_xml(self):
+        Item = namedtuple("Item", ["name", "type", "crystal"])
+        Crystal = namedtuple("Crystal", ["count", "type"])
+
         item_files = []
         for file in os.listdir(self.item_dir):
             if file.endswith(".xml"):
@@ -43,7 +47,15 @@ class NpcParser:
             for item in items:
                 item_id = eval(item["id"])
                 item_name = item["name"]
-                item_data[item_id] = item_name
+                item_type = item["type"]
+                try:
+                    crystal_count = int(item.find("set", {"name": "crystal_count"})["val"])
+                    crystal_type = item.find("set", {"name": "crystal_type"})["val"]
+                except:
+                    crystal_count = crystal_type = None
+
+                crystal = Crystal(crystal_count, crystal_type)
+                item_data[item_id] = Item(item_name, item_type, crystal)
         return item_data
 
     def parse_npc_xml(self):
@@ -113,12 +125,12 @@ class NpcParser:
                         cat = eval(category["id"])
                         if cat != -1:
                             npc_data[npc_id]["drop"].append(
-                                [id, min_amt, max_amt, chance, self.item_data[id]]
+                                [id, min_amt, max_amt, chance, self.item_data[id].name]
                             )
                         else:
                             # id == -1 means spoil
                             npc_data[npc_id]["spoil"].append(
-                                [id, min_amt, max_amt, chance, self.item_data[id]]
+                                [id, min_amt, max_amt, chance, self.item_data[id].name]
                             )
 
         return npc_data
