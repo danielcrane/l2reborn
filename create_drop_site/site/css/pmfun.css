@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.searchbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+div.content {
+width: 100%;
+padding-top:50px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 11.5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	background-color: #154F75;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+a
+{
+	text-decoration:none;
+	color:#FFF000;
+}
+.input
+{
+	width:250px;
+	border:1px solid #9E2C2C;
+	background-image: url(i/input_shadow.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:3px;
+	padding-top:3px;
+	height:18px;
+	color:#0F3853;
+}
+.input_comment
+{
+	width:250px;
+	border:1px solid #9E2C2C;
+	background-image: url(i/input_shadow_2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:3px;
+	padding-top:3px;
+	height:140px;
+	color:#0F3853;
+	background-attachment: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.left_back
+{
+	background-image: url(i/left_back.png);
+	background-repeat: repeat-x;
+	background-position: right top;
+	height:530px;
+}
+.right_back
+{
+	background-image: url(i/right_back.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height:530px;
+}
+.menu_1_level
+{
+	background-image: url(i/menu_1_level.jpg);
+	background-repeat: no-repeat;
+	height:27px;
+
+}
+.magic
+{
+	background-image: url(i/2menu_1_level.jpg);
+	background-repeat: no-repeat;
+	height:27px;
+
+}
+.menu_2_level
+{
+	background-image: url(i/menu_2_level.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-size: 12px;
+	height: 35px;
+	text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.menu_2_level_txt
+{
+	font-size:12px;
+}
+.menu_2_level A:hover
+{
+	color:#F3B831;
+}
+
+.footer
+{
+	background-image: url(i/footer.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.menu_1
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0B293C;
+	margin-top:5px;
+	font-weight:bold;
+}
+.menu_1 A
+{
+	color: #0B293C;
+}
+.menu_1 A:hover
+{
+	color: #990000;
+}
+.menu_1_tab
+{
+	color: #F3B831;
+	padding-top:4px;
+}
+.menu_1_tab H2
+{
+        font-size: 11px;
+        margin-top:0px;
+        margin-bottom:0px;
+}
+.design
+{
+	font-size: 9px;
+	color: #A1B7C3;
+	padding-left:20px;
+	padding-top:30px;
+}
+.design A
+{
+	color: #A1B7C3;
+}
+.design A:hover
+{
+	color: #FFF;
+}
+.footer_menu
+{
+	padding-left:20px;
+	padding-top:25px;
+	font-size: 12px;
+}
+.footer_menu A
+{
+	color: #FFF;
+}
+.footer_menu A:hover
+{
+	color: #F3B831;
+}
+.footer_copy
+{
+	padding-top:25px;
+	text-align:right;
+	padding-right:13px;
+	font-size: 12px;
+}
+.footer_copy A
+{
+	color: #FFF;
+}
+.footer_copy A:hover
+{
+	color: #F3B831;
+}
+.osnova
+{
+	background-image: url(i/osnova.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	width:942px;
+}
+.osnova A
+{
+	color:#F3B831;
+}
+.osnova A:hover
+{
+	color:#F3B831;
+	text-decoration: underline;
+}
+.osnova H1
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align:center;
+	letter-spacing:2px;
+}
+.in_menu
+{	font-size: 12px;
+	color: #E1DBCC;
+	background-color:#29536E;
+	padding:4px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.in_menu A
+{
+	color: #E1DBCC;
+}
+.in_menu A:hover
+{
+	color: #FFF;
+}
+.show
+{
+	font-size: 12px;
+}
+.show_list
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:center;
+	padding-bottom:10px;
+}
+.first_line
+{
+	padding-bottom:15px;
+	padding-top:10px;
+	font-weight:bold;
+}
+.search_box
+{
+	width:703px;
+	height:130px;
+}
+.img_border
+{
+	border: 1px solid #FFC46E;
+	margin-right:8px;
+}
+.pad
+{
+	padding-left:20px;
+}
+.s_table
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#CCCCCC;
+}
+.s_table a
+{
+	color:#CCCCCC;
+}
+.s_table tr
+{
+	height:20px;
+}
+.s_box
+{
+	width:373px;
+	height:62px;
+}
+.s_box td
+{
+	padding-bottom:3px;
+}
+.txt
+{
+	font-size: 12px;
+}
+.txtsmall
+{
+	font-size: 11px;
+}
+.txtbig
+{
+	font-size: 16px;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+.gold {
+	color:#F3B831;
+}
+.calcbut {
+	width: 25px;
+	border: 1px solid #B9C9D4;
+	height: 22px;
+	color: #0F3853;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	background-image: url(i/input_shadow.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.autocomplete-w1 { background:url(i/shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #9E2C2C; color:#0F3853; background:#CCCCCC; cursor:default; text-align:left; max-height:200px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:200px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#184F76; color:#DDDDDD; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#DD7700; }
+.hid { display:none !important; visibility:hidden; }
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #B3CFDD;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
