@@ -1,6 +1,13 @@
 import os
 import sys
+import cv2
+import numpy as np
 from collections import namedtuple
+import requests
+import urllib.request
+from bs4 import BeautifulSoup
+import time
+import re
 
 sys.path.append("..")
 import utils
@@ -12,7 +19,9 @@ class PageBuilder:
         self.npc_path = "npc"
         self.item_path = "item"
         self.img_path = "img"
+        self.loc_path = "loc"
         self.css_path = "css"
+        self.map_path = f"{self.img_path}/etc/world_map_interlude_big.png"
 
         if not os.path.exists(self.site_path):
             os.makedirs(self.site_path)
@@ -20,10 +29,19 @@ class PageBuilder:
             os.makedirs(os.path.join(self.site_path, self.npc_path))
         if not os.path.exists(os.path.join(self.site_path, self.item_path)):
             os.makedirs(os.path.join(self.site_path, self.item_path))
+        if not os.path.exists(os.path.join(self.site_path, self.loc_path)):
+            os.makedirs(os.path.join(self.site_path, self.loc_path))
+        if not os.path.exists(os.path.join(self.site_path, self.img_path, self.loc_path)):
+            os.makedirs(os.path.join(self.site_path, self.img_path, self.loc_path))
+        if not os.path.exists(os.path.join(self.site_path, self.img_path, self.item_path)):
+            os.makedirs(os.path.join(self.site_path, self.img_path, self.item_path))
 
         self.parser = utils.NpcParser()
         self.npc_data = self.parser.parse()
         self.item_data = self.create_item_db()
+        self.spawn_data = utils.SpawnParser().parse()
+        self.skill_data = utils.SkillParser().parse()
+
         self.css = """
         <head>
             <link href="{}/pmfun.css" rel="stylesheet" type="text/css" />
@@ -74,6 +92,7 @@ class PageBuilder:
         """
 
     def create_search_page(self):
+        img_path = self.img_path
         search_db = {"items": {}, "npcs": {}}
         search_db["items"] = {"names": [], "ids": []}
         search_db["npcs"] = {"names": [], "ids": [], "levels": []}
@@ -138,19 +157,25 @@ class PageBuilder:
             <h3 id="npcHead" style='display:none'>NPCs</h3>
             <ul id='npcUL'>
         """
+        loc_html = """
+                    <a href="{self.loc_path}/{id}.html" title="{npc_name} location on the map">
+                        <img src="{img_path}/etc/flag.gif" border="0" align="absmiddle" alt="{npc_name} location on the map" title="{npc_name} location on the map">
+                    </a>
+        """
         for i, id in enumerate(search_db["npcs"]["ids"]):
             npc_name = search_db["npcs"]["names"][i]
             npc_level = search_db["npcs"]["levels"][i]
-            npc_list += f"<li style='display:none'><a href='{self.npc_path}/{id}.html'>{npc_name} ({npc_level})</a></li>\n"
+            loc = eval(f'f"""{loc_html}"""') if id in self.spawn_data else ""
+            npc_list += f"<li style='display:none'><a href='{self.npc_path}/{id}.html'>{npc_name} ({npc_level}) {loc}</a></li>\n"
         npc_list += "\n</ul>"
 
         item_list = """
             <h3 id="itemHead" style='display:none'>Items</h3>
             <ul id='itemUL'>
         """
-        img_path = self.img_path
+
         for i, id in enumerate(search_db["items"]["ids"]):
-            item_list += f"<li style='display:none'><a href='{self.item_path}/{id}.html'><img src='{img_path}/item/5-{id}.jpg' style='position:relative; top:10px;'>{search_db['items']['names'][i]}</a></li>\n"
+            item_list += f"<li style='display:none'><a href='{self.item_path}/{id}.html'><img src='{img_path}/item/{id}.png' style='position:relative; top:10px;'>{search_db['items']['names'][i]}</a></li>\n"
         item_list += "\n</ul>"
 
         html_bottom = """
@@ -241,7 +266,7 @@ class PageBuilder:
 
         template = """
                 <tr $COLOR>
-                  <td align="left"><img src="{img_path}/item/5-{drop[0]}.jpg" align="absmiddle" class="img_border" alt="{drop[4]}" title="{drop[4]}"> <a href="../{self.item_path}/{drop[0]}.html" title="{drop[4]}">{drop[4]}</a> ($DROP)</td>
+                  <td align="left"><img src="{img_path}/item/{drop[0]}.png" align="absmiddle" class="img_border" alt="{drop[4]}" title="{drop[4]}"> <a href="../{self.item_path}/{drop[0]}.html" title="{drop[4]}">{drop[4]}</a> ($DROP)</td>
                   <td>$CRYSTALS</td>
                   <td>{format_probability(drop[3])}</td>
                 </tr>
@@ -296,28 +321,66 @@ class PageBuilder:
     def create_npc_pages(self):
         img_path = f"../{self.img_path}"
         header_template = """
-        <td valign="top" bgcolor="#1E4863"><table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list"><tbody><tr><td colspan="3"><img src="{img_path}/etc/blank.gif" height="8"><br><span class="txtbig"><b>{name}</b> ({stats["level"]})</span>&nbsp;&nbsp;&nbsp;<img src="{img_path}/etc/blank.gif" height="10"><br>
+        <td valign="top" bgcolor="#1E4863">
+            <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <img src="{img_path}/etc/blank.gif" height="8">
+                            <br>
+                            <span class="txtbig"><b>{name}</b> ({stats["level"]})</span>
+                            &nbsp;&nbsp;&nbsp;
+                            $LOC
+                            <br>
+                            <img src="{img_path}/etc/blank.gif" height="10">
+                            <br>
         """
-        # Note: Removed location info for now from above:
-        # <a href="/loc/21224/{name.lower().replace(" ", "-")}.html" title="{name} location on the map"><img src="{img_path}/etc/flag.gif" border="0" align="absmiddle" alt="{name} location on the map" title="{name} location on the map">Location</a><br>
-        stats_template = '<br><img src="{img_path}/etc/blank.gif" height="12"><br>  {"Passive" if stats["agro"] is "No" else "Aggressive"} male, Exp: {stats["exp"]}, SP: {stats["sp"]}, HP: {stats["hp"]}, P.Atk: {stats["patk"]}, M.Atk: {stats["matk"]}, RunSpd: 000, Atk.Range: 000 </td></tr>'
+
+        loc_html = """
+        <a href="../{self.loc_path}/{id}.html" title="{name} location on the map">
+        <img src="{img_path}/etc/flag.gif" border="0" align="absmiddle" alt="{name} location on the map" title="{name} location on the map">
+        Location
+        </a>
+        """
+        skill_template = """<img src="{0}/skill/{1}.png" width="16" align="absmiddle" class="img_border" alt="{2} ({3})\n{4}" title="{2} ({3})\n{4}">"""
+        stats_template = """
+            Exp: {stats["exp"]}, SP: {stats["sp"]}<br>
+            Aggressive: {stats["agro"]}, Herbs: {stats["herbs"]}<br>
+            HP: {stats["hp"]}, P.Atk: {stats["patk"]}, M.Atk: {stats["matk"]}, RunSpd: {stats["runspd"]}
+            </td>
+            </tr>
+        """
         footer = "</tbody></table>\n</td>"
 
         for id, data in self.npc_data.items():
             name = data["name"]
             stats = data["stats"]
+            skills = data["skills"]
 
             title = f"<title>{name}</title>"
-            header = eval(f'f"""{header_template}"""')
+            header = eval(f'f"""{header_template}"""').replace(
+                "$LOC", eval(f'f"""{loc_html}"""') if id in self.spawn_data else ""
+            )
             # skills = Add skills here later
-            stats = eval(f'f"""{stats_template}"""')
+            stat_list = eval(f'f"""{stats_template}"""')
+
+            skill_list = ""
+            for skill in skills:
+                skill_data = self.skill_data[skill.id][skill.level]
+                icon = skill_data.icon.strip("icon.")
+                skill_list += skill_template.format(
+                    img_path, icon, skill_data.name, skill.level, skill_data.desc
+                )
+            skill_list += "\n<br><br>"
 
             drops = self.create_drops(data)
 
             css = self.css.format(f"../{self.css_path}")
 
-            html = f"<html>\n{title}\n{css}\n{self.search}\n{self.table_head.format(img_path)}\n{header}\n{drops}\n{self.table_foot.format(img_path)}\n{footer}</html>"
-            with open(os.path.join(self.site_path, self.npc_path, f"{id}.html"), "w") as f:
+            html = f"<html>\n{title}\n{css}\n{self.search}\n{self.table_head.format(img_path)}\n{header}\n{skill_list}\n{stat_list}\n{drops}\n{self.table_foot.format(img_path)}\n{footer}</html>"
+            with open(
+                os.path.join(self.site_path, self.npc_path, f"{id}.html"), "w", encoding="utf-8"
+            ) as f:
                 f.write(html)
 
     def create_item_db(self):
@@ -390,7 +453,12 @@ class PageBuilder:
 
         template = """
                 <tr class="itemData" $COLOR>
-                  <td class="npcName" align="left"><a href="../{self.npc_path}/{drop.npc.id}.html" title="View {drop.npc.name} drop and spoil">{drop.npc.name}</a></td>
+                  <td class="npcName" align="left">
+                    <a href="../{self.npc_path}/{drop.npc.id}.html" title="View {drop.npc.name} drop and spoil">
+                        {drop.npc.name}
+                    </a>
+                  $LOC
+                  </td>
                   <td class="npcLevel" align="left">{drop.npc.level}</td>
                   <td class="npcAgro">{drop.npc.agro}</td>
                   <td class="dropCount">$DROP</td>
@@ -402,10 +470,19 @@ class PageBuilder:
 
         drops = []
         levels = []
+        loc_html = """
+                    <a href="../{self.loc_path}/{drop.npc.id}.html" title="{drop.npc.name} location on the map">
+                        <img src="{img_path}/etc/flag.gif" border="0" align="absmiddle" alt="{drop.npc.name} location on the map" title="{drop.npc.name} location on the map">
+                    </a>
+        """
         for i, drop in enumerate(data["drop"]):
             drops.append(
-                eval(f'f"""{template}"""').replace(
+                eval(f'f"""{template}"""')
+                .replace(
                     "$DROP", f"{drop.min}-{drop.max}" if drop.min != drop.max else f"{drop.min}"
+                )
+                .replace(
+                    "$LOC", eval(f'f"""{loc_html}"""') if drop.npc.id in self.spawn_data else ""
                 )
             )
             levels.append(int(drop.npc.level))
@@ -422,8 +499,12 @@ class PageBuilder:
         levels = []
         for i, drop in enumerate(data["spoil"]):
             spoils.append(
-                eval(f'f"""{template}"""').replace(
+                eval(f'f"""{template}"""')
+                .replace(
                     "$DROP", f"{drop.min}-{drop.max}" if drop.min != drop.max else f"{drop.min}"
+                )
+                .replace(
+                    "$LOC", eval(f'f"""{loc_html}"""') if drop.npc.id in self.spawn_data else ""
                 )
             )
             levels.append(int(drop.npc.level))
@@ -443,7 +524,7 @@ class PageBuilder:
         header_template = """
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody id="itemDataTable"><tr><td colspan="4"><img src="{img_path}/etc/blank.gif" height="8"><br><img src="{img_path}/item/5-{id}.jpg" align="absmiddle" class="img_border" alt="{name}" title="{name}">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="{img_path}/etc/blank.gif" height="8"><br><img src="{img_path}/item/{id}.png" align="absmiddle" class="img_border" alt="{name}" title="{name}">
         		<b class="txtbig">{name}</b>{crystals}<br><img src="{img_path}/etc/blank.gif" height="8"><br>
         """
         desc_template = 'Type: Blunt, P.Atk/Def: 175, M.Atk/Def: 91		<br><img src="{img_path}/etc/blank.gif" height="8"><br>Bestows either Anger, Health, or Rsk. Focus.</td></tr>'
@@ -507,6 +588,150 @@ class PageBuilder:
             with open(os.path.join(self.site_path, self.item_path, f"{id}.html"), "w") as f:
                 f.write(html)
 
+    def create_loc_images(self):
+        # Information from World.java about world size:
+        TILE_X_MIN = 16
+        TILE_X_MAX = 26
+        TILE_Y_MIN = 10
+        TILE_Y_MAX = 25
+
+        TILE_SIZE = 32768
+        WORLD_X_MIN = (TILE_X_MIN - 20) * TILE_SIZE
+        WORLD_X_MAX = (TILE_X_MAX - 19) * TILE_SIZE
+        WORLD_Y_MIN = (TILE_Y_MIN - 18) * TILE_SIZE
+        WORLD_Y_MAX = (TILE_Y_MAX - 17) * TILE_SIZE
+        ###
+
+        cross_radius = 5
+        cross_thickness = 2
+
+        img = cv2.imread(f"{self.site_path}/{self.map_path}")  # Read map image file
+        x_vals = np.linspace(WORLD_X_MIN, WORLD_X_MAX, img.shape[1])  # Generate x range
+        y_vals = np.linspace(WORLD_Y_MIN, WORLD_Y_MAX, img.shape[0])  # Generate y range
+
+        for npc_id, spawn_points in self.spawn_data.items():
+            spawn_img = np.zeros((img.shape[0], img.shape[1], 4))
+            for spawn_point in spawn_points:
+                x_idx = find_nearest_idx(x_vals, spawn_point.x)
+                y_idx = find_nearest_idx(y_vals, spawn_point.y)
+                spawn_img = cv2.line(
+                    spawn_img,
+                    (x_idx - cross_radius, y_idx - cross_radius),
+                    (x_idx + cross_radius, y_idx + cross_radius),
+                    color=(0, 0, 255, 255),
+                    thickness=cross_thickness,
+                )
+                spawn_img = cv2.line(
+                    spawn_img,
+                    (x_idx - cross_radius, y_idx + cross_radius),
+                    (x_idx + cross_radius, y_idx - cross_radius),
+                    color=(0, 0, 255, 255),
+                    thickness=cross_thickness,
+                )
+            cv2.imwrite(
+                f"{self.site_path}/{self.img_path}/{self.loc_path}/{npc_id}.png", spawn_img
+            )
+
+    def create_loc_pages(self):
+        img_path = f"../{self.img_path}"
+
+        for id, data in self.npc_data.items():
+            if id not in self.spawn_data:
+                continue
+
+            name = data["name"]
+            title = f"<title>{name} Location</title>"
+            css = self.css.format(f"../{self.css_path}")
+
+            map = """
+                <div id="images" class="world_map_parent" align="center">
+                    <img class="world_map" src="{}" height="100%"/>
+                    <img class="spawn_overlay" src="{}" height="100%"/>
+                </div>
+            """.format(
+                f"../{self.map_path}", f"{img_path}/{self.loc_path}/{id}.png"
+            )
+
+            jquery = """
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                    <script src="../js/imgViewer2.min.js"></script>
+                    <script>
+                    ;(function($) {
+                    /*
+                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
+                     *
+                     * This can be done with a few lines of code because of the capabilities of Leaflet
+                    */
+                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
+                            _create() {
+                                var self = this;
+                                var images = this.element.children();
+                                images.each(function( index) {
+                                    if (index!=0) {
+                                        $(images[index]).hide();
+                                    }
+                                });
+
+                                var result = this._super();
+                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
+                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
+                                images.each(function( index) {
+                                    if (index!=0) {
+                                        self.addImage(images[index].alt, images[index].src);
+                                    }
+                                });
+                                return result;
+                            },
+                    /*
+                    *   Add an image
+                    */
+                            addImage: function( name, imgurl ) {
+                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
+                                // this.layerControl.addOverlay(img, name);
+                                return img;
+                            }
+                    	});
+                        $(document).ready(function() {
+                    		var $img = $("#images").imgComparator();
+                    	});
+                    })(jQuery);
+                  	</script>
+            """
+            html = f"<html>\n{title}\n{css}\n{map}\n{jquery}</html>"
+            with open(os.path.join(self.site_path, self.loc_path, f"{id}.html"), "w") as f:
+                f.write(html)
+
+    def scrape_pmfun_images(self):
+        for id, data in self.item_data.items():
+            url = f"https://lineage.pmfun.com/item/{id}"
+            r = requests.get(url)
+            soup = BeautifulSoup(r.text, features="html.parser")
+            try:
+                loc = soup.find("img", {"src": re.compile(r"^data/img/")})["src"]
+            except:
+                import ipdb
+
+                ipdb.set_trace()
+            image_url = f"https://lineage.pmfun.com/{loc}"
+            with open(
+                os.path.join(self.site_path, self.img_path, self.item_path, f"{id}.png"), "wb"
+            ) as f:
+                f.write(requests.get(image_url).content)
+            time.sleep(0.1)
+
+
+def find_nearest_idx(array, value):
+    idx = np.searchsorted(array, value, side="left")
+    if idx > 0 and (
+        idx == len(array) or np.abs(value - array[idx - 1]) < np.abs(value - array[idx])
+    ):
+        return idx - 1
+    else:
+        return idx
+
 
 def format_probability(chance, n=4):
     """Format the inputted probability as a percent or fraction depending size
@@ -530,6 +755,13 @@ def format_probability(chance, n=4):
 
 if __name__ == "__main__":
     pb = PageBuilder()
-    # pb.create_npc_pages()
+    print("Creating NPC pages")
+    pb.create_npc_pages()
+    # print("Creating Item pages")
     # pb.create_item_pages()
-    pb.create_search_page()
+    # print("Creating search page")
+    # pb.create_search_page()
+    # print("Creating loc images")
+    # pb.create_loc_images()
+    # print("Creating loc pages")
+    # pb.create_loc_pages()

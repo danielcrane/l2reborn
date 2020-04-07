@@ -1,0 +1,62 @@
+<html>
+<title>Triol's Mirror Location</title>
+
+        <head>
+            <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+
+                <div id="images" class="world_map_parent" align="center">
+                    <img class="world_map" src="../img/etc/world_map_interlude_big.png" height="100%"/>
+                    <img class="spawn_overlay" src="../img/loc/32039.png" height="100%"/>
+                </div>
+            
+
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                    <script src="../js/imgViewer2.min.js"></script>
+                    <script>
+                    ;(function($) {
+                    /*
+                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
+                     *
+                     * This can be done with a few lines of code because of the capabilities of Leaflet
+                    */
+                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
+                            _create() {
+                                var self = this;
+                                var images = this.element.children();
+                                images.each(function( index) {
+                                    if (index!=0) {
+                                        $(images[index]).hide();
+                                    }
+                                });
+
+                                var result = this._super();
+                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
+                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
+                                images.each(function( index) {
+                                    if (index!=0) {
+                                        self.addImage(images[index].alt, images[index].src);
+                                    }
+                                });
+                                return result;
+                            },
+                    /*
+                    *   Add an image
+                    */
+                            addImage: function( name, imgurl ) {
+                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
+                                // this.layerControl.addOverlay(img, name);
+                                return img;
+                            }
+                    	});
+                        $(document).ready(function() {
+                    		var $img = $("#images").imgComparator();
+                    	});
+                    })(jQuery);
+                  	</script>
+            </html>
