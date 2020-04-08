@@ -40,7 +40,7 @@ class PageBuilder:
         self.npc_data = self.parser.parse()
         self.item_data = self.create_item_db()
         self.spawn_data = utils.SpawnParser().parse()
-        self.skill_data = utils.SkillParser().parse()
+        self.skill_data, self.skill_order = utils.SkillParser().parse()
 
         self.css = """
         <head>
@@ -355,7 +355,12 @@ class PageBuilder:
         for id, data in self.npc_data.items():
             name = data["name"]
             stats = data["stats"]
-            skills = data["skills"]
+            try:
+                # First try to get correct skill order from game files:
+                skills = self.skill_order[id]
+            except KeyError:
+                # If not available, get from xml files:
+                skills = data["skills"]
 
             title = f"<title>{name}</title>"
             header = eval(f'f"""{header_template}"""').replace(

@@ -15,7 +15,19 @@ class NpcParser:
             self.npc_dir = os.path.join(self.util_dir, "..", "server_data", "npcs")
 
         # Stats to extract from NPC XMLs:
-        self.stats = {"level", "type", "hp", "mp", "exp", "sp", "patk", "pdef", "matk", "mdef"}
+        self.stats = {
+            "level",
+            "type",
+            "hp",
+            "mp",
+            "exp",
+            "sp",
+            "patk",
+            "pdef",
+            "matk",
+            "mdef",
+            "runspd",
+        }
 
         self.item_data = None
         self.drop_data = None
@@ -59,6 +71,7 @@ class NpcParser:
         return item_data
 
     def parse_npc_xml(self):
+        Skill = namedtuple("Skill", ["id", "level"])
         if self.item_data is None:
             assert ValueError("self.item_data is None, first parse item xml")
         npc_files = []
@@ -98,12 +111,23 @@ class NpcParser:
                             stats[stat_name] = str(round(eval(stat["val"])))
                         except NameError:  # Otherwise:
                             stats[stat_name] = stat["val"]
+                    elif stat_name == "dropherbgroup":
+                        if stat["val"] != "0":
+                            stats["herbs"] = "Yes"
+                        else:
+                            stats["herbs"] = "No"
 
                 ai = npc.find("ai")
                 if ai.has_attr("aggro") and ai["aggro"] != "0":
                     stats["agro"] = "Yes"
                 else:
                     stats["agro"] = "No"
+
+                skills = []
+                skill_list = npc.find("skills")
+                for skill in skill_list.find_all("skill"):
+                    skills.append(Skill(int(skill["id"]), int(skill["level"])))
+                npc_data[npc_id]["skills"] = skills
 
                 npc_data[npc_id]["stats"] = stats
 
