@@ -344,7 +344,7 @@ class PageBuilder:
         """
         skill_template = """<img src="{0}/skill/{1}.png" width="16" align="absmiddle" class="img_border" alt="{2} ({3})\n{4}" title="{2} ({3})\n{4}">"""
         stats_template = """
-            Exp: {stats["exp"]}, SP: {stats["sp"]}<br>
+            <b>Exp: {stats["exp"]}, SP: {stats["sp"]}</b><br>
             Aggressive: {stats["agro"]}, Herbs: {stats["herbs"]}<br>
             HP: {stats["hp"]}, P.Atk: {stats["patk"]}, M.Atk: {stats["matk"]}, RunSpd: {stats["runspd"]}
             </td>
