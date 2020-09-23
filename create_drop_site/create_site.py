@@ -18,10 +18,14 @@ class PageBuilder:
         self.site_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "site")
         self.npc_path = "npc"
         self.item_path = "item"
+        self.recipe_path = "recipe"
         self.img_path = "img"
         self.loc_path = "loc"
         self.css_path = "css"
         self.map_path = f"{self.img_path}/etc/world_map_interlude_big.png"
+        img = cv2.imread(f"{self.site_path}/{self.map_path}")  # Read map image file
+        self.map_size = (img.shape[1], img.shape[0])
+        self.set_world_info()
 
         if not os.path.exists(self.site_path):
             os.makedirs(self.site_path)
@@ -29,16 +33,14 @@ class PageBuilder:
             os.makedirs(os.path.join(self.site_path, self.npc_path))
         if not os.path.exists(os.path.join(self.site_path, self.item_path)):
             os.makedirs(os.path.join(self.site_path, self.item_path))
+        if not os.path.exists(os.path.join(self.site_path, self.recipe_path)):
+            os.makedirs(os.path.join(self.site_path, self.recipe_path))
         if not os.path.exists(os.path.join(self.site_path, self.loc_path)):
             os.makedirs(os.path.join(self.site_path, self.loc_path))
-        if not os.path.exists(os.path.join(self.site_path, self.img_path, self.loc_path)):
-            os.makedirs(os.path.join(self.site_path, self.img_path, self.loc_path))
-        if not os.path.exists(os.path.join(self.site_path, self.img_path, self.item_path)):
-            os.makedirs(os.path.join(self.site_path, self.img_path, self.item_path))
 
-        self.parser = utils.NpcParser()
-        self.npc_data = self.parser.parse()
-        self.item_data = self.create_item_db()
+        self.item_data = utils.ItemParser().parse()
+        self.npc_data = utils.NpcSqlParser(item_data=self.item_data).parse()
+        self.drop_data = self.create_drop_data()
         self.spawn_data = utils.SpawnParser().parse()
         self.skill_data, self.skill_order = utils.SkillParser().parse()
 
@@ -91,6 +93,18 @@ class PageBuilder:
             </div>
         """
 
+    def set_world_info(self):
+        TILE_X_MIN = 16
+        TILE_X_MAX = 26
+        TILE_Y_MIN = 10
+        TILE_Y_MAX = 25
+
+        TILE_SIZE = 32768
+        self.WORLD_X_MIN = (TILE_X_MIN - 20) * TILE_SIZE
+        self.WORLD_X_MAX = (TILE_X_MAX - 19) * TILE_SIZE
+        self.WORLD_Y_MIN = (TILE_Y_MIN - 18) * TILE_SIZE
+        self.WORLD_Y_MAX = (TILE_Y_MAX - 17) * TILE_SIZE
+
     def create_search_page(self):
         img_path = self.img_path
         search_db = {"items": {}, "npcs": {}}
@@ -100,8 +114,8 @@ class PageBuilder:
 
         for id, data in self.item_data.items():
             search_db["items"]["ids"].append(id)
-            search_db["items"]["names"].append(data["name"])
-            names_lower.append(data["name"].lower())
+            search_db["items"]["names"].append(data.name)
+            names_lower.append(data.name.lower())
 
         # Now sort the item list in order of names for easier search:
         _, search_db["items"]["names"], search_db["items"]["ids"] = (
@@ -175,7 +189,8 @@ class PageBuilder:
         """
 
         for i, id in enumerate(search_db["items"]["ids"]):
-            item_list += f"<li style='display:none'><a href='{self.item_path}/{id}.html'><img src='{img_path}/item/{id}.png' style='position:relative; top:10px;'>{search_db['items']['names'][i]}</a></li>\n"
+            icon = self.item_data[id].icon.strip("icon.").lower()
+            item_list += f"<li style='display:none'><a href='{self.item_path}/{id}.html'><img src='{img_path}/icons/{icon}.png' style='position:relative; top:10px;' class='img_border'>{search_db['items']['names'][i]}</a></li>\n"
         item_list += "\n</ul>"
 
         html_bottom = """
@@ -266,7 +281,7 @@ class PageBuilder:
 
         template = """
                 <tr $COLOR>
-                  <td align="left"><img src="{img_path}/item/{drop[0]}.png" align="absmiddle" class="img_border" alt="{drop[4]}" title="{drop[4]}"> <a href="../{self.item_path}/{drop[0]}.html" title="{drop[4]}">{drop[4]}</a> ($DROP)</td>
+                  <td align="left"><img src="{img_path}/icons/{icon}.png" align="absmiddle" class="img_border" alt="{drop[4]}" title="{drop[4]}"> <a href="../{self.item_path}/{drop[0]}.html" title="{drop[4]}">{drop[4]}</a> ($DROP)</td>
                   <td>$CRYSTALS</td>
                   <td>{format_probability(drop[3])}</td>
                 </tr>
@@ -275,7 +290,8 @@ class PageBuilder:
         drops = []
         chances = []
         for i, drop in enumerate(data["drop"]):
-            crystal = self.item_data[drop[0]]["crystal"]
+            icon = self.item_data[drop[0]].icon.strip("icon.").lower()
+            crystal = self.item_data[drop[0]].crystal
             drops.append(
                 eval(f'f"""{template}"""')
                 .replace("$DROP", f"{drop[1]}-{drop[2]}" if drop[1] != drop[2] else f"{drop[1]}")
@@ -297,7 +313,8 @@ class PageBuilder:
         spoils = []
         chances = []
         for i, drop in enumerate(data["spoil"]):
-            crystal = self.item_data[drop[0]]["crystal"]
+            icon = self.item_data[drop[0]].icon.strip("icon.").lower()
+            crystal = self.item_data[drop[0]].crystal
             spoils.append(
                 eval(f'f"""{template}"""')
                 .replace("$DROP", f"{drop[1]}-{drop[2]}" if drop[1] != drop[2] else f"{drop[1]}")
@@ -342,7 +359,7 @@ class PageBuilder:
         Location
         </a>
         """
-        skill_template = """<img src="{0}/skill/{1}.png" width="16" align="absmiddle" class="img_border" alt="{2} ({3})\n{4}" title="{2} ({3})\n{4}">"""
+        skill_template = """<img src="{0}/icons/{1}.png" width="16" align="absmiddle" class="img_border" alt="{2} ({3})\n{4}" title="{2} ({3})\n{4}">"""
         stats_template = """
             <b>Exp: {stats["exp"]}, SP: {stats["sp"]}</b><br>
             Aggressive: {stats["agro"]}, Herbs: {stats["herbs"]}<br>
@@ -359,8 +376,12 @@ class PageBuilder:
                 # First try to get correct skill order from game files:
                 skills = self.skill_order[id]
             except KeyError:
-                # If not available, get from xml files:
-                skills = data["skills"]
+                try:
+                    # If not available, get from xml files:
+                    skills = data["skills"]
+                except KeyError:
+                    # If not available, then pass:
+                    pass
 
             title = f"<title>{name}</title>"
             header = eval(f'f"""{header_template}"""').replace(
@@ -372,7 +393,7 @@ class PageBuilder:
             skill_list = ""
             for skill in skills:
                 skill_data = self.skill_data[skill.id][skill.level]
-                icon = skill_data.icon.strip("icon.")
+                icon = skill_data.icon.lower().replace("icon.", "")
                 skill_list += skill_template.format(
                     img_path, icon, skill_data.name, skill.level, skill_data.desc
                 )
@@ -388,10 +409,10 @@ class PageBuilder:
             ) as f:
                 f.write(html)
 
-    def create_item_db(self):
+    def create_drop_data(self):
         Drop = namedtuple("Drop", ["npc", "min", "max", "chance"])
         Npc = namedtuple("Npc", ["id", "name", "level", "agro"])
-        item_data = {}
+        drop_data = {}
 
         for npc_id, npc in self.npc_data.items():
             stats = npc["stats"]
@@ -406,21 +427,27 @@ class PageBuilder:
                 for drop in npc[drop_type]:
                     id, min_amt, max_amt, chance, name = drop
 
-                    if id not in item_data:
-                        item_data[id] = {}
-                        item_data[id]["name"] = name
-                        item_data[id]["type"] = self.parser.item_data[id].name
-                        item_data[id]["crystal"] = self.parser.item_data[id].crystal
-                        item_data[id]["info"] = []
-                        item_data[id]["drop"] = []
-                        item_data[id]["spoil"] = []
+                    if id not in drop_data:
+                        drop_data[id] = {}
+                        drop_data[id]["name"] = name
+                        drop_data[id]["type"] = self.item_data[id].type
+                        drop_data[id]["crystal"] = self.item_data[id].crystal
+                        drop_data[id]["info"] = []
+                        drop_data[id]["drop"] = []
+                        drop_data[id]["spoil"] = []
 
-                    item_data[id][drop_type].append(Drop(npc_tuple, min_amt, max_amt, chance))
+                    drop_data[id][drop_type].append(Drop(npc_tuple, min_amt, max_amt, chance))
 
-        return item_data
+        return drop_data
 
-    def create_item_drops(self, data):
+    def create_item_drops(self, id):
         img_path = f"../{self.img_path}"
+
+        try:
+            data = self.drop_data[id]
+        except KeyError:
+            data = {"drop": [], "spoil": []}
+
         header = """
                     <tr>
                       <td class="first_line" align="left">NPC Name</td>
@@ -522,34 +549,34 @@ class PageBuilder:
 
         spoils = header_2.format("Spoil") + "\n" + "\n".join(spoils)
 
-        return f"{header.format(self.item_path, data['name'].lower().replace(' ', '-'))}\n{drops}<tr></tr>\n{spoils}"
+        # return f"{header.format(self.item_path, data['name'].lower().replace(' ', '-'))}\n{drops}<tr></tr>\n{spoils}"
+        return f"{header}\n{drops}<tr></tr>\n{spoils}"
 
     def create_item_pages(self):
         img_path = f"../{self.img_path}"
         header_template = """
         <td valign="top" bgcolor="#1E4863">
               <table width="100%" border="0" cellpadding="5" cellspacing="0" class="show_list">
-                <tbody id="itemDataTable"><tr><td colspan="4"><img src="{img_path}/etc/blank.gif" height="8"><br><img src="{img_path}/item/{id}.png" align="absmiddle" class="img_border" alt="{name}" title="{name}">
+                <tbody id="itemDataTable"><tr><td colspan="4"><img src="{img_path}/etc/blank.gif" height="8"><br><img src="{img_path}/icons/{icon}.png" align="absmiddle" class="img_border" alt="{name}" title="{name}">
         		<b class="txtbig">{name}</b>{crystals}<br><img src="{img_path}/etc/blank.gif" height="8"><br>
         """
         desc_template = 'Type: Blunt, P.Atk/Def: 175, M.Atk/Def: 91		<br><img src="{img_path}/etc/blank.gif" height="8"><br>Bestows either Anger, Health, or Rsk. Focus.</td></tr>'
         footer = "</tbody></table>\n</td>"
 
         for id, data in self.item_data.items():
-            data = self.item_data[id]
-            name = data["name"]
+            name = data.name
             title = f"<title>{name}</title>"
             crystals = (
                 ""
-                if data["crystal"].count == None
-                else f" (crystals: {data['crystal'].count} {data['crystal'].type}) "
+                if data.crystal.count == None
+                else f" (crystals: {data.crystal.count} {data.crystal.type}) "
             )
-
+            icon = data.icon.strip("icon.").lower()
             header = eval(f'f"""{header_template}"""')
             # Need to scrape descriptions from game files before enabling this:
             desc = ""  # eval(f'f"""{desc_template}"""')
 
-            drops = self.create_item_drops(data)
+            drops = self.create_item_drops(id)
 
             css = self.css.format(f"../{self.css_path}")
             jquery = """
@@ -593,49 +620,16 @@ class PageBuilder:
             with open(os.path.join(self.site_path, self.item_path, f"{id}.html"), "w") as f:
                 f.write(html)
 
-    def create_loc_images(self):
-        # Information from World.java about world size:
-        TILE_X_MIN = 16
-        TILE_X_MAX = 26
-        TILE_Y_MIN = 10
-        TILE_Y_MAX = 25
-
-        TILE_SIZE = 32768
-        WORLD_X_MIN = (TILE_X_MIN - 20) * TILE_SIZE
-        WORLD_X_MAX = (TILE_X_MAX - 19) * TILE_SIZE
-        WORLD_Y_MIN = (TILE_Y_MIN - 18) * TILE_SIZE
-        WORLD_Y_MAX = (TILE_Y_MAX - 17) * TILE_SIZE
-        ###
-
-        cross_radius = 5
-        cross_thickness = 2
-
-        img = cv2.imread(f"{self.site_path}/{self.map_path}")  # Read map image file
-        x_vals = np.linspace(WORLD_X_MIN, WORLD_X_MAX, img.shape[1])  # Generate x range
-        y_vals = np.linspace(WORLD_Y_MIN, WORLD_Y_MAX, img.shape[0])  # Generate y range
-
-        for npc_id, spawn_points in self.spawn_data.items():
-            spawn_img = np.zeros((img.shape[0], img.shape[1], 4))
-            for spawn_point in spawn_points:
-                x_idx = find_nearest_idx(x_vals, spawn_point.x)
-                y_idx = find_nearest_idx(y_vals, spawn_point.y)
-                spawn_img = cv2.line(
-                    spawn_img,
-                    (x_idx - cross_radius, y_idx - cross_radius),
-                    (x_idx + cross_radius, y_idx + cross_radius),
-                    color=(0, 0, 255, 255),
-                    thickness=cross_thickness,
-                )
-                spawn_img = cv2.line(
-                    spawn_img,
-                    (x_idx - cross_radius, y_idx + cross_radius),
-                    (x_idx + cross_radius, y_idx - cross_radius),
-                    color=(0, 0, 255, 255),
-                    thickness=cross_thickness,
-                )
-            cv2.imwrite(
-                f"{self.site_path}/{self.img_path}/{self.loc_path}/{npc_id}.png", spawn_img
-            )
+    def spawn2map(self, spawn_point):
+        x_map = (
+            (spawn_point.x - self.WORLD_X_MIN) / (self.WORLD_X_MAX - self.WORLD_X_MIN)
+        ) * self.map_size[0]
+        y_map = (
+            self.map_size[1]
+            - ((spawn_point.y - self.WORLD_Y_MIN) / (self.WORLD_Y_MAX - self.WORLD_Y_MIN))
+            * self.map_size[1]
+        )
+        return x_map, y_map
 
     def create_loc_pages(self):
         img_path = f"../{self.img_path}"
@@ -646,96 +640,309 @@ class PageBuilder:
 
             name = data["name"]
             title = f"<title>{name} Location</title>"
-            css = self.css.format(f"../{self.css_path}")
-
-            map = """
-                <div id="images" class="world_map_parent" align="center">
-                    <img class="world_map" src="{}" height="100%"/>
-                    <img class="spawn_overlay" src="{}" height="100%"/>
-                </div>
+            # css = self.css.format(f"../{self.css_path}")
+            css = """
+                    <head>
+                        <link href="{0}/pmfun.css" rel="stylesheet" type="text/css" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <style>
+                        #map {{
+                          margin: auto;
+                          height: 874px;
+                          width: 604px;
+                        }}
+                        </style>
+                    </head>
             """.format(
-                f"../{self.map_path}", f"{img_path}/{self.loc_path}/{id}.png"
+                f"../{self.css_path}"
             )
 
-            jquery = """
-                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-                    <script src="../js/imgViewer2.min.js"></script>
-                    <script>
-                    ;(function($) {
-                    /*
-                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
-                     *
-                     * This can be done with a few lines of code because of the capabilities of Leaflet
-                    */
-                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
-                            _create() {
-                                var self = this;
-                                var images = this.element.children();
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        $(images[index]).hide();
-                                    }
-                                });
+            spawn_points = self.spawn_data[id]
+            spawn_list = "<ul id='coords' style='display:none;'>"
+            for spawn_point in spawn_points:
+                x_map, y_map = self.spawn2map(spawn_point)
+                spawn_list += f"\n\t<li x={x_map} y={y_map}></li>"
+            spawn_list += "\n</ul>"
 
-                                var result = this._super();
-                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
-                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        self.addImage(images[index].alt, images[index].src);
-                                    }
-                                });
-                                return result;
-                            },
-                    /*
-                    *   Add an image
-                    */
-                            addImage: function( name, imgurl ) {
-                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
-                                // this.layerControl.addOverlay(img, name);
-                                return img;
-                            }
-                    	});
-                        $(document).ready(function() {
-                    		var $img = $("#images").imgComparator();
-                    	});
-                    })(jQuery);
-                  	</script>
-            """
-            html = f"<html>\n{title}\n{css}\n{map}\n{jquery}</html>"
+            npc_title = f"<div align='center'><a href='../{self.npc_path}/{id}.html' title='View {name} drop and spoil'><h2>{name} ({data['stats']['level']})</h2></a></div>"
+            map = '<div id="map" align="center"></div>'
+
+            jquery = """
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="   crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="  crossorigin=""></script>
+              	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <script>
+
+                  var map = L.map('map', {{
+                      crs: L.CRS.Simple,
+                      nowrap: true,
+                      minZoom: -1.6
+                  }});
+
+                  var redIcon = new L.Icon({{
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                  }});
+
+                  var bounds = [[0, 0], [{0}, {1}]];
+                  var image = L.imageOverlay("../img/etc/world_map_interlude_big.png", bounds).addTo(map);
+                  map.fitBounds(bounds);
+
+                  var bigIcon = new L.Icon({{
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                  }});
+
+                  var smallIcon = new L.Icon({{
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [12.5, 20.5],
+                    iconAnchor: [6, 20.5],
+                    popupAnchor: [1, -34],
+                  }});
+
+                  var ul = document.getElementById("coords");
+                  var li = ul.getElementsByTagName('li');
+                  var markers = []
+                  for (i = 0; i < li.length; i++) {{
+                    x = li[i].getAttribute("x");
+                    y = li[i].getAttribute("y");
+                    markers.push(L.marker(L.latLng(y, x), {{icon: smallIcon}}).addTo(map));
+                  }}
+
+                  map.setMaxBounds(bounds);
+                  map.on('drag', function() {{ map.panInsideBounds(bounds, {{ animate: false }}); }});
+
+                  map.on('zoomend', function(ev){{
+                    for (i = 0; i < markers.length; i++) {{
+                      marker = markers[i];
+                      if (map.getZoom() > 1) {{
+                        marker.setIcon(bigIcon);
+                      }} else {{
+                        marker.setIcon(smallIcon);
+                      }}
+                    }}
+                  }})
+              	</script>
+            """.format(
+                self.map_size[1], self.map_size[0]
+            )
+            html = f"<html>\n{title}\n{css}\n{self.search}\n<br><br><br><br>\n{spawn_list}\n{npc_title}\n{map}\n{jquery}</html>"
             with open(os.path.join(self.site_path, self.loc_path, f"{id}.html"), "w") as f:
+                f.write(html)
+
+    def create_ingredient_table(self, recipe, first=True):
+        img_path = f"../{self.img_path}"
+        ingredient_list = set()
+
+        if first:
+            ingredients = f"<ul class='{recipe.result.id}'>\n"
+        else:
+            ingredients = f"<ul class='{recipe.result.id}' style = 'display:none'>\n"
+
+        for ingredient in recipe.ingredients:
+            icon = self.item_data[ingredient.id].icon.strip("icon.").lower()
+            ingredients += f"\t<li class='{ingredient.id}'><img src='{img_path}/icons/{icon}.png' style='position:relative; top:10px;' class='img_border'> <text class='item_count'>{ingredient.count}</text>x <a href='../item/{ingredient.id}.html'>{ingredient.name}</a>"
+            ingredient_list.add(ingredient.id)
+
+            if ingredient.id in self.recipe_results and ingredient.id != recipe.id:
+                ingredients += f" (<a href='../{self.recipe_path}/{ingredient.id}.html'>recipe</a>) <img src='../img/etc/expand.png' id='{ingredient.id}' height='12' style='cursor:pointer; position:relative; top:3px;' onclick='myFunction(this)'></li>\n"
+                ingredients_, ingredient_list_ = self.create_ingredient_table(
+                    self.recipe_data[self.recipe_results[ingredient.id]], first=False
+                )
+                ingredients += ingredients_
+                ingredients += "</details>"
+                ingredient_list = ingredient_list.union(ingredient_list_)
+            else:
+                ingredients += "</li>\n"
+        ingredients += "</ul>"
+        return ingredients, ingredient_list
+
+    def create_recipe_pages(self):
+        img_path = f"../{self.img_path}"
+        css = self.css.format(f"../{self.css_path}")
+
+        self.recipe_data = utils.RecipeParser(item_data=self.item_data).parse()
+        self.recipe_results = {}
+        for recipe_id, recipe in self.recipe_data.items():
+            self.recipe_results[recipe.result.id] = recipe_id
+
+        for recipe in self.recipe_data.values():
+            title = f"<title>{recipe.name}</title>"
+            info = f"<b>{recipe.name}</b> (level {recipe.level}, quantity {recipe.result.count}, sucess chance {recipe.chance}, MP {recipe.mp}"
+            ingredients, ingredient_list = self.create_ingredient_table(recipe)
+
+            table_0 = """
+            <td align="center" valign="top" bgcolor="#1E4863">
+            <img src="{0}/etc/blank.gif" height="8"><br>
+            <b class="txtbig"><a href='../item/{1}.html'>Recipe</a>:
+            <a href='../item/{2}.html'>{3}</a> ({4})</b><br><img src="{0}/etc/blank.gif" height="8"><br>
+            <table cellspacing='0' cellpadding='0' border='0' width='100%' class='txt'>\n<tbody>\n<tr>\n<td>
+            """.format(
+                img_path, recipe.id, recipe.result.id, recipe.result.name, recipe.chance
+            )
+            table_1 = "</td>\n<td valign='top'><h3>Totals:</h3>"
+            table_2 = "</td>\n</tr>\n</tbody>\n</table>"
+
+            totals = "<ul id='totals'>\n"
+            base_ingredients = [ingredient.id for ingredient in recipe.ingredients]
+            base_ingredient_counts = [ingredient.count for ingredient in recipe.ingredients]
+
+            for ingredient_id in ingredient_list:
+                ingredient_data = self.item_data[ingredient_id]
+                ingredient_name = ingredient_data.name
+                icon = ingredient_data.icon.strip("icon.").lower()
+
+                if ingredient_id in base_ingredients:
+                    ingredient_count = base_ingredient_counts[
+                        base_ingredients.index(ingredient_id)
+                    ]
+                    style = "style = ''"
+                else:
+                    ingredient_count = 0
+                    style = "style='display:none'"
+
+                totals += f"\t<li {style} id='total_{ingredient_id}' ><img src='{img_path}/icons/{icon}.png' style='position:relative; top:10px;' class='img_border'><text class='item_count'>{ingredient_count}</text>x <a href='../item/{ingredient_id}.html'>{ingredient_name}</a>\n"
+            totals += "</ul>\n"
+
+            jquery = """
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  var totalUL = document.getElementById("totals");
+  var totalLIs = totalUL.getElementsByTagName('li');
+  var i, childNode, childNodes, findID, findLI, parentVal, childVal, totalVal, childID;
+
+  function expand(elem, ul) {
+    ul.style.display = "";
+    elem.src = '../img/etc/collapse.png';
+
+    parentVal = parseInt($(ul).parent().find("li."+elem.id+" text.item_count").text());
+
+    findLI = document.getElementById("total_"+elem.id);
+    totalVal = parseInt($(findLI).find('text.item_count').text());
+    totalVal -= parentVal;
+    if (totalVal === 0) {
+      $(findLI).find('text.item_count').text(totalVal);
+      findLI.style.display = "none";
+    };
+
+    childNodes = ul.childNodes;
+    for(i = 0; i < childNodes.length; i++) {
+      childNode = childNodes[i];
+      if (childNodes[i].nodeName === "LI") {
+        childID = childNode.getAttribute("class");
+        childVal = parseInt($(childNode).find("text.item_count").text());
+        findLI = document.getElementById("total_"+childID);
+
+        totalVal = parseInt($(document.getElementById("total_"+childID)).find('text.item_count').text());
+        totalVal += childVal;
+        $(findLI).find('text.item_count').text(totalVal);
+        if (findLI.style.display == "none") {
+          findLI.style.display = "";
+        }
+      }
+    }
+  };
+
+  function contract(elem, ul) {
+    var i, childNode, childNodes, findID, findLI, parentVal, childVal, totalVal, childID;
+    ul.style.display = "none";
+    elem.src = '../img/etc/expand.png';
+
+    parentVal = parseInt($(ul).parent().find("li."+elem.id+" text.item_count").text());
+
+    findLI = document.getElementById("total_"+elem.id);
+    totalVal = parseInt($(findLI).find('text.item_count').text());
+    childNodes = ul.childNodes;
+
+    for(i = 0; i < childNodes.length; i++) {
+      childNode = childNodes[i];
+      if (childNode.nodeName === "UL") {
+        if (childNode.style.display === "") {
+          childID = childNode.getAttribute("class");
+          elem = document.getElementById(childID);
+          ul = $(elem).parent().parent().find('ul.'+elem.id)[0];
+          contract(elem, ul);
+        }
+      }
+    }
+
+    totalVal += parentVal;
+    if (totalVal > 0) {
+      findLI.style.display = "";
+      $(findLI).find('text.item_count').text(totalVal);
+    }
+
+
+    for(i = 0; i < childNodes.length; i++) {
+      childNode = childNodes[i];
+      if (childNode.nodeName === "LI") {
+        childID = childNode.getAttribute("class");
+        childVal = parseInt($(childNode).find("text.item_count").text());
+        findLI = document.getElementById("total_"+childID);
+
+        totalVal = parseInt($(document.getElementById("total_"+childID)).find('text.item_count').text());
+        totalVal -= childVal;
+        $(findLI).find('text.item_count').text(totalVal);
+        if (totalVal === 0) {
+          findLI.style.display = "none";
+        }
+      }
+    }
+  };
+
+  function myFunction(elem) {
+    var ul = $(elem).parent().parent().find('ul.'+elem.id)[0];
+    if (ul.style.display == "none") {
+      // Expand
+      expand(elem, ul);
+    }
+    else {
+      // Contract
+      contract(elem, ul)
+    }
+  };
+</script>
+            """
+
+            html = f"<html>\n{title}\n{css}\n{self.search}\n{'<br>'*4}\n{self.table_head.format(img_path)}\n{table_0}\n{ingredients}\n{table_1}\n{totals}\n{self.table_foot.format(img_path)}\n{table_2}\n{jquery}\n</html>"
+            with open(
+                os.path.join(self.site_path, self.recipe_path, f"{recipe.id}.html"), "w"
+            ) as f:
                 f.write(html)
 
     def scrape_pmfun_images(self):
         for id, data in self.item_data.items():
+            file_path = os.path.join(self.site_path, self.img_path, self.item_path, f"{id}.png")
+
+            if os.path.isfile(file_path):
+                continue
+
             url = f"https://lineage.pmfun.com/item/{id}"
             r = requests.get(url)
             soup = BeautifulSoup(r.text, features="html.parser")
-            try:
-                loc = soup.find("img", {"src": re.compile(r"^data/img/")})["src"]
-            except:
-                import ipdb
-
-                ipdb.set_trace()
+            loc = soup.find("img", {"src": re.compile(r"^data/img/")})["src"]
             image_url = f"https://lineage.pmfun.com/{loc}"
-            with open(
-                os.path.join(self.site_path, self.img_path, self.item_path, f"{id}.png"), "wb"
-            ) as f:
+            with open(file_path, "wb") as f:
                 f.write(requests.get(image_url).content)
             time.sleep(0.1)
 
 
-def find_nearest_idx(array, value):
-    idx = np.searchsorted(array, value, side="left")
-    if idx > 0 and (
-        idx == len(array) or np.abs(value - array[idx - 1]) < np.abs(value - array[idx])
-    ):
-        return idx - 1
-    else:
-        return idx
+def icons_to_lower():
+    dir = r"C:\git\l2reborn\create_drop_site\site\img\icons"
+    os.chdir(dir)
+    first = os.listdir()
+
+    for file in os.listdir():
+        # if you do not want to change the name of the .py file too uncomment the next line
+        # if not file.endswith(".py") # and indent the next one (of four spaces)
+        os.rename(file, file.lower())  # use upper() for the opposite goal
 
 
 def format_probability(chance, n=4):
@@ -762,11 +969,11 @@ if __name__ == "__main__":
     pb = PageBuilder()
     print("Creating NPC pages")
     pb.create_npc_pages()
-    # print("Creating Item pages")
-    # pb.create_item_pages()
-    # print("Creating search page")
-    # pb.create_search_page()
-    # print("Creating loc images")
-    # pb.create_loc_images()
-    # print("Creating loc pages")
-    # pb.create_loc_pages()
+    print("Creating Item pages")
+    pb.create_item_pages()
+    print("Creating search page")
+    pb.create_search_page()
+    print("Creating loc pages")
+    pb.create_loc_pages()
+    print("Creating recipe pages")
+    pb.create_recipe_pages()

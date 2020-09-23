@@ -1,62 +1,190 @@
 <html>
 <title>Goblin Tomb Raider Leader Location</title>
 
-        <head>
-            <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
-        
-
-                <div id="images" class="world_map_parent" align="center">
-                    <img class="world_map" src="../img/etc/world_map_interlude_big.png" height="100%"/>
-                    <img class="spawn_overlay" src="../img/loc/20320.png" height="100%"/>
-                </div>
+                    <head>
+                        <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <style>
+                        #map {
+                          margin: auto;
+                          height: 874px;
+                          width: 604px;
+                        }
+                        </style>
+                    </head>
             
 
-                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-                    <script src="../js/imgViewer2.min.js"></script>
-                    <script>
-                    ;(function($) {
-                    /*
-                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
-                     *
-                     * This can be done with a few lines of code because of the capabilities of Leaflet
-                    */
-                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
-                            _create() {
-                                var self = this;
-                                var images = this.element.children();
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        $(images[index]).hide();
-                                    }
-                                });
+            <div class="searchbar">
+                <form class="example" action="../search.html">
+                  <input type="text" id="searchTxt" placeholder="Search.." name="search">
+                  <button id="searchBtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        
+<br><br><br><br>
+<ul id='coords' style='display:none;'>
+	<li x=593.2454057173295 y=1966.9189453125></li>
+	<li x=593.2454057173295 y=1966.9189453125></li>
+	<li x=601.1680797230114 y=1972.8556823730469></li>
+	<li x=629.9430708451705 y=1989.476547241211></li>
+	<li x=641.4952947443181 y=1983.1550216674805></li>
+	<li x=629.9430708451705 y=1970.5119705200195></li>
+	<li x=653.0475186434659 y=1967.9833602905273></li>
+	<li x=626.0923295454545 y=1967.9833602905273></li>
+	<li x=622.2415882457386 y=1966.7190551757812></li>
+	<li x=594.4619584517045 y=1958.7984085083008></li>
+	<li x=583.6034712357955 y=1953.3763885498047></li>
+	<li x=589.03271484375 y=1958.0238342285156></li>
+	<li x=596.2717063210226 y=1961.8967056274414></li>
+	<li x=551.8826127485795 y=1830.7737731933594></li>
+	<li x=549.1579367897726 y=1833.3723449707031></li>
+	<li x=547.7955988103694 y=1829.4744873046875></li>
+	<li x=560.056640625 y=1837.2702026367188></li>
+	<li x=583.4023881392045 y=1827.5355529785156></li>
+	<li x=569.12548828125 y=1832.4528503417969></li>
+	<li x=577.6916281960226 y=1824.4622421264648></li>
+	<li x=622.5834295099431 y=1780.7562637329102></li>
+	<li x=631.7829811789774 y=1773.0105209350586></li>
+	<li x=632.7029363458806 y=1776.8833923339844></li>
+	<li x=623.5033846768466 y=1783.8545608520508></li>
+	<li x=627.1832053444601 y=1780.7562637329102></li>
+	<li x=633.6228915127841 y=1781.5308380126953></li>
+	<li x=630.8630260120739 y=1784.629135131836></li>
+	<li x=618.9036088423295 y=1782.3054122924805></li>
+	<li x=593.7682217684659 y=1894.5237350463867></li>
+	<li x=596.9805242365056 y=1886.0234069824219></li>
+	<li x=601.263594193892 y=1886.967887878418></li>
+	<li x=571.3575106534091 y=1890.3810119628906></li>
+	<li x=566.3706498579545 y=1888.4220886230469></li>
+	<li x=567.6173650568181 y=1897.2372436523438></li>
+	<li x=577.5910866477274 y=1888.4220886230469></li>
+	<li x=573.6548850319601 y=1926.9709014892578></li>
+	<li x=563.1885098544034 y=1926.9709014892578></li>
+	<li x=564.9329057173295 y=1907.4066543579102></li>
+	<li x=556.2109264026989 y=1910.0152206420898></li>
+	<li x=556.2109264026989 y=1916.536636352539></li>
+	<li x=582.3768643465909 y=1915.2323532104492></li>
+	<li x=581.7384255149149 y=1940.4734802246094></li>
+	<li x=584.6641845703125 y=1946.0953903198242></li>
+	<li x=584.6641845703125 y=1946.0953903198242></li>
+	<li x=570.0353892933239 y=1934.8515701293945></li>
+	<li x=586.1270640980114 y=1938.2247161865234></li>
+	<li x=524.9575861150569 y=1776.793441772461></li>
+	<li x=521.4989568536931 y=1781.4708709716797></li>
+	<li x=519.3373135653409 y=1788.4870147705078></li>
+	<li x=602.1584139737216 y=1973.3953857421875></li>
+	<li x=594.2357399680399 y=1972.8556823730469></li>
+	<li x=592.2550714666194 y=1973.9350891113281></li>
+	<li x=654.9728892933239 y=1966.7190551757812></li>
+	<li x=633.7938121448864 y=1990.740852355957></li>
+	<li x=651.122147993608 y=1980.6264114379883></li>
+	<li x=635.7191827947444 y=1966.7190551757812></li>
+	<li x=629.9430708451705 y=1967.9833602905273></li>
+	<li x=629.9430708451705 y=1983.1550216674805></li>
+	<li x=581.7937233664774 y=1954.1509628295898></li>
+	<li x=578.1742276278409 y=1956.4746856689453></li>
+	<li x=594.4619584517045 y=1956.4746856689453></li>
+	<li x=583.6034712357955 y=1957.2492599487305></li>
+	<li x=549.1579367897726 y=1825.5766296386719></li>
+	<li x=554.6072887073864 y=1838.5694885253906></li>
+	<li x=551.8826127485795 y=1842.4673461914062></li>
+	<li x=555.9696266867899 y=1829.4744873046875></li>
+	<li x=577.6916281960226 y=1826.9208908081055></li>
+	<li x=580.5470081676136 y=1825.6915664672852></li>
+	<li x=579.1193181818181 y=1823.8475799560547></li>
+	<li x=631.7829811789774 y=1780.7562637329102></li>
+	<li x=629.023115678267 y=1777.6579666137695></li>
+	<li x=628.1031605113636 y=1777.6579666137695></li>
+	<li x=626.2632501775569 y=1779.981689453125></li>
+	<li x=632.7029363458806 y=1779.2071151733398></li>
+	<li x=634.5428466796875 y=1775.334243774414></li>
+	<li x=629.023115678267 y=1777.6579666137695></li>
+	<li x=632.7029363458806 y=1783.8545608520508></li>
+	<li x=592.6974542791194 y=1886.967887878418></li>
+	<li x=601.263594193892 y=1886.0234069824219></li>
+	<li x=587.3436168323864 y=1890.7458114624023></li>
+	<li x=580.0845170454545 y=1891.3604736328125></li>
+	<li x=581.3312322443181 y=1894.2988586425781></li>
+	<li x=573.8509410511364 y=1900.1756286621094></li>
+	<li x=567.6173650568181 y=1897.2372436523438></li>
+	<li x=566.6773015802556 y=1928.2751846313477></li>
+	<li x=559.6997181285511 y=1913.9280700683594></li>
+	<li x=566.6773015802556 y=1926.9709014892578></li>
+	<li x=563.1885098544034 y=1904.7980880737305></li>
+	<li x=563.1885098544034 y=1904.7980880737305></li>
+	<li x=556.2109264026989 y=1913.9280700683594></li>
+	<li x=575.8869074041194 y=1932.6028060913086></li>
+	<li x=590.515702681108 y=1934.8515701293945></li>
+	<li x=571.4982688210226 y=1932.6028060913086></li>
+	<li x=589.0528231534091 y=1932.6028060913086></li>
+	<li x=586.1270640980114 y=1943.8466262817383></li>
+	<li x=518.0403275923295 y=1781.4708709716797></li>
+	<li x=521.9312855113636 y=1786.1483001708984></li>
+	<li x=524.5252574573864 y=1769.7772979736328></li>
+</ul>
+<div align='center'><a href='../npc/20320.html' title='View Goblin Tomb Raider Leader drop and spoil'><h2>Goblin Tomb Raider Leader (12)</h2></a></div>
+<div id="map" align="center"></div>
 
-                                var result = this._super();
-                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
-                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        self.addImage(images[index].alt, images[index].src);
-                                    }
-                                });
-                                return result;
-                            },
-                    /*
-                    *   Add an image
-                    */
-                            addImage: function( name, imgurl ) {
-                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
-                                // this.layerControl.addOverlay(img, name);
-                                return img;
-                            }
-                    	});
-                        $(document).ready(function() {
-                    		var $img = $("#images").imgComparator();
-                    	});
-                    })(jQuery);
-                  	</script>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="   crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="  crossorigin=""></script>
+              	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <script>
+
+                  var map = L.map('map', {
+                      crs: L.CRS.Simple,
+                      nowrap: true,
+                      minZoom: -1.6
+                  });
+
+                  var redIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                  });
+
+                  var bounds = [[0, 0], [2620, 1812]];
+                  var image = L.imageOverlay("../img/etc/world_map_interlude_big.png", bounds).addTo(map);
+                  map.fitBounds(bounds);
+
+                  var bigIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var smallIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [12.5, 20.5],
+                    iconAnchor: [6, 20.5],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var ul = document.getElementById("coords");
+                  var li = ul.getElementsByTagName('li');
+                  var markers = []
+                  for (i = 0; i < li.length; i++) {
+                    x = li[i].getAttribute("x");
+                    y = li[i].getAttribute("y");
+                    markers.push(L.marker(L.latLng(y, x), {icon: smallIcon}).addTo(map));
+                  }
+
+                  map.setMaxBounds(bounds);
+                  map.on('drag', function() { map.panInsideBounds(bounds, { animate: false }); });
+
+                  map.on('zoomend', function(ev){
+                    for (i = 0; i < markers.length; i++) {
+                      marker = markers[i];
+                      if (map.getZoom() > 1) {
+                        marker.setIcon(bigIcon);
+                      } else {
+                        marker.setIcon(smallIcon);
+                      }
+                    }
+                  })
+              	</script>
             </html>

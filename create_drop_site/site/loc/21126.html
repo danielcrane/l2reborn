@@ -1,62 +1,152 @@
 <html>
 <title>Kerope Werewolf Location</title>
 
-        <head>
-            <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
-        
-
-                <div id="images" class="world_map_parent" align="center">
-                    <img class="world_map" src="../img/etc/world_map_interlude_big.png" height="100%"/>
-                    <img class="spawn_overlay" src="../img/loc/21126.png" height="100%"/>
-                </div>
+                    <head>
+                        <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <style>
+                        #map {
+                          margin: auto;
+                          height: 874px;
+                          width: 604px;
+                        }
+                        </style>
+                    </head>
             
 
-                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-                    <script src="../js/imgViewer2.min.js"></script>
-                    <script>
-                    ;(function($) {
-                    /*
-                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
-                     *
-                     * This can be done with a few lines of code because of the capabilities of Leaflet
-                    */
-                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
-                            _create() {
-                                var self = this;
-                                var images = this.element.children();
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        $(images[index]).hide();
-                                    }
-                                });
+            <div class="searchbar">
+                <form class="example" action="../search.html">
+                  <input type="text" id="searchTxt" placeholder="Search.." name="search">
+                  <button id="searchBtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        
+<br><br><br><br>
+<ul id='coords' style='display:none;'>
+	<li x=1452.8354270241477 y=2366.344413757324></li>
+	<li x=1452.0562300248578 y=2361.272201538086></li>
+	<li x=1449.3868519176137 y=2382.5704956054688></li>
+	<li x=1463.1409357244318 y=2380.2317810058594></li>
+	<li x=1441.966885653409 y=2392.784881591797></li>
+	<li x=1449.2159312855113 y=2392.784881591797></li>
+	<li x=1449.9901012073863 y=2412.0343017578125></li>
+	<li x=1443.2337091619318 y=2409.0359497070312></li>
+	<li x=1464.1061345880682 y=2412.3641204833984></li>
+	<li x=1462.758877840909 y=2400.9953689575195></li>
+	<li x=1467.8311989524148 y=2396.577796936035></li>
+	<li x=1475.1104070490057 y=2398.166923522949></li>
+	<li x=1485.0489390980113 y=2386.668243408203></li>
+	<li x=1485.7828924005682 y=2384.0896606445312></li>
+	<li x=1490.9306196732953 y=2376.2939453125></li>
+	<li x=1487.5524236505682 y=2380.0119018554688></li>
+	<li x=1484.6467729048297 y=2355.4454040527344></li>
+	<li x=1488.2361061789773 y=2366.1395263671875></li>
+	<li x=1488.5176225142047 y=2346.5103149414062></li>
+	<li x=1491.2724609375 y=2347.8795623779297></li>
+	<li x=1489.814608487216 y=2338.1199264526367></li>
+	<li x=1484.1591463955965 y=2313.253593444824></li>
+	<li x=1496.601162997159 y=2327.2409057617188></li>
+	<li x=1486.4213312322443 y=2327.2409057617188></li>
+	<li x=1532.8866077769887 y=2379.5821380615234></li>
+	<li x=1527.5327703302557 y=2382.8053665161133></li>
+	<li x=1527.5327703302557 y=2375.2845001220703></li>
+	<li x=1515.955411044034 y=2359.2882919311523></li>
+	<li x=1524.250088778409 y=2367.7186584472656></li>
+	<li x=1517.3378573330965 y=2354.4709396362305></li>
+	<li x=1451.2770330255682 y=2366.344413757324></li>
+	<li x=1455.1730180220172 y=2364.170608520508></li>
+	<li x=1460.8485884232953 y=2370.876922607422></li>
+	<li x=1465.4332830255682 y=2372.436065673828></li>
+	<li x=1454.3938210227273 y=2404.0586853027344></li>
+	<li x=1456.4649769176137 y=2403.1192016601562></li>
+	<li x=1447.456454190341 y=2415.5323791503906></li>
+	<li x=1464.7797629616477 y=2407.991523742676></li>
+	<li x=1467.474276455966 y=2411.489601135254></li>
+	<li x=1456.746493252841 y=2410.035400390625></li>
+	<li x=1470.5609019886363 y=2399.7560501098633></li>
+	<li x=1470.5609019886363 y=2392.60498046875></li>
+	<li x=1483.9480091441762 y=2384.949188232422></li>
+	<li x=1487.2507990056818 y=2386.668243408203></li>
+	<li x=1493.1827503551137 y=2369.7875213623047></li>
+	<li x=1489.2415216619318 y=2376.2939453125></li>
+	<li x=1486.6978204900568 y=2368.278350830078></li>
+	<li x=1486.18505859375 y=2352.2371673583984></li>
+	<li x=1496.0934281782672 y=2346.5103149414062></li>
+	<li x=1492.6498801491477 y=2349.248809814453></li>
+	<li x=1488.6835160688922 y=2327.2409057617188></li>
+	<li x=1486.4213312322443 y=2317.916030883789></li>
+	<li x=1495.4700705788352 y=2324.132614135742></li>
+	<li x=1492.0767933238637 y=2330.3491973876953></li>
+	<li x=1518.9666304154828 y=2375.2845001220703></li>
+	<li x=1529.6743053089488 y=2370.986862182617></li>
+	<li x=1525.3912353515625 y=2375.2845001220703></li>
+	<li x=1518.720303622159 y=2352.0622634887695></li>
+	<li x=1520.1027499112215 y=2368.922996520996></li>
+	<li x=1528.3974276455965 y=2355.675277709961></li>
+</ul>
+<div align='center'><a href='../npc/21126.html' title='View Kerope Werewolf drop and spoil'><h2>Kerope Werewolf (20)</h2></a></div>
+<div id="map" align="center"></div>
 
-                                var result = this._super();
-                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
-                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        self.addImage(images[index].alt, images[index].src);
-                                    }
-                                });
-                                return result;
-                            },
-                    /*
-                    *   Add an image
-                    */
-                            addImage: function( name, imgurl ) {
-                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
-                                // this.layerControl.addOverlay(img, name);
-                                return img;
-                            }
-                    	});
-                        $(document).ready(function() {
-                    		var $img = $("#images").imgComparator();
-                    	});
-                    })(jQuery);
-                  	</script>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="   crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="  crossorigin=""></script>
+              	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <script>
+
+                  var map = L.map('map', {
+                      crs: L.CRS.Simple,
+                      nowrap: true,
+                      minZoom: -1.6
+                  });
+
+                  var redIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                  });
+
+                  var bounds = [[0, 0], [2620, 1812]];
+                  var image = L.imageOverlay("../img/etc/world_map_interlude_big.png", bounds).addTo(map);
+                  map.fitBounds(bounds);
+
+                  var bigIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var smallIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [12.5, 20.5],
+                    iconAnchor: [6, 20.5],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var ul = document.getElementById("coords");
+                  var li = ul.getElementsByTagName('li');
+                  var markers = []
+                  for (i = 0; i < li.length; i++) {
+                    x = li[i].getAttribute("x");
+                    y = li[i].getAttribute("y");
+                    markers.push(L.marker(L.latLng(y, x), {icon: smallIcon}).addTo(map));
+                  }
+
+                  map.setMaxBounds(bounds);
+                  map.on('drag', function() { map.panInsideBounds(bounds, { animate: false }); });
+
+                  map.on('zoomend', function(ev){
+                    for (i = 0; i < markers.length; i++) {
+                      marker = markers[i];
+                      if (map.getZoom() > 1) {
+                        marker.setIcon(bigIcon);
+                      } else {
+                        marker.setIcon(smallIcon);
+                      }
+                    }
+                  })
+              	</script>
             </html>

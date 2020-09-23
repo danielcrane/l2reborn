@@ -1,62 +1,172 @@
 <html>
 <title>Lirein Location</title>
 
-        <head>
-            <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
-        
-
-                <div id="images" class="world_map_parent" align="center">
-                    <img class="world_map" src="../img/etc/world_map_interlude_big.png" height="100%"/>
-                    <img class="spawn_overlay" src="../img/loc/20036.png" height="100%"/>
-                </div>
+                    <head>
+                        <link href="../css/pmfun.css" rel="stylesheet" type="text/css" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <style>
+                        #map {
+                          margin: auto;
+                          height: 874px;
+                          width: 604px;
+                        }
+                        </style>
+                    </head>
             
 
-                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-                    <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-                  	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-                    <script src="../js/imgViewer2.min.js"></script>
-                    <script>
-                    ;(function($) {
-                    /*
-                     *	Here we extend the imgViewer2 widget to compare multiple versions of an image
-                     *
-                     * This can be done with a few lines of code because of the capabilities of Leaflet
-                    */
-                    	$.widget("wgm.imgComparator", $.wgm.imgViewer2, {
-                            _create() {
-                                var self = this;
-                                var images = this.element.children();
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        $(images[index]).hide();
-                                    }
-                                });
+            <div class="searchbar">
+                <form class="example" action="../search.html">
+                  <input type="text" id="searchTxt" placeholder="Search.." name="search">
+                  <button id="searchBtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        
+<br><br><br><br>
+<ul id='coords' style='display:none;'>
+	<li x=685.3716264204545 y=1020.7889556884766></li>
+	<li x=697.85888671875 y=1009.2353057861328></li>
+	<li x=704.1025168678976 y=1012.1237182617188></li>
+	<li x=697.85888671875 y=1009.2353057861328></li>
+	<li x=688.2219793146306 y=1008.7855529785156></li>
+	<li x=683.3557683771306 y=1000.8699035644531></li>
+	<li x=684.7482688210226 y=992.2746276855469></li>
+	<li x=673.6082652698864 y=1000.8699035644531></li>
+	<li x=680.5707674893466 y=988.8365173339844></li>
+	<li x=674.9153053977274 y=1021.5585327148438></li>
+	<li x=676.2424538352274 y=1027.8750610351562></li>
+	<li x=670.9338600852274 y=1019.9794006347656></li>
+	<li x=685.5324928977274 y=1023.1376647949219></li>
+	<li x=670.9338600852274 y=1034.1915893554688></li>
+	<li x=675.3777965198864 y=1030.623550415039></li>
+	<li x=707.9834206321024 y=1001.9892883300781></li>
+	<li x=713.3221768465909 y=1000.8649063110352></li>
+	<li x=716.88134765625 y=991.8698501586914></li>
+	<li x=704.4242498224431 y=997.4917602539062></li>
+	<li x=711.5425914417614 y=1004.2380523681641></li>
+	<li x=690.956709428267 y=981.2706756591797></li>
+	<li x=699.1558726917614 y=974.5243835449219></li>
+	<li x=672.2207919034091 y=974.7392654418945></li>
+	<li x=663.6345436789774 y=977.6626586914062></li>
+	<li x=680.8070401278409 y=976.6881942749023></li>
+	<li x=695.6871892755681 y=949.1783142089844></li>
+	<li x=699.8093927556819 y=954.9751281738281></li>
+	<li x=689.0916637073864 y=945.7002258300781></li>
+	<li x=698.9849520596591 y=956.1344909667969></li>
+	<li x=674.5935724431819 y=956.2344360351562></li>
+	<li x=662.2872869318181 y=947.4542617797852></li>
+	<li x=678.6956676136364 y=957.4887466430664></li>
+	<li x=696.5116299715909 y=952.6564025878906></li>
+	<li x=679.7061101740056 y=941.2026977539062></li>
+	<li x=682.8731689453125 y=933.0471801757812></li>
+	<li x=672.7033913352274 y=919.0448760986328></li>
+	<li x=670.3356378728694 y=930.9383392333984></li>
+	<li x=671.914140181108 y=932.127685546875></li>
+	<li x=663.2323774857955 y=930.9383392333984></li>
+	<li x=663.2323774857955 y=919.0448760986328></li>
+	<li x=685.3716264204545 y=1009.2353057861328></li>
+	<li x=685.3716264204545 y=1016.4563369750977></li>
+	<li x=687.4528364701705 y=999.125862121582></li>
+	<li x=693.6964666193181 y=1003.4584808349609></li>
+	<li x=694.1338223544034 y=1010.3846740722656></li>
+	<li x=672.2157648259944 y=985.3984069824219></li>
+	<li x=669.4307639382101 y=993.9936828613281></li>
+	<li x=686.1407692649149 y=990.5555725097656></li>
+	<li x=672.2157648259944 y=999.1508483886719></li>
+	<li x=688.1867897727274 y=1031.0333251953125></li>
+	<li x=673.5881569602274 y=1019.9794006347656></li>
+	<li x=669.6067116477274 y=1023.1376647949219></li>
+	<li x=677.5696022727274 y=1027.8750610351562></li>
+	<li x=676.2424538352274 y=1016.8211364746094></li>
+	<li x=678.0924183238636 y=1031.897850036621></li>
+	<li x=706.2038352272726 y=983.9991760253906></li>
+	<li x=713.3221768465909 y=989.6210861206055></li>
+	<li x=700.8650790127841 y=996.3673782348633></li>
+	<li x=715.1017622514205 y=991.8698501586914></li>
+	<li x=718.6609330610795 y=999.7405242919922></li>
+	<li x=703.8411088423295 y=977.222900390625></li>
+	<li x=702.6697998046875 y=979.4716644287109></li>
+	<li x=666.0877574573864 y=970.8414077758789></li>
+	<li x=661.1813299005681 y=963.0456924438477></li>
+	<li x=680.8070401278409 y=977.6626586914062></li>
+	<li x=689.0916637073864 y=954.9751281738281></li>
+	<li x=694.0383078835226 y=952.6564025878906></li>
+	<li x=691.5649857954545 y=948.0189514160156></li>
+	<li x=689.0916637073864 y=959.6125793457031></li>
+	<li x=687.4427823153409 y=945.7002258300781></li>
+	<li x=668.4404296875 y=939.9283981323242></li>
+	<li x=673.5680486505681 y=951.2171936035156></li>
+	<li x=668.4404296875 y=943.6913299560547></li>
+	<li x=678.6504239169034 y=937.1249389648438></li>
+	<li x=680.2339533025569 y=933.726806640625></li>
+	<li x=662.4431263316761 y=929.7489929199219></li>
+	<li x=672.7033913352274 y=929.7489929199219></li>
+	<li x=662.4431263316761 y=929.7489929199219></li>
+	<li x=660.8646240234375 y=926.1809539794922></li>
+	<li x=662.4431263316761 y=923.8022613525391></li>
+</ul>
+<div align='center'><a href='../npc/20036.html' title='View Lirein drop and spoil'><h2>Lirein (18)</h2></a></div>
+<div id="map" align="center"></div>
 
-                                var result = this._super();
-                                // this.layerControl = new L.control.layers(null, null, {collapsed: false}).addTo(this.map);
-                                // this.layerControl.addBaseLayer(self.zimg, images[0].alt);
-                                images.each(function( index) {
-                                    if (index!=0) {
-                                        self.addImage(images[index].alt, images[index].src);
-                                    }
-                                });
-                                return result;
-                            },
-                    /*
-                    *   Add an image
-                    */
-                            addImage: function( name, imgurl ) {
-                                var img = L.imageOverlay(imgurl, this.bounds).addTo(this.map);
-                                // this.layerControl.addOverlay(img, name);
-                                return img;
-                            }
-                    	});
-                        $(document).ready(function() {
-                    		var $img = $("#images").imgComparator();
-                    	});
-                    })(jQuery);
-                  	</script>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="   crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="  crossorigin=""></script>
+              	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <script>
+
+                  var map = L.map('map', {
+                      crs: L.CRS.Simple,
+                      nowrap: true,
+                      minZoom: -1.6
+                  });
+
+                  var redIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                  });
+
+                  var bounds = [[0, 0], [2620, 1812]];
+                  var image = L.imageOverlay("../img/etc/world_map_interlude_big.png", bounds).addTo(map);
+                  map.fitBounds(bounds);
+
+                  var bigIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var smallIcon = new L.Icon({
+                    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                    iconSize: [12.5, 20.5],
+                    iconAnchor: [6, 20.5],
+                    popupAnchor: [1, -34],
+                  });
+
+                  var ul = document.getElementById("coords");
+                  var li = ul.getElementsByTagName('li');
+                  var markers = []
+                  for (i = 0; i < li.length; i++) {
+                    x = li[i].getAttribute("x");
+                    y = li[i].getAttribute("y");
+                    markers.push(L.marker(L.latLng(y, x), {icon: smallIcon}).addTo(map));
+                  }
+
+                  map.setMaxBounds(bounds);
+                  map.on('drag', function() { map.panInsideBounds(bounds, { animate: false }); });
+
+                  map.on('zoomend', function(ev){
+                    for (i = 0; i < markers.length; i++) {
+                      marker = markers[i];
+                      if (map.getZoom() > 1) {
+                        marker.setIcon(bigIcon);
+                      } else {
+                        marker.setIcon(smallIcon);
+                      }
+                    }
+                  })
+              	</script>
             </html>
